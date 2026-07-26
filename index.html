@@ -186,7 +186,7 @@
     <div class="brand"><span class="dot"></span>EDGE PICKS</div>
     <div style="display:flex; align-items:center; gap:10px;">
       <button class="admin-link" id="langToggle">EN</button>
-      <button class="admin-link" id="adminToggle">Administration</button>
+      <button class="admin-link hidden" id="adminToggle">Administration</button>
     </div>
   </header>
 </div>
@@ -308,7 +308,8 @@
 
 <script>
 const TOTAL_SPOTS = 10000;
-const ADMIN_CODE = "pronos2026";
+const ADMIN_CODE = "IO8UPPH0";
+const ADMIN_URL_TOKEN = "5y4xw2r3zf";
 const MATCH_KEYS = ['m1','m2','m3'];
 const emptyMatch = () => ({ home:"", away:"", date:"", odds:"", pick:"" });
 
@@ -755,6 +756,11 @@ async function init(){
     hasPaidAccess = true;
     await setPersonal('paid', true);
     window.history.replaceState({}, document.title, window.location.pathname); // nettoie l'URL, le code ne doit pas rester visible
+  }
+
+  // Bouton admin visible uniquement avec le token secret dans l'URL (?panel=...)
+  if(urlParams.get('panel') === ADMIN_URL_TOKEN){
+    document.getElementById('adminToggle').classList.remove('hidden');
   }
 
   if(alreadySubscribed){
