@@ -34,15 +34,10 @@ import requests
 API_KEY = os.environ.get("ODDS_API_KEY", "")
 BASE_URL = "https://api.the-odds-api.com/v4/sports"
 
-# Championnats suivis (clés officielles the-odds-api). Ajoute/retire librement.
-LEAGUES = [
-    "soccer_france_ligue_one",
-    "soccer_epl",
-    "soccer_spain_la_liga",
-    "soccer_italy_serie_a",
-    "soccer_germany_bundesliga",
-    "soccer_uefa_champs_league",
-]
+# Championnats suivis : découverts automatiquement (voir get_active_soccer_leagues),
+# pour ne jamais dépendre d'une liste figée qui tomberait hors-saison
+# (ex: les grands championnats européens sont en pause l'été).
+SPORTS_ENDPOINT = "https://api.the-odds-api.com/v4/sports"
 
 ODDS_THRESHOLD = 1.5
 REGION = "eu"
@@ -51,19 +46,65 @@ OUTPUT_FILE = "pronostics.json"
 NB_PICKS = 3
 
 
+def get_active_soccer_leagues():
+    """Interroge l'API pour la liste de tous les sports/championnats, et ne garde
+    que les championnats de foot actuellement EN SAISON (active=true). Ça évite
+    de dépendre d'une liste figée qui tomberait hors-saison (ex: championnats
+    européens en pause l'été alors que la MLS, le Brésil, le Mexique, etc.
+    jouent toute l'année ou à des périodes différentes)."""
+    resp = requests.get(SPORTS_ENDPOINT, params={"apiKey": API_KEY}, timeout=15)
+    if resp.status_code != 200:
+        print(f"[erreur] Impossible de récupérer la liste des championnats: {resp.status_code} {resp.text[:200]}", file=sys.stderr)
+        return []
+
+    all_sports = resp.json()
+    active_leagues = [
+        s["key"] for s in all_sports
+        if s.get("key", "").startswith("soccer_") and s.get("active")
+    ]
+    print(f"[info] {len(active_leagues)} championnats de foot actifs trouvés: {active_leagues}")
+    return active_leagues
+
+
 def fetch_odds(league):
-    """Récupère les cotes 1X2, totals (over/under) et btts pour un championnat."""
+    """Récupère les cotes pour un championnat. h2h/totals sont demandés ensemble
+    (largement supportés). btts est demandé séparément et fusionné : s'il n'est
+    pas disponible pour ce championnat/plan API, on continue quand même avec
+    les autres marchés au lieu de tout faire échouer."""
+    core = _fetch_markets(league, "h2h,totals")
+    if core is None:
+        return []
+
+    btts_data = _fetch_markets(league, "btts")
+    if btts_data:
+        btts_by_id = {m["id"]: m for m in btts_data}
+        for match in core:
+            btts_match = btts_by_id.get(match["id"])
+            if not btts_match:
+                continue
+            btts_books = {b["key"]: b for b in btts_match.get("bookmakers", [])}
+            for bookmaker in match.get("bookmakers", []):
+                btts_book = btts_books.get(bookmaker["key"])
+                if btts_book:
+                    for m in btts_book.get("markets", []):
+                        if m["key"] == "btts":
+                            bookmaker["markets"].append(m)
+
+    return core
+
+
+def _fetch_markets(league, markets):
     url = f"{BASE_URL}/{league}/odds"
     params = {
         "apiKey": API_KEY,
         "regions": REGION,
-        "markets": "h2h,totals,btts",
+        "markets": markets,
         "oddsFormat": ODDS_FORMAT,
     }
     resp = requests.get(url, params=params, timeout=15)
     if resp.status_code != 200:
-        print(f"[warn] {league}: {resp.status_code} {resp.text[:200]}", file=sys.stderr)
-        return []
+        print(f"[warn] {league} ({markets}): {resp.status_code} {resp.text[:200]}", file=sys.stderr)
+        return None if markets != "btts" else []
     return resp.json()
 
 
@@ -138,8 +179,13 @@ def evaluate_match(match):
 
 def build_picks():
     all_candidates = []
+    leagues = get_active_soccer_leagues()
 
-    for league in LEAGUES:
+    if not leagues:
+        print("[erreur] Aucun championnat de foot actif trouvé — vérifie ta clé API.", file=sys.stderr)
+        return []
+
+    for league in leagues:
         matches = fetch_odds(league)
         for match in matches:
             pick = evaluate_match(match)
