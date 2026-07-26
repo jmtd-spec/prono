@@ -1,5 +1,27 @@
 {
-  "generated_at": "2026-07-26T02:59:46.139745+00:00",
-  "matches": [],
+  "generated_at": "2026-07-26T03:10:24.420107+00:00",
+  "matches": [
+    {
+      "home": "VfL Osnabrück",
+      "away": "Bayern Munich",
+      "date": "Mer. 02/09 — 18h45",
+      "odds": "12.50",
+      "pick": "Victoire VfL Osnabrück"
+    },
+    {
+      "home": "Erzgebirge Aue",
+      "away": "TSG Hoffenheim",
+      "date": "Sam. 22/08 — 13h30",
+      "odds": "10.50",
+      "pick": "Victoire Erzgebirge Aue"
+    },
+    {
+      "home": "Wehen Wiesbaden",
+      "away": "Bayer Leverkusen",
+      "date": "Sam. 22/08 — 11h00",
+      "odds": "8.50",
+      "pick": "Victoire Wehen Wiesbaden"
+    }
+  ],
   "disclaimer": "Sélections générées automatiquement à partir des cotes du marché. Ne constitue pas un conseil financier ni une garantie de gain. Le pari comporte des risques, jouez de façon responsable."
 }
