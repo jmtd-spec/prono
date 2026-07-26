@@ -25,7 +25,7 @@ l'indique clairement dans le pronostic, sans inventer de cote combinée.
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import requests
 
 # ----------------------------------------------------------------------------
@@ -40,6 +40,7 @@ BASE_URL = "https://api.the-odds-api.com/v4/sports"
 SPORTS_ENDPOINT = "https://api.the-odds-api.com/v4/sports"
 
 ODDS_THRESHOLD = 1.5
+ODDS_MAX = 3.0          # au-delà, ce n'est plus un "pronostic sûr" mais un pari risqué
 REGION = "eu"
 ODDS_FORMAT = "decimal"
 OUTPUT_FILE = "pronostics.json"
@@ -119,62 +120,58 @@ def best_outcome(market, min_odds):
     return min(candidates, key=lambda o: o["price"])
 
 
+def in_range(price):
+    """Une cote n'est un 'pronostic sûr' que si elle est ni trop basse (sous le
+    seuil demandé) ni trop haute (pari trop risqué pour être présenté comme
+    une sélection safe)."""
+    return ODDS_THRESHOLD <= price <= ODDS_MAX
+
+
 def evaluate_match(match):
-    """Analyse un match et retourne la meilleure sélection valide trouvée,
-    en essayant plusieurs types de marché dans un ordre de préférence."""
+    """Analyse un match et retourne la meilleure sélection valide, en
+    priorisant les marchés Over/BTTS (statistiquement plus stables) et en
+    n'utilisant le 1X2 qu'en dernier recours — sinon on finit par recommander
+    l'outsider juste parce que le favori est sous la cote minimum, ce qui est
+    un pari risqué déguisé en 'valeur sûre'."""
     if not match.get("bookmakers"):
         return None
 
-    # On regarde tous les books disponibles et on garde le meilleur candidat trouvé
-    best_pick = None
+    over_15_candidates, over_25_candidates, btts_candidates, h2h_candidates = [], [], [], []
 
     for bookmaker in match["bookmakers"]:
         markets_by_key = {m["key"]: m for m in bookmaker.get("markets", [])}
 
-        h2h = markets_by_key.get("h2h")
         totals = markets_by_key.get("totals")
         btts = markets_by_key.get("btts")
+        h2h = markets_by_key.get("h2h")
 
-        # 1) Vainqueur du match (home ou away, jamais le nul pour rester sur un pari simple)
-        if h2h:
-            for outcome in h2h.get("outcomes", []):
-                if outcome["name"] in (match["home_team"], match["away_team"]) and outcome["price"] >= ODDS_THRESHOLD:
-                    pick = {
-                        "type": "1X2",
-                        "label": f"Victoire {outcome['name']}",
-                        "odds": outcome["price"],
-                    }
-                    if not best_pick or pick["odds"] < best_pick["odds"]:
-                        best_pick = pick
-
-        # 2) Over 1.5 / Over 2.5 buts
         if totals:
             for outcome in totals.get("outcomes", []):
-                if outcome["name"] == "Over" and outcome["price"] >= ODDS_THRESHOLD:
-                    line = outcome.get("point")
-                    pick = {
-                        "type": f"Over {line}",
-                        "label": f"Plus de {line} buts",
-                        "odds": outcome["price"],
-                    }
-                    if not best_pick or pick["odds"] < best_pick["odds"]:
-                        best_pick = pick
+                if outcome["name"] != "Over" or not in_range(outcome["price"]):
+                    continue
+                line = outcome.get("point")
+                target = over_15_candidates if line == 1.5 else (over_25_candidates if line == 2.5 else None)
+                if target is not None:
+                    target.append({"type": f"Over {line}", "label": f"Plus de {line} buts", "odds": outcome["price"]})
 
-        # 3) BTTS combiné à Over — combo manuel si le book ne propose pas
-        #    la cote combinée directement (rare hors combo-markets spécifiques)
-        if btts and totals:
-            btts_yes = next((o for o in btts.get("outcomes", []) if o["name"] == "Yes"), None)
-            over_15 = next((o for o in totals.get("outcomes", []) if o["name"] == "Over" and o.get("point") == 1.5), None)
-            if btts_yes and over_15 and btts_yes["price"] >= ODDS_THRESHOLD:
-                pick = {
-                    "type": "BTTS+Over1.5",
-                    "label": "BTTS (oui) + Plus de 1.5 buts — deux paris distincts à combiner",
-                    "odds": btts_yes["price"],  # on affiche la cote BTTS, la plus contraignante des deux
-                }
-                if not best_pick or pick["odds"] < best_pick["odds"]:
-                    best_pick = pick
+        if btts:
+            for outcome in btts.get("outcomes", []):
+                if outcome["name"] == "Yes" and in_range(outcome["price"]):
+                    btts_candidates.append({"type": "BTTS", "label": "Les deux équipes marquent", "odds": outcome["price"]})
 
-    return best_pick
+        if h2h:
+            for outcome in h2h.get("outcomes", []):
+                if outcome["name"] in (match["home_team"], match["away_team"]) and in_range(outcome["price"]):
+                    h2h_candidates.append({"type": "1X2", "label": f"Victoire {outcome['name']}", "odds": outcome["price"]})
+
+    # Ordre de priorité: marchés plus stables d'abord, 1X2 en dernier recours.
+    # Dans chaque marché, on garde la cote la plus basse (donc la plus "sûre"
+    # parmi celles qui respectent quand même le minimum demandé).
+    for pool in (over_15_candidates, over_25_candidates, btts_candidates, h2h_candidates):
+        if pool:
+            return min(pool, key=lambda p: p["odds"])
+
+    return None
 
 
 def build_picks():
@@ -185,9 +182,13 @@ def build_picks():
         print("[erreur] Aucun championnat de foot actif trouvé — vérifie ta clé API.", file=sys.stderr)
         return []
 
+    window_end = end_of_upcoming_weekend()
+
     for league in leagues:
         matches = fetch_odds(league)
         for match in matches:
+            if not within_window(match.get("commence_time"), window_end):
+                continue
             pick = evaluate_match(match)
             if not pick:
                 continue
@@ -198,10 +199,14 @@ def build_picks():
                 "odds": f"{pick['odds']:.2f}",
                 "pick": pick["label"],
                 "league": league,
+                "_commence": match.get("commence_time"),
             })
 
-    # Trie par cote décroissante et garde 3 matchs DIFFÉRENTS (pas 2 picks sur le même match)
-    all_candidates.sort(key=lambda c: float(c["odds"]), reverse=True)
+    if not all_candidates:
+        print("[warn] Aucun match aujourd'hui ou ce week-end respectant les critères.", file=sys.stderr)
+
+    # Matchs les plus proches en premier (des pronostics "du moment", pas dans un mois)
+    all_candidates.sort(key=lambda c: c["_commence"] or "")
     seen_matches = set()
     selection = []
     for c in all_candidates:
@@ -209,11 +214,32 @@ def build_picks():
         if key in seen_matches:
             continue
         seen_matches.add(key)
-        selection.append({k: v for k, v in c.items() if k != "league"})
+        selection.append({k: v for k, v in c.items() if k not in ("league", "_commence")})
         if len(selection) == NB_PICKS:
             break
 
     return selection
+
+
+def end_of_upcoming_weekend():
+    """Calcule la fin du week-end en cours ou à venir : minuit le dimanche
+    (heure UTC — si tu veux un fuseau précis, ajuste ici). Si on est déjà
+    dimanche, ça couvre jusqu'à la fin de la journée en cours."""
+    now = datetime.now(timezone.utc)
+    days_until_sunday = (6 - now.weekday()) % 7  # lundi=0 ... dimanche=6
+    sunday = now + timedelta(days=days_until_sunday)
+    return sunday.replace(hour=23, minute=59, second=59, microsecond=0)
+
+
+def within_window(iso_str, window_end):
+    if not iso_str:
+        return False
+    try:
+        dt = datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    now = datetime.now(timezone.utc)
+    return now <= dt <= window_end
 
 
 def format_date(iso_str):
