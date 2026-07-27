@@ -12,7 +12,7 @@ Ce script :
 
 Prérequis :
     pip install requests
-    export ODDS_API_KEY="ta_cle_api"   (clé gratuite sur https://the-odds-api.com)
+    export API_FOOTBALL_KEY="ta_cle_api"   (clé gratuite sur https://the-odds-api.com)
 
 Limite honnête : je n'ai pas pu exécuter ce script contre l'API réelle dans cet
 environnement (accès réseau restreint côté sandbox). Teste-le avec ta propre clé
@@ -31,7 +31,7 @@ import requests
 # ----------------------------------------------------------------------------
 # Configuration
 # ----------------------------------------------------------------------------
-API_KEY = os.environ.get("ODDS_API_KEY", "")
+API_KEY = os.environ.get("API_FOOTBALL_KEY", "")
 BASE_URL = "https://api.the-odds-api.com/v4/sports"
 
 # Championnats suivis : découverts automatiquement (voir get_active_soccer_leagues),
