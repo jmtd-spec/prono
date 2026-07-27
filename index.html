@@ -59,25 +59,6 @@
   h1 span{ color:var(--amber); }
   .sub{ color:var(--chalk-dim); font-size:16px; max-width:520px; margin:0 auto 44px; line-height:1.6; }
 
-  .scoreboard{
-    display:inline-flex; align-items:center; gap:18px;
-    background: linear-gradient(180deg, var(--night-2), var(--pitch) 260%);
-    border:1px solid var(--line); border-radius:6px;
-    padding: 22px 30px; margin: 0 auto 8px;
-    box-shadow: inset 0 0 40px rgba(0,0,0,0.35);
-  }
-  .scoreboard .digits{
-    font-family:'JetBrains Mono', monospace; font-weight:700; font-size:clamp(30px,6vw,52px);
-    letter-spacing:0.02em; color:var(--amber); text-shadow:0 0 18px rgba(255,182,39,0.35);
-    font-variant-numeric: tabular-nums;
-  }
-  .scoreboard .of{ font-family:'JetBrains Mono', monospace; color:var(--chalk-dim); font-size:clamp(16px,3vw,22px); }
-  .scoreboard .label{ text-align:left; }
-  .scoreboard .label .t1{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.12em; color:var(--chalk-dim); text-transform:uppercase; }
-  .scoreboard .label .t2{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.12em; color:var(--amber); text-transform:uppercase; margin-top:2px;}
-  .bar-outer{ max-width:420px; height:6px; margin:18px auto 0; background:rgba(255,255,255,0.06); border-radius:3px; overflow:hidden; }
-  .bar-inner{ height:100%; background: linear-gradient(90deg, var(--amber-dim), var(--amber)); width:0%; transition: width 0.6s ease; }
-
   /* SIGNUP - ticket stub */
   .ticket{
     max-width:460px; margin: 40px auto 0;
@@ -195,32 +176,13 @@
 <div id="publicView">
   <div class="wrap">
     <section class="hero">
-      <div class="eyebrow" data-i18n="eyebrow">Pronos gratuits dès votre première inscription</div>
-      <h1 data-i18n-html="hero_title">3 pronostics offerts, cote <span>1.5 ou plus</span>, réservés aux 10 000 premiers abonnés</h1>
-      <p class="sub" data-i18n="hero_sub">Un email, trois sélections analysées, une seule règle : cote minimum de 1.5. Dès que les 10 000 places sont prises, l'offre se ferme.</p>
+      <div class="eyebrow" data-i18n="eyebrow">Pronostics analysés, accès immédiat</div>
+      <h1 data-i18n-html="hero_title">3 pronostics, cote <span>1.5 ou plus</span>, débloqués après paiement</h1>
+      <p class="sub" data-i18n="hero_sub">Trois sélections analysées, une seule règle : cote minimum de 1.5. Paiement unique, accès immédiat.</p>
 
-      <div class="scoreboard">
-        <div class="digits" id="remainingDigits">10000</div>
-        <div class="of" data-i18n="of_total">/ 10 000</div>
-        <div class="label"><div class="t1" data-i18n="places">Places</div><div class="t2" data-i18n="remaining">Restantes</div></div>
-      </div>
-      <div class="bar-outer"><div class="bar-inner" id="barInner"></div></div>
-
-      <div class="ticket" id="signupTicket">
-        <h3 id="signupTitle" data-i18n="reserve_title">Réserver ma place</h3>
-        <form id="signupForm">
-          <div class="field-row">
-            <input type="email" id="emailInput" data-i18n-placeholder="email_placeholder" placeholder="ton@email.com" required>
-            <button type="submit" class="cta" id="signupBtn" data-i18n="receive_btn">Recevoir</button>
-          </div>
-          <p class="fine" data-i18n="ticket_fine">Gratuit. Pas de spam. Les pronostics s'affichent juste en dessous une fois inscrit.</p>
-          <div class="msg hidden" id="signupMsg"></div>
-        </form>
-      </div>
-
-      <div class="ticket hidden" id="paywallTicket">
-        <h3 data-i18n="sold_out_title">Places gratuites épuisées</h3>
-        <p class="fine" style="margin-top:0; margin-bottom:16px;" data-i18n="sold_out_text">Les 10 000 accès gratuits sont partis. Les pronostics restent disponibles en version payante.</p>
+      <div class="ticket" id="paywallTicket">
+        <h3 data-i18n="unlock_title">Débloquer les pronostics</h3>
+        <p class="fine" style="margin-top:0; margin-bottom:16px;" data-i18n="unlock_text">Accès payant, sans abonnement caché. Les pronostics du jour s'affichent dès le paiement validé.</p>
         <div class="price-row">
           <span class="price-tag" id="priceTag">—</span>
           <a href="#" target="_blank" rel="noopener" class="cta" id="payLink" data-i18n="pay_btn" style="text-decoration:none; display:inline-block;">Payer et débloquer</a>
@@ -237,14 +199,14 @@
     </section>
 
     <section class="steps">
-      <div class="step"><div class="n">01</div><h4 data-i18n="step1_title">Tu réserves ta place</h4><p data-i18n="step1_text">Ton email, et c'est tout. Une des 10 000 places du lancement t'est attribuée.</p></div>
+      <div class="step"><div class="n">01</div><h4 data-i18n="step1_title">Tu débloques l'accès</h4><p data-i18n="step1_text">Un paiement unique, aucun abonnement caché.</p></div>
       <div class="step"><div class="n">02</div><h4 data-i18n="step2_title">On sélectionne 3 matchs</h4><p data-i18n="step2_text">Chaque sélection a une cote minimum de 1.5, aucune exception.</p></div>
-      <div class="step"><div class="n">03</div><h4 data-i18n="step3_title">Tu reçois les pronostics</h4><p data-i18n="step3_text">Affichés ici dès ton inscription, avant chaque match.</p></div>
+      <div class="step"><div class="n">03</div><h4 data-i18n="step3_title">Tu reçois les pronostics</h4><p data-i18n="step3_text">Affichés ici dès ton paiement validé, avant chaque match.</p></div>
     </section>
 
     <section class="matches-section">
       <h2 data-i18n="matches_title">Les 3 pronostics du moment</h2>
-      <p class="sub2" id="matchesSub" data-i18n="matches_sub_locked">Inscris-toi ci-dessus pour les débloquer.</p>
+      <p class="sub2" id="matchesSub" data-i18n="matches_sub_locked">Débloque l'accès ci-dessus pour les voir.</p>
       <div id="matchesList"></div>
     </section>
   </div>
@@ -265,7 +227,7 @@
 
     <div class="admin-panel hidden" id="adminEditor">
       <h2>Publier les 3 pronostics</h2>
-      <p class="hint">Ces informations remplacent celles visibles par les abonnés. Cote minimum recommandée : 1.5.</p>
+      <p class="hint">Ces informations remplacent celles visibles par les visiteurs. Cote minimum recommandée : 1.5.</p>
       <div id="adminMatchesForm"></div>
       <div class="admin-actions">
         <button class="cta" id="saveMatchesBtn">Publier les pronostics</button>
@@ -273,7 +235,7 @@
       </div>
 
       <div class="reset-row">
-        <p style="margin-bottom:14px;"><strong>Version payante</strong> — affichée automatiquement une fois les 10 000 places gratuites prises.</p>
+        <p style="margin-bottom:14px;"><strong>Accès payant</strong> — requis pour tous les visiteurs, aucun accès gratuit.</p>
         <div class="admin-match">
           <div class="grid">
             <div><label>Prix affiché</label><input id="paidPrice" placeholder="ex: 9,99 €"></div>
@@ -296,10 +258,6 @@
         <button class="btn-secondary" id="saveFeedBtn">Enregistrer le flux automatique</button>
       </div>
 
-      <div class="reset-row">
-        <p>Compteur d'abonnés actuel : <strong id="adminCountLabel">—</strong> / 10 000</p>
-        <button class="btn-secondary" id="resetCountBtn">Réinitialiser le compteur (démo)</button>
-      </div>
     </div>
   </div>
 </div>
@@ -307,7 +265,6 @@
 <div class="wrap"><footer data-i18n="footer_text">MVP — Edge Picks · Le pari comporte des risques, à consommer avec modération.</footer></div>
 
 <script>
-const TOTAL_SPOTS = 10000;
 const ADMIN_CODE = "IO8UPPH0";
 const ADMIN_URL_TOKEN = "5y4xw2r3zf";
 const MATCH_KEYS = ['m1','m2','m3'];
@@ -318,86 +275,60 @@ let currentLang = 'fr';
 
 const I18N = {
   fr: {
-    eyebrow: "Pronos gratuits dès votre première inscription",
-    hero_title: '3 pronostics offerts, cote <span>1.5 ou plus</span>, réservés aux 10 000 premiers abonnés',
-    hero_sub: "Un email, trois sélections analysées, une seule règle : cote minimum de 1.5. Dès que les 10 000 places sont prises, l'offre se ferme.",
-    of_total: "/ 10 000",
-    places: "Places",
-    remaining: "Restantes",
-    reserve_title: "Réserver ma place",
-    email_placeholder: "ton@email.com",
-    receive_btn: "Recevoir",
-    ticket_fine: "Gratuit. Pas de spam. Les pronostics s'affichent juste en dessous une fois inscrit.",
-    sold_out_title: "Places gratuites épuisées",
-    sold_out_text: "Les 10 000 accès gratuits sont partis. Les pronostics restent disponibles en version payante.",
+    eyebrow: "Pronostics analysés, accès immédiat",
+    hero_title: '3 pronostics, cote <span>1.5 ou plus</span>, débloqués après paiement',
+    hero_sub: "Trois sélections analysées, une seule règle : cote minimum de 1.5. Paiement unique, accès immédiat.",
+    unlock_title: "Débloquer les pronostics",
+    unlock_text: "Accès payant, sans abonnement caché. Les pronostics du jour s'affichent dès le paiement validé.",
     pay_btn: "Payer et débloquer",
     already_paid: "Déjà payé ? Entre le code reçu par email :",
     code_placeholder: "Code d'accès",
     validate_btn: "Valider",
-    step1_title: "Tu réserves ta place",
-    step1_text: "Ton email, et c'est tout. Une des 10 000 places du lancement t'est attribuée.",
+    step1_title: "Tu débloques l'accès",
+    step1_text: "Un paiement unique, aucun abonnement caché.",
     step2_title: "On sélectionne 3 matchs",
     step2_text: "Chaque sélection a une cote minimum de 1.5, aucune exception.",
     step3_title: "Tu reçois les pronostics",
-    step3_text: "Affichés ici dès ton inscription, avant chaque match.",
+    step3_text: "Affichés ici dès ton paiement validé, avant chaque match.",
     matches_title: "Les 3 pronostics du moment",
-    matches_sub_locked: "Inscris-toi ci-dessus pour les débloquer.",
+    matches_sub_locked: "Débloque l'accès ci-dessus pour les voir.",
     matches_sub_ready: "Voici les 3 sélections en cours, cote 1.5 minimum.",
-    matches_sub_empty: "Merci pour ton inscription — les pronostics sont en cours de préparation.",
-    empty_locked: "Les 3 pronostics apparaîtront ici juste après ton inscription (ou ton paiement une fois les places gratuites épuisées).",
+    matches_sub_empty: "Merci pour ton paiement — les pronostics sont en cours de préparation.",
+    empty_locked: "Les 3 pronostics apparaîtront ici juste après ton paiement.",
     empty_ready: "Aucun match publié pour l'instant. Reviens un peu plus tard.",
     pick_label: "Pronostic",
     date_tbd: "Date à confirmer",
     footer_text: "MVP — Edge Picks · Le pari comporte des risques, à consommer avec modération.",
-    sub_confirmed: "Inscription confirmée — tes pronostics sont juste en dessous.",
-    already_subscribed_title: "Tu es inscrit",
-    subscribed_btn: "Inscrit ✓",
-    spots_taken_meanwhile: "Toutes les places ont été prises entre-temps.",
     code_valid: "Code validé — accès débloqué.",
     code_invalid: "Code invalide.",
-    complet: "Complet",
-    spots_epuisees: "Places épuisées",
   },
   en: {
-    eyebrow: "Free picks on your first sign-up",
-    hero_title: '3 free picks, odds <span>1.5 (1/2) or higher</span>, for the first 10,000 subscribers',
-    hero_sub: "One email, three analysed picks, one simple rule: minimum odds of 1.5 (1/2). Once the 10,000 spots are taken, the offer closes.",
-    of_total: "/ 10,000",
-    places: "Spots",
-    remaining: "Remaining",
-    reserve_title: "Reserve my spot",
-    email_placeholder: "you@email.com",
-    receive_btn: "Get picks",
-    ticket_fine: "Free. No spam. Picks show up right below once you're signed up.",
-    sold_out_title: "Free spots are gone",
-    sold_out_text: "All 10,000 free spots have been claimed. Picks are still available with the paid plan.",
+    eyebrow: "Analysed picks, instant access",
+    hero_title: '3 picks, odds <span>1.5 (1/2) or higher</span>, unlocked after payment',
+    hero_sub: "Three analysed picks, one simple rule: minimum odds of 1.5 (1/2). One-time payment, instant access.",
+    unlock_title: "Unlock the picks",
+    unlock_text: "Paid access, no hidden subscription. Today's picks show up right after payment is confirmed.",
     pay_btn: "Pay and unlock",
     already_paid: "Already paid? Enter the code you received by email:",
     code_placeholder: "Access code",
     validate_btn: "Confirm",
-    step1_title: "Reserve your spot",
-    step1_text: "Your email, that's it. One of the 10,000 launch spots is assigned to you.",
+    step1_title: "Unlock access",
+    step1_text: "A single payment, no hidden subscription.",
     step2_title: "We pick 3 matches",
     step2_text: "Every pick has minimum odds of 1.5 (1/2), no exceptions.",
     step3_title: "You get the picks",
-    step3_text: "Shown here right after you sign up, ahead of each match.",
+    step3_text: "Shown here right after payment is confirmed, ahead of each match.",
     matches_title: "Today's 3 picks",
-    matches_sub_locked: "Sign up above to unlock them.",
+    matches_sub_locked: "Unlock access above to see them.",
     matches_sub_ready: "Here are the 3 current picks, minimum odds 1.5 (1/2).",
-    matches_sub_empty: "Thanks for signing up — picks are being prepared.",
-    empty_locked: "The 3 picks will appear here right after you sign up (or pay, once the free spots are gone).",
+    matches_sub_empty: "Thanks for your payment — picks are being prepared.",
+    empty_locked: "The 3 picks will appear here right after payment is confirmed.",
     empty_ready: "No match published yet. Check back a bit later.",
     pick_label: "Pick",
     date_tbd: "Date to be confirmed",
     footer_text: "MVP — Edge Picks · Betting involves risk, please play responsibly.",
-    sub_confirmed: "Sign-up confirmed — your picks are right below.",
-    already_subscribed_title: "You're signed up",
-    subscribed_btn: "Signed up ✓",
-    spots_taken_meanwhile: "All spots were taken in the meantime.",
     code_valid: "Code validated — access unlocked.",
     code_invalid: "Invalid code.",
-    complet: "Sold out",
-    spots_epuisees: "No spots left",
   }
 };
 
@@ -460,9 +391,7 @@ async function setPersonal(key, value){
 }
 
 // ---------- state ----------
-let subscriberCount = 0;
 let matches = { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() };
-let alreadySubscribed = false;
 let hasPaidAccess = false;
 let paidConfig = { price: "9,99 €", paymentLink: "", accessCode: "" };
 let autoFeedUrl = "";
@@ -487,31 +416,17 @@ async function loadAutoFeed(){
   }
 }
 
-function hasAccess(){ return alreadySubscribed || hasPaidAccess; }
+function hasAccess(){ return hasPaidAccess; }
 
-// ---------- render: scoreboard ----------
+// ---------- render: paywall ----------
 function renderScoreboard(){
-  const remaining = Math.max(TOTAL_SPOTS - subscriberCount, 0);
-  document.getElementById('remainingDigits').textContent = String(remaining).padStart(5,'0');
-  const pct = Math.min((subscriberCount / TOTAL_SPOTS) * 100, 100);
-  document.getElementById('barInner').style.width = pct + '%';
-
-  const signupTicket = document.getElementById('signupTicket');
   const paywallTicket = document.getElementById('paywallTicket');
-
-  if(remaining <= 0 && !alreadySubscribed){
-    // free tier closed -> show paywall (unless user already redeemed a paid code)
-    signupTicket.classList.add('hidden');
-    if(hasPaidAccess){
-      paywallTicket.classList.add('hidden');
-    } else {
-      paywallTicket.classList.remove('hidden');
-      document.getElementById('priceTag').textContent = paidConfig.price || '—';
-      document.getElementById('payLink').href = paidConfig.paymentLink || '#';
-    }
-  } else {
-    signupTicket.classList.remove('hidden');
+  if(hasPaidAccess){
     paywallTicket.classList.add('hidden');
+  } else {
+    paywallTicket.classList.remove('hidden');
+    document.getElementById('priceTag').textContent = paidConfig.price || '—';
+    document.getElementById('payLink').href = paidConfig.paymentLink || '#';
   }
 }
 
@@ -559,44 +474,6 @@ function escapeHtml(str){
   return d.innerHTML;
 }
 
-// ---------- signup flow ----------
-document.getElementById('signupForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const msg = document.getElementById('signupMsg');
-  msg.className = 'msg hidden';
-
-  if(alreadySubscribed){ return; }
-
-  const email = document.getElementById('emailInput').value.trim();
-  if(!email){ return; }
-
-  const btn = document.getElementById('signupBtn');
-  btn.disabled = true; btn.textContent = "...";
-
-  // re-fetch latest count to reduce race conditions
-  subscriberCount = await getShared('subscriber-count', 0);
-  if(subscriberCount >= TOTAL_SPOTS){
-    renderScoreboard();
-    msg.textContent = t('spots_taken_meanwhile');
-    msg.className = 'msg err';
-    btn.disabled = false; btn.textContent = t('receive_btn');
-    return;
-  }
-
-  subscriberCount += 1;
-  await setShared('subscriber-count', subscriberCount);
-  await setPersonal('subscribed', true);
-  await setPersonal('subscribed-email', email);
-  alreadySubscribed = true;
-
-  renderScoreboard();
-  renderMatches();
-  msg.textContent = t('sub_confirmed');
-  msg.className = 'msg ok';
-  btn.textContent = t('subscribed_btn');
-  document.getElementById('emailInput').disabled = true;
-});
-
 // ---------- redeem paid access code ----------
 document.getElementById('redeemBtn').addEventListener('click', async () => {
   const input = document.getElementById('codeInput');
@@ -636,7 +513,6 @@ document.getElementById('adminLoginBtn').addEventListener('click', () => {
     document.getElementById('adminGate').classList.add('hidden');
     document.getElementById('adminEditor').classList.remove('hidden');
     renderAdminForm();
-    document.getElementById('adminCountLabel').textContent = subscriberCount;
     document.getElementById('paidPrice').value = paidConfig.price || '';
     document.getElementById('paidLink').value = paidConfig.paymentLink || '';
     document.getElementById('paidCode').value = paidConfig.accessCode || '';
@@ -718,13 +594,6 @@ document.getElementById('savePaidBtn').addEventListener('click', async () => {
   setTimeout(() => btn.textContent = original, 2000);
 });
 
-document.getElementById('resetCountBtn').addEventListener('click', async () => {
-  subscriberCount = 0;
-  await setShared('subscriber-count', 0);
-  document.getElementById('adminCountLabel').textContent = 0;
-  renderScoreboard();
-});
-
 // ---------- init ----------
 async function init(){
   let storedLang = null;
@@ -741,12 +610,10 @@ async function init(){
   }
   applyStaticI18n();
 
-  subscriberCount = await getShared('subscriber-count', 0);
   matches = await getShared('matches', { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() });
   paidConfig = await getShared('paid-config', paidConfig);
   autoFeedUrl = await getShared('auto-feed-url', '');
   await loadAutoFeed();
-  alreadySubscribed = await getPersonal('subscribed', false);
   hasPaidAccess = await getPersonal('paid', false);
 
   // Déblocage automatique si on revient d'un paiement Stripe/PayPal avec ?code=... dans l'URL
@@ -763,13 +630,6 @@ async function init(){
     document.getElementById('adminToggle').classList.remove('hidden');
   }
 
-  if(alreadySubscribed){
-    document.getElementById('emailInput').disabled = true;
-    document.getElementById('signupBtn').textContent = t('subscribed_btn');
-    document.getElementById('signupBtn').disabled = true;
-    document.getElementById('signupTicket').querySelector('h3').textContent = t('already_subscribed_title');
-  }
-
   renderScoreboard();
   renderMatches();
 }
@@ -778,10 +638,6 @@ document.getElementById('langToggle').addEventListener('click', async () => {
   currentLang = currentLang === 'fr' ? 'en' : 'fr';
   await setPersonal('lang', currentLang);
   applyStaticI18n();
-  if(alreadySubscribed){
-    document.getElementById('signupBtn').textContent = t('subscribed_btn');
-    document.getElementById('signupTicket').querySelector('h3').textContent = t('already_subscribed_title');
-  }
   renderScoreboard();
   renderMatches();
 });
