@@ -24,7 +24,7 @@ jobs:
 
       - name: Générer les pronostics
         env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: python pronostic_bot.py
 
       - name: Publier pronostics.json
