@@ -117,6 +117,7 @@
   .match-pick{ text-align:right; }
   .match-pick .p-label{ font-size:11px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.08em; }
   .match-pick .p-val{ font-family:'Oswald',sans-serif; font-size:16px; color:var(--amber); }
+  .match-pick .match-confidence{ font-size:11px; color:var(--chalk-dim); font-family:'JetBrains Mono', monospace; margin-top:2px; }
   .match-odds{
     font-family:'JetBrains Mono',monospace; font-weight:700; font-size:16px; color:var(--chalk);
     background:var(--amber); padding:6px 14px; border-radius:4px; min-width:64px; text-align:center; white-space:nowrap;
@@ -268,7 +269,7 @@
 const ADMIN_CODE = "IO8UPPH0";
 const ADMIN_URL_TOKEN = "5y4xw2r3zf";
 const MATCH_KEYS = ['m1','m2','m3'];
-const emptyMatch = () => ({ home:"", away:"", date:"", odds:"", pick:"" });
+const emptyMatch = () => ({ home:"", away:"", date:"", odds:"", pick:"", confidence:"" });
 
 // ---------- i18n ----------
 let currentLang = 'fr';
@@ -394,8 +395,22 @@ async function setPersonal(key, value){
 let matches = { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() };
 let hasPaidAccess = false;
 let paidConfig = { price: "9,99 €", paymentLink: "", accessCode: "" };
-let autoFeedUrl = "";
+let autoFeedUrl = "https://raw.githubusercontent.com/jmtd-spec/prono/main/pronostics.json";
 let autoFeedError = false;
+
+function parseConfidence(c){
+  const n = parseFloat(String(c ?? '').replace('%',''));
+  return isFinite(n) ? n : -1;
+}
+
+function formatFeedDate(iso){
+  if(!iso) return '';
+  const d = new Date(iso);
+  if(isNaN(d.getTime())) return String(iso);
+  try{
+    return d.toLocaleString(currentLang === 'fr' ? 'fr-FR' : 'en-GB', { day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' });
+  }catch(e){ return String(iso); }
+}
 
 async function loadAutoFeed(){
   if(!autoFeedUrl){ autoFeedError = false; return; }
@@ -403,11 +418,33 @@ async function loadAutoFeed(){
     const res = await fetch(autoFeedUrl, { cache: "no-store" });
     if(!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
-    const list = Array.isArray(data) ? data : (data.matches || []);
-    if(!Array.isArray(list) || list.length === 0) throw new Error("format vide/invalide");
+
+    // Le bot écrit { products: { single, premium, vip } }. On repli sur data.matches / un tableau brut
+    // pour rester compatible avec d'autres formats de flux.
+    let source = null;
+    if(data && data.products && Array.isArray(data.products.single)) source = data.products.single;
+    else if(Array.isArray(data)) source = data;
+    else if(Array.isArray(data.matches)) source = data.matches;
+    if(!source || source.length === 0) throw new Error("format vide/invalide");
+
+    // Toujours trier par confiance décroissante : on ne garde que les meilleurs pronostics du flux.
+    const sorted = [...source].sort((a,b) => parseConfidence(b.confidence) - parseConfidence(a.confidence));
 
     const next = { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() };
-    MATCH_KEYS.forEach((k, i) => { if(list[i]) next[k] = { ...emptyMatch(), ...list[i] }; });
+    MATCH_KEYS.forEach((k, i) => {
+      const src = sorted[i];
+      if(src){
+        next[k] = {
+          ...emptyMatch(),
+          home: src.home || '',
+          away: src.away || '',
+          date: formatFeedDate(src.date),
+          odds: src.odds || '',
+          pick: src.pick || '',
+          confidence: src.confidence || ''
+        };
+      }
+    });
     matches = next;
     autoFeedError = false;
   }catch(e){
@@ -461,6 +498,7 @@ function renderMatches(){
       <div class="match-pick">
         <div class="p-label">${t('pick_label')}</div>
         <div class="p-val">${escapeHtml(m.pick || '—')}</div>
+        ${m.confidence ? `<div class="match-confidence">${escapeHtml(String(m.confidence))}</div>` : ''}
       </div>
       <div class="match-odds">${escapeHtml(formatOdds(m.odds))}</div>
     `;
@@ -540,7 +578,10 @@ function renderAdminForm(){
         <div><label>Date / heure</label><input data-key="${k}" data-field="date" value="${escapeAttr(m.date)}" placeholder="ex: Sam. 2 août — 21h00"></div>
         <div><label>Cote (≥ 1.5)</label><input data-key="${k}" data-field="odds" value="${escapeAttr(m.odds)}" placeholder="ex: 1.75"></div>
       </div>
-      <div><label>Pronostic</label><input data-key="${k}" data-field="pick" value="${escapeAttr(m.pick)}" placeholder="ex: Victoire domicile"></div>
+      <div class="grid">
+        <div><label>Pronostic</label><input data-key="${k}" data-field="pick" value="${escapeAttr(m.pick)}" placeholder="ex: Victoire domicile"></div>
+        <div><label>Confiance (optionnel)</label><input data-key="${k}" data-field="confidence" value="${escapeAttr(m.confidence)}" placeholder="ex: 78%"></div>
+      </div>
     `;
     container.appendChild(block);
   });
@@ -612,7 +653,7 @@ async function init(){
 
   matches = await getShared('matches', { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() });
   paidConfig = await getShared('paid-config', paidConfig);
-  autoFeedUrl = await getShared('auto-feed-url', '');
+  autoFeedUrl = await getShared('auto-feed-url', autoFeedUrl);
   await loadAutoFeed();
   hasPaidAccess = await getPersonal('paid', false);
 
