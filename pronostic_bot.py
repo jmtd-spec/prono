@@ -1,126 +1,107 @@
 import json
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 import requests
 
 # ==========================
 # CONFIGURATION
 # ==========================
+# Utilise the-odds-api.com (plan gratuit : 500 requêtes/mois, aucune carte requise).
+# Clé à créer sur https://the-odds-api.com/ puis à stocker dans le secret GitHub ODDS_API_KEY.
 
-API_KEY = os.environ.get("API_FOOTBALL_KEY", "")
-BASE_URL = "https://v3.football.api-sports.io"
-HEADERS = {"x-apisports-key": API_KEY}
+API_KEY = os.environ.get("ODDS_API_KEY", "")
+BASE_URL = "https://api.the-odds-api.com/v4"
 OUTPUT_FILE = "pronostics.json"
+
+# Ligues suivies (clés "sport_key" de the-odds-api.com). On en garde peu pour
+# rester confortablement sous le quota gratuit de 500 requêtes/mois :
+# 6 ligues x 2 marchés x 1 region = 12 crédits/jour ~= 360/mois.
+LEAGUES = [
+    "soccer_epl",
+    "soccer_spain_la_liga",
+    "soccer_germany_bundesliga",
+    "soccer_italy_serie_a",
+    "soccer_france_ligue_one",
+    "soccer_uefa_champs_league",
+]
+
+REGIONS = "eu"
+MARKETS = "h2h,totals"
 
 # Odds range
 MIN_ODDS = 1.60
 MAX_ODDS = 2.20
-
-# How many days ahead to look for fixtures (today + N-1 more days)
-DAYS_AHEAD = 2
 
 # Product sizes
 SINGLE_LIMIT = 3
 PREMIUM_LIMIT = 6
 VIP_LIMIT = 3
 
-ALLOWED_MARKETS = ["Goals Over/Under", "Both Teams Score", "Double Chance", "Match Winner"]
-BLOCKED_MARKETS = ["First Half", "Second Half", "Asian Handicap"]
+MARKET_LABELS = {
+    "h2h": "Match Winner",
+    "totals": "Goals Over/Under",
+}
 
 
 # ==========================
 # API REQUEST
 # ==========================
 
-def api_request(endpoint, params=None):
-    """Call the API-Football endpoint and surface any API-level errors,
-    not just HTTP-level ones. A 200 response can still carry an
-    'errors' payload (e.g. plan restrictions, rate limits)."""
-    url = f"{BASE_URL}/{endpoint}"
-    response = requests.get(url, headers=HEADERS, params=params, timeout=20)
+def get_league_odds(sport_key):
+    """Fetch upcoming events + odds for one league. Returns [] on any
+    problem instead of raising, and logs the reason so the workflow
+    log tells us exactly what happened."""
+    url = f"{BASE_URL}/sports/{sport_key}/odds"
+    params = {
+        "apiKey": API_KEY,
+        "regions": REGIONS,
+        "markets": MARKETS,
+        "oddsFormat": "decimal",
+        "dateFormat": "iso",
+    }
 
-    if response.status_code != 200:
-        print(f"[ERROR] HTTP {response.status_code} on /{endpoint}: {response.text}", file=sys.stderr)
+    try:
+        response = requests.get(url, params=params, timeout=20)
+    except requests.RequestException as e:
+        print(f"[ERROR] Network error on {sport_key}: {e}", file=sys.stderr)
         return []
 
-    data = response.json()
+    remaining = response.headers.get("x-requests-remaining")
+    used = response.headers.get("x-requests-used")
+    if remaining is not None:
+        print(f"[DEBUG] Quota after {sport_key}: used={used}, remaining={remaining}")
 
-    # api-football returns 200 even when access is denied for a plan/endpoint;
-    # the actual reason lives in "errors" (dict or list depending on the error type).
-    errors = data.get("errors")
-    if errors:
-        print(f"[WARN] API errors on /{endpoint}: {errors}", file=sys.stderr)
+    if response.status_code != 200:
+        print(f"[ERROR] HTTP {response.status_code} on {sport_key}: {response.text}", file=sys.stderr)
+        return []
 
-    results = data.get("response", [])
-    print(f"[DEBUG] /{endpoint} -> {data.get('results', len(results))} result(s) "
-          f"(quota used today: {data.get('paging', {})})", file=sys.stderr)
-
-    return results
-
-
-# ==========================
-# FIXTURES
-# ==========================
-
-def get_fixtures():
-    """Fetch fixtures for today plus the next DAYS_AHEAD-1 days, keeping
-    only matches that haven't started yet (no point pulling odds for
-    matches already live or finished)."""
-    all_fixtures = []
-
-    for offset in range(DAYS_AHEAD):
-        day = (datetime.now(timezone.utc) + timedelta(days=offset)).strftime("%Y-%m-%d")
-        fixtures = api_request("fixtures", {"date": day})
-        print(f"[INFO] {len(fixtures)} fixture(s) on {day}")
-        all_fixtures.extend(fixtures)
-
-    not_started = [f for f in all_fixtures if f.get("fixture", {}).get("status", {}).get("short") == "NS"]
-    print(f"[INFO] Fixtures found: {len(all_fixtures)} total, {len(not_started)} not-yet-started")
-
-    return not_started
-
-
-# ==========================
-# ODDS
-# ==========================
-
-def get_fixture_odds(fixture_id):
-    return api_request("odds", {"fixture": fixture_id})
+    events = response.json()
+    print(f"[INFO] {sport_key}: {len(events)} event(s) returned")
+    return events
 
 
 # ==========================
 # ANALYSE ODDS
 # ==========================
 
-def analyse_odds(odds_data):
+def analyse_event(event):
     """Return the best (odds closest to 1.80) candidate pick within
-    MIN_ODDS-MAX_ODDS across the allowed markets, or None with a reason."""
-    if not odds_data:
-        return None, "no_odds_data"
-
-    try:
-        bookmakers = odds_data[0]["bookmakers"]
-    except Exception:
-        return None, "no_bookmakers_field"
-
+    MIN_ODDS-MAX_ODDS across h2h/totals markets, or None with a reason."""
+    bookmakers = event.get("bookmakers", [])
     if not bookmakers:
-        return None, "empty_bookmakers"
+        return None, "no_bookmakers"
 
     candidates = []
 
     for bookmaker in bookmakers:
-        for bet in bookmaker.get("bets", []):
-            market = bet.get("name", "")
+        for market in bookmaker.get("markets", []):
+            market_key = market.get("key")
+            market_label = MARKET_LABELS.get(market_key, market_key)
 
-            if any(x in market for x in BLOCKED_MARKETS):
-                continue
-            if not any(x in market for x in ALLOWED_MARKETS):
-                continue
-
-            for value in bet.get("values", []):
-                odd = value.get("odd")
+            for outcome in market.get("outcomes", []):
+                odd = outcome.get("price")
                 if odd is None:
                     continue
                 try:
@@ -128,13 +109,21 @@ def analyse_odds(odds_data):
                 except (TypeError, ValueError):
                     continue
 
-                if MIN_ODDS <= odd <= MAX_ODDS:
-                    candidates.append({
-                        "market": market,
-                        "pick": value.get("value"),
-                        "odds": odd,
-                        "bookmaker": bookmaker.get("name"),
-                    })
+                if not (MIN_ODDS <= odd <= MAX_ODDS):
+                    continue
+
+                if market_key == "totals":
+                    point = outcome.get("point")
+                    pick_label = f"{outcome.get('name')} {point}" if point is not None else outcome.get("name")
+                else:
+                    pick_label = outcome.get("name")
+
+                candidates.append({
+                    "market": market_label,
+                    "pick": pick_label,
+                    "odds": odd,
+                    "bookmaker": bookmaker.get("title"),
+                })
 
     if not candidates:
         return None, "no_odds_in_range"
@@ -162,37 +151,35 @@ def calculate_confidence(pick):
 # ==========================
 
 def build_picks():
-    fixtures = get_fixtures()
-
     all_picks = []
     reason_counts = {}
+    total_events = 0
 
-    for fixture in fixtures:
-        fixture_id = fixture["fixture"]["id"]
-        home = fixture["teams"]["home"]["name"]
-        away = fixture["teams"]["away"]["name"]
+    for sport_key in LEAGUES:
+        events = get_league_odds(sport_key)
+        total_events += len(events)
 
-        odds = get_fixture_odds(fixture_id)
-        best, reason = analyse_odds(odds)
-        reason_counts[reason] = reason_counts.get(reason, 0) + 1
+        for event in events:
+            best, reason = analyse_event(event)
+            reason_counts[reason] = reason_counts.get(reason, 0) + 1
 
-        if not best:
-            continue
+            if not best:
+                continue
 
-        confidence = calculate_confidence(best)
+            confidence = calculate_confidence(best)
 
-        all_picks.append({
-            "home": home,
-            "away": away,
-            "date": fixture["fixture"]["date"],
-            "pick": best["pick"],
-            "market": best["market"],
-            "bookmaker": best["bookmaker"],
-            "odds": f'{best["odds"]:.2f}',
-            "confidence": f"{confidence}%",
-        })
+            all_picks.append({
+                "home": event.get("home_team", ""),
+                "away": event.get("away_team", ""),
+                "date": event.get("commence_time", ""),
+                "pick": best["pick"],
+                "market": best["market"],
+                "bookmaker": best["bookmaker"],
+                "odds": f'{best["odds"]:.2f}',
+                "confidence": f"{confidence}%",
+            })
 
-    print(f"[INFO] Odds analysis breakdown across {len(fixtures)} fixture(s): {reason_counts}")
+    print(f"[INFO] Odds analysis breakdown across {total_events} event(s): {reason_counts}")
     print(f"[INFO] Total usable picks found: {len(all_picks)}")
 
     all_picks = sorted(all_picks, key=lambda x: int(x["confidence"].replace("%", "")), reverse=True)
@@ -229,7 +216,7 @@ def save_predictions(products):
 
 def main():
     if not API_KEY:
-        print("[ERROR] API_FOOTBALL_KEY missing", file=sys.stderr)
+        print("[ERROR] ODDS_API_KEY missing", file=sys.stderr)
         sys.exit(1)
 
     products = build_picks()
