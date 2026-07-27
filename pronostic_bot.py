@@ -19,16 +19,18 @@ HEADERS = {
 
 OUTPUT_FILE = "pronostics.json"
 
-SINGLE_PICKS = 3
-PREMIUM_PICKS = 6
-VIP_PICKS = 12
+MIN_ODDS = 1.60
+MAX_ODDS = 2.20
 
-MIN_ODDS = 1.50
-MAX_ODDS = 2.50
+
+# Products
+SINGLE_LIMIT = 3
+PREMIUM_LIMIT = 6
+VIP_LIMIT = 3
 
 
 # ==========================
-# API REQUESTS
+# API REQUEST
 # ==========================
 
 def api_request(endpoint, params=None):
@@ -71,7 +73,7 @@ def get_fixtures():
     )
 
     print(
-        f"[INFO] {len(fixtures)} fixtures found today"
+        f"[INFO] Fixtures found: {len(fixtures)}"
     )
 
     return fixtures
@@ -97,7 +99,7 @@ def get_fixture_odds(fixture_id):
 # PICK ANALYSIS
 # ==========================
 
-def extract_best_pick(odds_data):
+def analyse_odds(odds_data):
 
     if not odds_data:
         return None
@@ -113,27 +115,37 @@ def extract_best_pick(odds_data):
     candidates = []
 
 
+    allowed_markets = [
+        "Goals Over/Under",
+        "Both Teams Score",
+        "Double Chance",
+        "Match Winner"
+    ]
+
+
     for bookmaker in bookmakers:
 
         for bet in bookmaker.get("bets", []):
 
-            market_name = bet.get("name", "")
+            market = bet.get("name", "")
 
-            # Keep only useful football markets
-            allowed_markets = [
-                "Goals Over/Under",
-                "Both Teams Score",
-                "Double Chance",
-                "Match Winner"
-            ]
 
-            if not any(m in market_name for m in allowed_markets):
+            # remove first half markets
+            if "First Half" in market:
+                continue
+
+
+            if not any(
+                x in market
+                for x in allowed_markets
+            ):
                 continue
 
 
             for value in bet.get("values", []):
 
                 odd = value.get("odd")
+
 
                 if odd is None:
                     continue
@@ -150,10 +162,10 @@ def extract_best_pick(odds_data):
 
                     candidates.append(
                         {
-                            "bookmaker": bookmaker["name"],
-                            "market": market_name,
-                            "pick": value["value"],
-                            "odds": odd
+                            "market": market,
+                            "pick": value.get("value"),
+                            "odds": odd,
+                            "bookmaker": bookmaker.get("name")
                         }
                     )
 
@@ -162,40 +174,43 @@ def extract_best_pick(odds_data):
         return None
 
 
-    # Select safest valid odd
+    # Prefer value around 1.80
     best = sorted(
         candidates,
-        key=lambda x: x["odds"]
+        key=lambda x: abs(x["odds"] - 1.80)
     )[0]
-
-
-    # Confidence score
-    if best["odds"] <= 1.70:
-        confidence = 85
-
-    elif best["odds"] <= 2.00:
-        confidence = 78
-
-    else:
-        confidence = 72
-
-
-    best["confidence"] = confidence
 
 
     return best
 
+# ==========================
+# CONFIDENCE SCORE
+# ==========================
+
+def calculate_confidence(pick):
+
+    odds = pick["odds"]
+
+    if odds <= 1.70:
+        return 82
+
+    elif odds <= 1.90:
+        return 78
+
+    else:
+        return 74
+
 
 
 # ==========================
-# BUILD PICKS
+# BUILD DAILY PICKS
 # ==========================
 
 def build_picks():
 
     fixtures = get_fixtures()
 
-    picks = []
+    all_picks = []
 
 
     for fixture in fixtures:
@@ -211,7 +226,7 @@ def build_picks():
         )
 
 
-        best = extract_best_pick(
+        best = analyse_odds(
             odds
         )
 
@@ -220,7 +235,12 @@ def build_picks():
             continue
 
 
-        picks.append(
+        confidence = calculate_confidence(
+            best
+        )
+
+
+        all_picks.append(
             {
                 "home": home,
                 "away": away,
@@ -229,61 +249,56 @@ def build_picks():
                 "market": best["market"],
                 "bookmaker": best["bookmaker"],
                 "odds": f'{best["odds"]:.2f}',
-                "confidence": f'{best["confidence"]}%'
+                "confidence": f"{confidence}%"
             }
         )
 
 
-        print(
-            f"[PICK] {home} vs {away} "
-            f"{best['pick']} "
-            f"{best['odds']} "
-            f"{best['confidence']}%"
-        )
-
-
-    # Rank by confidence
-    picks = sorted(
-        picks,
-        key=lambda x: int(x["confidence"].replace("%","")),
+    # Highest confidence first
+    all_picks = sorted(
+        all_picks,
+        key=lambda x: int(
+            x["confidence"].replace("%","")
+        ),
         reverse=True
     )
 
 
     return {
-        "single": picks[:SINGLE_PICKS],
-        "premium": picks[:PREMIUM_PICKS],
-        "vip": picks[:VIP_PICKS]
+
+        "single": all_picks[:SINGLE_LIMIT],
+
+        "premium": all_picks[:PREMIUM_LIMIT],
+
+        "vip": all_picks[:VIP_LIMIT]
+
     }
 
 
 
 # ==========================
-# MAIN
+# SAVE JSON
 # ==========================
 
-def main():
-
-    if not API_KEY:
-
-        print(
-            "[ERROR] API_FOOTBALL_KEY missing",
-            file=sys.stderr
-        )
-
-        sys.exit(1)
-
-
-    products = build_picks()
-
+def save_predictions(products):
 
     output = {
 
         "generated_at":
             datetime.now(timezone.utc).isoformat(),
 
-        "products":
-            products,
+
+        "products": products,
+
+
+        "vip_membership": {
+
+            "monthly_unlocks": 12,
+
+            "picks_per_unlock": 3
+
+        },
+
 
         "disclaimer":
             "Automatic football selections generated from market odds. Responsible betting only."
@@ -305,16 +320,42 @@ def main():
         )
 
 
+# ==========================
+# MAIN
+# ==========================
+
+def main():
+
+    if not API_KEY:
+
+        print(
+            "[ERROR] API_FOOTBALL_KEY missing",
+            file=sys.stderr
+        )
+
+        sys.exit(1)
+
+
+    products = build_picks()
+
+
+    save_predictions(
+        products
+    )
+
+
     total = sum(
-        len(v) for v in products.values()
+        len(x)
+        for x in products.values()
     )
 
 
     print(
-        f"[OK] {total} picks saved"
+        f"[OK] {total} picks generated"
     )
 
 
 
 if __name__ == "__main__":
+
     main()
