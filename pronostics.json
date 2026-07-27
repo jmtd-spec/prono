@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T01:45:50.421186+00:00",
+  "generated_at": "2026-07-27T01:56:14.917834+00:00",
   "products": {
     "single": [
       {
@@ -68,8 +68,8 @@
         "home": "Angel City W",
         "away": "Racing Louisville W",
         "date": "2026-07-27T01:00:00+00:00",
-        "pick": "Under 1.5",
-        "market": "Goals Over/Under - Second Half",
+        "pick": "Yes",
+        "market": "Both Teams Score",
         "bookmaker": "10Bet",
         "odds": "1.80",
         "confidence": "78%"
@@ -88,9 +88,9 @@
         "home": "CF Pachuca",
         "away": "Club Queretaro",
         "date": "2026-07-27T01:06:00+00:00",
-        "pick": "Under 1.5",
-        "market": "Goals Over/Under - Second Half",
-        "bookmaker": "10Bet",
+        "pick": "Yes",
+        "market": "Both Teams Score",
+        "bookmaker": "Bet365",
         "odds": "1.80",
         "confidence": "78%"
       }
