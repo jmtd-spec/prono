@@ -1,7 +1,7 @@
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import requests
 
@@ -15,16 +15,41 @@ API_KEY = os.environ.get("ODDS_API_KEY", "")
 BASE_URL = "https://api.the-odds-api.com/v4"
 OUTPUT_FILE = "pronostics.json"
 
-# Ligues suivies (clés "sport_key" de the-odds-api.com). On en garde peu pour
-# rester confortablement sous le quota gratuit de 500 requêtes/mois :
-# 6 ligues x 2 marchés x 1 region = 12 crédits/jour ~= 360/mois.
+# Ligues suivies (clés "sport_key" de the-odds-api.com). On couvre plusieurs
+# continents pour éviter de tomber à sec pendant la trêve estivale européenne
+# (juillet-août) : les requêtes qui ne renvoient aucun événement ne comptent
+# PAS dans le quota gratuit, donc élargir la liste ne coûte quasi rien les
+# jours où une ligue ne joue pas. On reste prudent quand même : si beaucoup
+# de ces ligues jouent le même jour, la conso peut monter (chaque appel avec
+# résultat coûte 2 crédits : 2 marchés x 1 région). Surveille les lignes
+# [DEBUG] Quota after ... dans les logs pour ajuster si besoin.
 LEAGUES = [
+    # Europe (grands championnats)
     "soccer_epl",
+    "soccer_efl_champ",
     "soccer_spain_la_liga",
     "soccer_germany_bundesliga",
     "soccer_italy_serie_a",
     "soccer_france_ligue_one",
+    "soccer_netherlands_eredivisie",
+    "soccer_portugal_primeira_liga",
     "soccer_uefa_champs_league",
+    "soccer_uefa_europa_league",
+    "soccer_uefa_europa_conference_league",
+    # Europe (en saison l'été : Scandinavie)
+    "soccer_sweden_allsvenskan",
+    "soccer_norway_eliteserien",
+    "soccer_denmark_superliga",
+    # Amériques (en saison l'été)
+    "soccer_usa_mls",
+    "soccer_mexico_ligamx",
+    "soccer_brazil_campeonato",
+    "soccer_argentina_primera_division",
+    "soccer_conmebol_copa_libertadores",
+    # Asie (en saison l'été)
+    "soccer_japan_j_league",
+    "soccer_korea_kleague1",
+    "soccer_china_superleague",
 ]
 
 REGIONS = "eu"
@@ -49,10 +74,37 @@ MARKET_LABELS = {
 # API REQUEST
 # ==========================
 
-def get_league_odds(sport_key):
-    """Fetch upcoming events + odds for one league. Returns [] on any
-    problem instead of raising, and logs the reason so the workflow
-    log tells us exactly what happened."""
+def get_active_leagues():
+    """Ask the (free, quota-exempt) /sports endpoint which competitions are
+    currently in season, and only keep the ones we're tracking. Avoids
+    spending calls/log noise on leagues that are on their off-season break."""
+    url = f"{BASE_URL}/sports"
+    try:
+        response = requests.get(url, params={"apiKey": API_KEY}, timeout=20)
+    except requests.RequestException as e:
+        print(f"[ERROR] Network error on /sports: {e}", file=sys.stderr)
+        return list(LEAGUES)  # repli : on tente toutes les ligues suivies
+
+    if response.status_code != 200:
+        print(f"[ERROR] HTTP {response.status_code} on /sports: {response.text}", file=sys.stderr)
+        return list(LEAGUES)
+
+    in_season = {s["key"] for s in response.json() if s.get("key")}
+    active = [key for key in LEAGUES if key in in_season]
+    skipped = [key for key in LEAGUES if key not in in_season]
+
+    print(f"[INFO] {len(active)}/{len(LEAGUES)} ligue(s) suivie(s) en saison")
+    if skipped:
+        print(f"[INFO] Ligues ignorées (hors saison) : {', '.join(skipped)}")
+
+    return active
+
+
+def get_league_odds(sport_key, time_from, time_to):
+    """Fetch today's events + odds for one league (window is UTC
+    [time_from, time_to)). Returns [] on any problem instead of
+    raising, and logs the reason so the workflow log tells us exactly
+    what happened."""
     url = f"{BASE_URL}/sports/{sport_key}/odds"
     params = {
         "apiKey": API_KEY,
@@ -60,6 +112,8 @@ def get_league_odds(sport_key):
         "markets": MARKETS,
         "oddsFormat": "decimal",
         "dateFormat": "iso",
+        "commenceTimeFrom": time_from,
+        "commenceTimeTo": time_to,
     }
 
     try:
@@ -151,12 +205,21 @@ def calculate_confidence(pick):
 # ==========================
 
 def build_picks():
+    now = datetime.now(timezone.utc)
+    window_start = now.replace(minute=0, second=0, microsecond=0)
+    window_end = window_start + timedelta(hours=48)
+    time_from = window_start.strftime("%Y-%m-%dT%H:%M:%SZ")
+    time_to = window_end.strftime("%Y-%m-%dT%H:%M:%SZ")
+    print(f"[INFO] Fenêtre (48h, UTC) : {time_from} -> {time_to}")
+
     all_picks = []
     reason_counts = {}
     total_events = 0
 
-    for sport_key in LEAGUES:
-        events = get_league_odds(sport_key)
+    active_leagues = get_active_leagues()
+
+    for sport_key in active_leagues:
+        events = get_league_odds(sport_key, time_from, time_to)
         total_events += len(events)
 
         for event in events:
