@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T01:56:14.917834+00:00",
+  "generated_at": "2026-07-27T02:01:21.838753+00:00",
   "products": {
     "single": [
       {
@@ -26,8 +26,8 @@
         "home": "Concepción",
         "away": "O'Higgins",
         "date": "2026-07-27T00:30:00+00:00",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
+        "pick": "Draw/Away",
+        "market": "Double Chance",
         "bookmaker": "10Bet",
         "odds": "1.80",
         "confidence": "78%"
@@ -58,8 +58,8 @@
         "home": "Concepción",
         "away": "O'Higgins",
         "date": "2026-07-27T00:30:00+00:00",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
+        "pick": "Draw/Away",
+        "market": "Double Chance",
         "bookmaker": "10Bet",
         "odds": "1.80",
         "confidence": "78%"
@@ -120,8 +120,8 @@
         "home": "Concepción",
         "away": "O'Higgins",
         "date": "2026-07-27T00:30:00+00:00",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
+        "pick": "Draw/Away",
+        "market": "Double Chance",
         "bookmaker": "10Bet",
         "odds": "1.80",
         "confidence": "78%"
