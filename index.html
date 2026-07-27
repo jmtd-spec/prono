@@ -1,785 +1,793 @@
-<!-- =========================
-FILE 1/5 — index.html
-EDGE PICKS
-========================= -->
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edge Picks — 3 matchs, cote 1.5+, 10 000 premiers abonnés</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
 
-<title>Edge Picks — Football Predictions</title>
+  :root{
+    --night:#FFFFFF;
+    --night-2:#F7F7F8;
+    --pitch:#0B3D2E;
+    --pitch-2:#0E4A38;
+    --chalk:#14161A;
+    --chalk-dim:#6B7280;
+    --amber:#E08A1E;
+    --amber-dim:#B96F14;
+    --line: rgba(20,22,26,0.12);
+    --red:#D9342B;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background: var(--night);
+    color: var(--chalk);
+    font-family:'Inter', sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width: 960px; margin:0 auto; padding: 0 24px; }
 
-<link rel="stylesheet" href="style.css">
+  header.top{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 24px 0; border-bottom:1px solid var(--line);
+  }
+  .brand{
+    font-family:'Oswald', sans-serif; font-weight:700; letter-spacing:0.08em;
+    font-size:15px; text-transform:uppercase; color:var(--chalk);
+    display:flex; align-items:center; gap:10px;
+  }
+  .brand .dot{ width:9px; height:9px; border-radius:50%; background:var(--amber); display:inline-block; box-shadow:0 0 10px var(--amber); }
+  .admin-link{
+    font-size:12px; color:var(--chalk-dim); text-decoration:none; letter-spacing:0.04em;
+    border:1px solid var(--line); padding:7px 12px; border-radius:3px; background:transparent; cursor:pointer;
+    font-family:'Inter',sans-serif;
+  }
+  .admin-link:hover{ color:var(--amber); border-color:var(--amber-dim); }
 
+  /* HERO / SCOREBOARD */
+  .hero{ padding: 64px 0 40px; text-align:center; }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.18em;
+    color:var(--amber); text-transform:uppercase; margin-bottom:20px;
+  }
+  h1{
+    font-family:'Oswald', sans-serif; font-weight:600; font-size:clamp(28px,5vw,46px);
+    line-height:1.15; letter-spacing:-0.01em; max-width:720px; margin:0 auto 16px;
+  }
+  h1 span{ color:var(--amber); }
+  .sub{ color:var(--chalk-dim); font-size:16px; max-width:520px; margin:0 auto 44px; line-height:1.6; }
+
+  .scoreboard{
+    display:inline-flex; align-items:center; gap:18px;
+    background: linear-gradient(180deg, var(--night-2), var(--pitch) 260%);
+    border:1px solid var(--line); border-radius:6px;
+    padding: 22px 30px; margin: 0 auto 8px;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.35);
+  }
+  .scoreboard .digits{
+    font-family:'JetBrains Mono', monospace; font-weight:700; font-size:clamp(30px,6vw,52px);
+    letter-spacing:0.02em; color:var(--amber); text-shadow:0 0 18px rgba(255,182,39,0.35);
+    font-variant-numeric: tabular-nums;
+  }
+  .scoreboard .of{ font-family:'JetBrains Mono', monospace; color:var(--chalk-dim); font-size:clamp(16px,3vw,22px); }
+  .scoreboard .label{ text-align:left; }
+  .scoreboard .label .t1{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.12em; color:var(--chalk-dim); text-transform:uppercase; }
+  .scoreboard .label .t2{ font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.12em; color:var(--amber); text-transform:uppercase; margin-top:2px;}
+  .bar-outer{ max-width:420px; height:6px; margin:18px auto 0; background:rgba(255,255,255,0.06); border-radius:3px; overflow:hidden; }
+  .bar-inner{ height:100%; background: linear-gradient(90deg, var(--amber-dim), var(--amber)); width:0%; transition: width 0.6s ease; }
+
+  /* SIGNUP - ticket stub */
+  .ticket{
+    max-width:460px; margin: 40px auto 0;
+    background: var(--night-2);
+    border:1px dashed var(--line);
+    border-radius:8px;
+    padding: 26px 26px 22px;
+    position:relative;
+  }
+  .ticket::before, .ticket::after{
+    content:""; position:absolute; width:18px; height:18px; background:var(--night);
+    border:1px solid var(--line); border-radius:50%; top:50%; transform:translateY(-50%);
+  }
+  .ticket::before{ left:-10px; } .ticket::after{ right:-10px; }
+  .ticket h3{ font-family:'Oswald', sans-serif; font-size:16px; letter-spacing:0.03em; margin-bottom:14px; text-transform:uppercase; text-align:left;}
+  .field-row{ display:flex; gap:10px; flex-wrap:wrap; }
+  input[type=email]{
+    flex:1; min-width:200px; background:var(--night); border:1px solid var(--line); color:var(--chalk);
+    padding:13px 14px; border-radius:4px; font-family:'Inter',sans-serif; font-size:14px; outline:none;
+  }
+  input[type=email]:focus{ border-color:var(--amber); }
+  button.cta{
+    background:var(--amber); color:var(--chalk); border:none; padding:13px 22px; border-radius:4px;
+    font-family:'Oswald',sans-serif; font-weight:600; letter-spacing:0.03em; font-size:14px; cursor:pointer;
+    text-transform:uppercase; transition: transform 0.15s ease, background 0.15s ease;
+  }
+  button.cta:hover{ background:#ffc450; }
+  button.cta:active{ transform: scale(0.97); }
+  button.cta:disabled{ opacity:0.5; cursor:not-allowed; }
+  .fine{ font-size:12px; color:var(--chalk-dim); margin-top:12px; text-align:left; }
+  .msg{ font-size:13px; margin-top:12px; text-align:left; font-family:'JetBrains Mono', monospace; }
+  .msg.ok{ color:#3DDC97; } .msg.err{ color:var(--red); }
+
+  .price-row{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:20px; }
+  .price-tag{ font-family:'JetBrains Mono', monospace; font-weight:700; font-size:24px; color:var(--amber); }
+  .redeem-row{ border-top:1px solid var(--line); padding-top:16px; }
+
+  /* HOW IT WORKS */
+  .steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin: 68px 0 60px; }
+  .step{ border-top:1px solid var(--line); padding-top:16px; }
+  .step .n{ font-family:'JetBrains Mono', monospace; color:var(--amber); font-size:13px; margin-bottom:10px; }
+  .step h4{ font-family:'Oswald',sans-serif; font-size:16px; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.02em;}
+  .step p{ color:var(--chalk-dim); font-size:13.5px; line-height:1.55; }
+
+  /* MATCHES REVEAL */
+  .matches-section{ padding: 20px 0 70px; }
+  .matches-section h2{ font-family:'Oswald',sans-serif; font-size:22px; text-transform:uppercase; letter-spacing:0.02em; margin-bottom:6px; }
+  .matches-section .sub2{ color:var(--chalk-dim); font-size:13.5px; margin-bottom:26px; }
+  .match-card{
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    background:var(--night-2); border:1px solid var(--line); border-radius:6px;
+    padding:20px 22px; margin-bottom:12px; flex-wrap:wrap;
+  }
+  .match-teams{ font-family:'Oswald',sans-serif; font-size:17px; letter-spacing:0.01em; }
+  .match-meta{ color:var(--chalk-dim); font-size:12.5px; font-family:'JetBrains Mono',monospace; margin-top:4px; }
+  .match-pick{ text-align:right; }
+  .match-pick .p-label{ font-size:11px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.08em; }
+  .match-pick .p-val{ font-family:'Oswald',sans-serif; font-size:16px; color:var(--amber); }
+  .match-odds{
+    font-family:'JetBrains Mono',monospace; font-weight:700; font-size:16px; color:var(--chalk);
+    background:var(--amber); padding:6px 14px; border-radius:4px; min-width:64px; text-align:center; white-space:nowrap;
+  }
+
+  .empty-state{ color:var(--chalk-dim); font-size:14px; border:1px solid var(--line); border-radius:6px; padding:26px; text-align:center; }
+
+  footer{ border-top:1px solid var(--line); padding:26px 0; text-align:center; color:var(--chalk-dim); font-size:12px; }
+
+  /* ADMIN */
+  .admin-panel{
+    max-width:640px; margin: 50px auto; background:var(--night-2); border:1px solid var(--line);
+    border-radius:8px; padding:30px;
+  }
+  .admin-panel h2{ font-family:'Oswald',sans-serif; text-transform:uppercase; margin-bottom:4px; }
+  .admin-panel .hint{ color:var(--chalk-dim); font-size:13px; margin-bottom:22px; }
+  .admin-match{ border:1px solid var(--line); border-radius:6px; padding:16px; margin-bottom:14px; }
+  .admin-match .grid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
+  .admin-match label{ font-size:11px; color:var(--chalk-dim); text-transform:uppercase; letter-spacing:0.05em; display:block; margin-bottom:5px; }
+  .admin-match input{
+    width:100%; background:var(--night); border:1px solid var(--line); color:var(--chalk);
+    padding:9px 10px; border-radius:4px; font-family:'Inter',sans-serif; font-size:13px; outline:none;
+  }
+  .admin-match input:focus{ border-color:var(--amber); }
+  .admin-actions{ display:flex; gap:10px; margin-top:20px; flex-wrap:wrap; }
+  .btn-secondary{
+    background:transparent; border:1px solid var(--line); color:var(--chalk); padding:11px 18px;
+    border-radius:4px; font-family:'Oswald',sans-serif; font-size:13px; letter-spacing:0.02em; cursor:pointer; text-transform:uppercase;
+  }
+  .btn-secondary:hover{ border-color:var(--amber); color:var(--amber); }
+  .reset-row{ margin-top:26px; padding-top:18px; border-top:1px solid var(--line); }
+  .reset-row p{ color:var(--chalk-dim); font-size:12px; margin-bottom:10px; }
+
+  .hidden{ display:none !important; }
+
+  @media (max-width: 640px){
+    .steps{ grid-template-columns:1fr; gap:26px; }
+    .admin-match .grid{ grid-template-columns:1fr; }
+    .match-card{ flex-direction:column; align-items:flex-start; }
+    .match-pick{ text-align:left; }
+  }
+</style>
 </head>
-
-
 <body>
 
-
-<header class="header">
-
-<div class="logo">
-<span class="dot"></span>
-EDGE PICKS
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span class="dot"></span>EDGE PICKS</div>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <button class="admin-link" id="langToggle">EN</button>
+      <button class="admin-link hidden" id="adminToggle">Administration</button>
+    </div>
+  </header>
 </div>
 
+<!-- PUBLIC VIEW -->
+<div id="publicView">
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow" data-i18n="eyebrow">Pronos gratuits dès votre première inscription</div>
+      <h1 data-i18n-html="hero_title">3 pronostics offerts, cote <span>1.5 ou plus</span>, réservés aux 10 000 premiers abonnés</h1>
+      <p class="sub" data-i18n="hero_sub">Un email, trois sélections analysées, une seule règle : cote minimum de 1.5. Dès que les 10 000 places sont prises, l'offre se ferme.</p>
 
-<div class="language">
-<button id="langBtn">
-EN
-</button>
+      <div class="scoreboard">
+        <div class="digits" id="remainingDigits">10000</div>
+        <div class="of" data-i18n="of_total">/ 10 000</div>
+        <div class="label"><div class="t1" data-i18n="places">Places</div><div class="t2" data-i18n="remaining">Restantes</div></div>
+      </div>
+      <div class="bar-outer"><div class="bar-inner" id="barInner"></div></div>
+
+      <div class="ticket" id="signupTicket">
+        <h3 id="signupTitle" data-i18n="reserve_title">Réserver ma place</h3>
+        <form id="signupForm">
+          <div class="field-row">
+            <input type="email" id="emailInput" data-i18n-placeholder="email_placeholder" placeholder="ton@email.com" required>
+            <button type="submit" class="cta" id="signupBtn" data-i18n="receive_btn">Recevoir</button>
+          </div>
+          <p class="fine" data-i18n="ticket_fine">Gratuit. Pas de spam. Les pronostics s'affichent juste en dessous une fois inscrit.</p>
+          <div class="msg hidden" id="signupMsg"></div>
+        </form>
+      </div>
+
+      <div class="ticket hidden" id="paywallTicket">
+        <h3 data-i18n="sold_out_title">Places gratuites épuisées</h3>
+        <p class="fine" style="margin-top:0; margin-bottom:16px;" data-i18n="sold_out_text">Les 10 000 accès gratuits sont partis. Les pronostics restent disponibles en version payante.</p>
+        <div class="price-row">
+          <span class="price-tag" id="priceTag">—</span>
+          <a href="#" target="_blank" rel="noopener" class="cta" id="payLink" data-i18n="pay_btn" style="text-decoration:none; display:inline-block;">Payer et débloquer</a>
+        </div>
+        <div class="redeem-row">
+          <p class="fine" style="margin-top:0;" data-i18n="already_paid">Déjà payé ? Entre le code reçu par email :</p>
+          <div class="field-row">
+            <input type="text" id="codeInput" data-i18n-placeholder="code_placeholder" placeholder="Code d'accès">
+            <button type="button" class="btn-secondary" id="redeemBtn" data-i18n="validate_btn">Valider</button>
+          </div>
+          <div class="msg hidden" id="redeemMsg"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="step"><div class="n">01</div><h4 data-i18n="step1_title">Tu réserves ta place</h4><p data-i18n="step1_text">Ton email, et c'est tout. Une des 10 000 places du lancement t'est attribuée.</p></div>
+      <div class="step"><div class="n">02</div><h4 data-i18n="step2_title">On sélectionne 3 matchs</h4><p data-i18n="step2_text">Chaque sélection a une cote minimum de 1.5, aucune exception.</p></div>
+      <div class="step"><div class="n">03</div><h4 data-i18n="step3_title">Tu reçois les pronostics</h4><p data-i18n="step3_text">Affichés ici dès ton inscription, avant chaque match.</p></div>
+    </section>
+
+    <section class="matches-section">
+      <h2 data-i18n="matches_title">Les 3 pronostics du moment</h2>
+      <p class="sub2" id="matchesSub" data-i18n="matches_sub_locked">Inscris-toi ci-dessus pour les débloquer.</p>
+      <div id="matchesList"></div>
+    </section>
+  </div>
 </div>
 
-</header>
+<!-- ADMIN VIEW -->
+<div id="adminView" class="hidden">
+  <div class="wrap">
+    <div class="admin-panel" id="adminGate">
+      <h2>Accès administration</h2>
+      <p class="hint">Réservé à l'équipe éditoriale — saisis le code d'accès.</p>
+      <div class="field-row">
+        <input type="password" id="adminPass" placeholder="Code d'accès" style="flex:1;">
+        <button class="cta" id="adminLoginBtn">Entrer</button>
+      </div>
+      <div class="msg hidden" id="adminLoginMsg"></div>
+    </div>
 
+    <div class="admin-panel hidden" id="adminEditor">
+      <h2>Publier les 3 pronostics</h2>
+      <p class="hint">Ces informations remplacent celles visibles par les abonnés. Cote minimum recommandée : 1.5.</p>
+      <div id="adminMatchesForm"></div>
+      <div class="admin-actions">
+        <button class="cta" id="saveMatchesBtn">Publier les pronostics</button>
+        <button class="btn-secondary" id="backToSiteBtn">Retour au site</button>
+      </div>
 
+      <div class="reset-row">
+        <p style="margin-bottom:14px;"><strong>Version payante</strong> — affichée automatiquement une fois les 10 000 places gratuites prises.</p>
+        <div class="admin-match">
+          <div class="grid">
+            <div><label>Prix affiché</label><input id="paidPrice" placeholder="ex: 9,99 €"></div>
+            <div><label>Code d'accès (envoyé après paiement)</label><input id="paidCode" placeholder="ex: PRONOS-VIP-42"></div>
+          </div>
+          <div><label>Lien de paiement (Stripe Payment Link, PayPal.me, etc.)</label><input id="paidLink" placeholder="https://buy.stripe.com/..."></div>
+          <p class="fine">Crée un "Payment Link" gratuitement sur Stripe ou PayPal.me, colle l'URL ici. Après l'achat, envoie manuellement (ou via l'automatisation Stripe/Zapier) le code d'accès au client — il le saisit sur le site pour débloquer les pronostics.</p>
+          <p class="fine" style="margin-top:8px;"><strong>Pour automatiser sans email/WhatsApp :</strong> dans les réglages de ton Payment Link Stripe, active "After payment → Redirect customers to your website" et mets comme URL : <code>https://tonsite.com/?code=TON_CODE_ICI</code> (remplace par le code choisi ci-dessus). Le client sera redirigé ici avec l'accès débloqué automatiquement, sans rien copier-coller.</p>
+        </div>
+        <button class="btn-secondary" id="savePaidBtn">Enregistrer la version payante</button>
+      </div>
 
+      <div class="reset-row">
+        <p style="margin-bottom:14px;"><strong>Flux automatique (bot)</strong> — si renseigné, remplace la saisie manuelle ci-dessus à chaque chargement de la page.</p>
+        <div class="admin-match">
+          <label>URL du fichier pronostics.json publié par le bot</label>
+          <input id="autoFeedUrl" placeholder="https://raw.githubusercontent.com/ton-compte/ton-repo/main/pronostics.json">
+          <p class="fine">Correspond au fichier généré par pronostic_bot.py via GitHub Actions. Laisse vide pour revenir à la saisie manuelle.</p>
+        </div>
+        <button class="btn-secondary" id="saveFeedBtn">Enregistrer le flux automatique</button>
+      </div>
 
-<main>
-
-
-
-<section class="hero">
-
-
-<p class="eyebrow" data-i18n="eyebrow">
-PRONOSTICS FOOTBALL
-</p>
-
-
-<h1 data-i18n="title">
-3 sélections analysées.
-<br>
-Des cotes intelligentes.
-</h1>
-
-
-<p class="subtitle" data-i18n="subtitle">
-Recevez les meilleurs pronostics du moment directement sur Edge Picks.
-</p>
-
-
-
-<div class="signup-box">
-
-
-<h3 data-i18n="signupTitle">
-Accéder aux pronostics
-</h3>
-
-
-<div class="form-row">
-
-<input 
-type="email"
-id="email"
-placeholder="Votre email"
->
-
-
-<button id="subscribeBtn">
-Recevoir
-</button>
-
-
+      <div class="reset-row">
+        <p>Compteur d'abonnés actuel : <strong id="adminCountLabel">—</strong> / 10 000</p>
+        <button class="btn-secondary" id="resetCountBtn">Réinitialiser le compteur (démo)</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-<p id="signupMessage"></p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section class="matches">
-
-
-<h2 data-i18n="matchesTitle">
-Les 3 pronostics du jour
-</h2>
-
-
-
-<div id="matchesContainer">
-
-
-<div class="loading">
-Chargement des pronostics...
-</div>
-
-
-</div>
-
-</section>
-
-
-</main>
-
-<footer>
-
-Edge Picks © 2026
-
-</footer>
-
-
-</body>
-
-</html>
-<!-- =========================
-FILE 1/5 — index.html
-EDGE PICKS
-========================= -->
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Edge Picks — Football Predictions</title>
-
-</head>
-
-
-<body>
-
-
-<header class="header">
-
-<div class="logo">
-<span class="dot"></span>
-EDGE PICKS
-</div>
-
-
-<div class="language">
-<button id="langBtn">
-EN
-</button>
-</div>
-
-</header>
-
-
-
-
-<main>
-
-
-
-<section class="hero">
-
-
-<p class="eyebrow" data-i18n="eyebrow">
-PRONOSTICS FOOTBALL
-</p>
-
-
-<h1 data-i18n="title">
-3 sélections analysées.
-<br>
-Des cotes intelligentes.
-</h1>
-
-
-<p class="subtitle" data-i18n="subtitle">
-Recevez les meilleurs pronostics du moment directement sur Edge Picks.
-</p>
-
-
-
-<div class="signup-box">
-
-
-<h3 data-i18n="signupTitle">
-Accéder aux pronostics
-</h3>
-
-
-<div class="form-row">
-
-<input 
-type="email"
-id="email"
-placeholder="Votre email"
->
-
-
-<button id="subscribeBtn">
-Recevoir
-</button>
-
-
-</div>
-
-
-<p id="signupMessage"></p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section class="matches">
-
-
-<h2 data-i18n="matchesTitle">
-Les 3 pronostics du jour
-</h2>
-
-
-
-<div id="matchesContainer">
-
-
-<div class="loading">
-Chargement des pronostics...
-</div>
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-</main>
-
-
-
-
-
-
-<footer>
-
-Edge Picks © 2026
-
-</footer>
-
-
-
-
-<script src="app.js"></script>
-
-
-</body>
-
-</html>
-/* =========================
-FILE 3/5 — app.js
-EDGE PICKS
-========================= */
-
-
-let currentLang = "fr";
-
-let userRegistered = false;
-
-
-
-const translations = {
-
-
-fr:{
-
-eyebrow:"PRONOSTICS FOOTBALL",
-
-title:"3 sélections analysées.<br>Des cotes intelligentes.",
-
-subtitle:"Recevez les meilleurs pronostics du moment directement sur Edge Picks.",
-
-signupTitle:"Accéder aux pronostics",
-
-subscribe:"Recevoir",
-
-matchesTitle:"Les 3 pronostics du jour",
-
-emailPlaceholder:"Votre email",
-
-success:"Inscription confirmée. Vos pronostics sont accessibles."
-
-},
-
-
-
-en:{
-
-eyebrow:"FOOTBALL PICKS",
-
-title:"3 analysed selections.<br>Smart odds.",
-
-subtitle:"Receive the best football picks directly from Edge Picks.",
-
-signupTitle:"Access the predictions",
-
-subscribe:"Get picks",
-
-matchesTitle:"Today's 3 picks",
-
-emailPlaceholder:"Your email",
-
-success:"Registration confirmed. Your picks are available."
-
-}
-
-
+<div class="wrap"><footer data-i18n="footer_text">MVP — Edge Picks · Le pari comporte des risques, à consommer avec modération.</footer></div>
+
+<script>
+const TOTAL_SPOTS = 10000;
+const ADMIN_CODE = "IO8UPPH0";
+const ADMIN_URL_TOKEN = "5y4xw2r3zf";
+const MATCH_KEYS = ['m1','m2','m3'];
+const emptyMatch = () => ({ home:"", away:"", date:"", odds:"", pick:"" });
+
+// ---------- i18n ----------
+let currentLang = 'fr';
+
+const I18N = {
+  fr: {
+    eyebrow: "Pronos gratuits dès votre première inscription",
+    hero_title: '3 pronostics offerts, cote <span>1.5 ou plus</span>, réservés aux 10 000 premiers abonnés',
+    hero_sub: "Un email, trois sélections analysées, une seule règle : cote minimum de 1.5. Dès que les 10 000 places sont prises, l'offre se ferme.",
+    of_total: "/ 10 000",
+    places: "Places",
+    remaining: "Restantes",
+    reserve_title: "Réserver ma place",
+    email_placeholder: "ton@email.com",
+    receive_btn: "Recevoir",
+    ticket_fine: "Gratuit. Pas de spam. Les pronostics s'affichent juste en dessous une fois inscrit.",
+    sold_out_title: "Places gratuites épuisées",
+    sold_out_text: "Les 10 000 accès gratuits sont partis. Les pronostics restent disponibles en version payante.",
+    pay_btn: "Payer et débloquer",
+    already_paid: "Déjà payé ? Entre le code reçu par email :",
+    code_placeholder: "Code d'accès",
+    validate_btn: "Valider",
+    step1_title: "Tu réserves ta place",
+    step1_text: "Ton email, et c'est tout. Une des 10 000 places du lancement t'est attribuée.",
+    step2_title: "On sélectionne 3 matchs",
+    step2_text: "Chaque sélection a une cote minimum de 1.5, aucune exception.",
+    step3_title: "Tu reçois les pronostics",
+    step3_text: "Affichés ici dès ton inscription, avant chaque match.",
+    matches_title: "Les 3 pronostics du moment",
+    matches_sub_locked: "Inscris-toi ci-dessus pour les débloquer.",
+    matches_sub_ready: "Voici les 3 sélections en cours, cote 1.5 minimum.",
+    matches_sub_empty: "Merci pour ton inscription — les pronostics sont en cours de préparation.",
+    empty_locked: "Les 3 pronostics apparaîtront ici juste après ton inscription (ou ton paiement une fois les places gratuites épuisées).",
+    empty_ready: "Aucun match publié pour l'instant. Reviens un peu plus tard.",
+    pick_label: "Pronostic",
+    date_tbd: "Date à confirmer",
+    footer_text: "MVP — Edge Picks · Le pari comporte des risques, à consommer avec modération.",
+    sub_confirmed: "Inscription confirmée — tes pronostics sont juste en dessous.",
+    already_subscribed_title: "Tu es inscrit",
+    subscribed_btn: "Inscrit ✓",
+    spots_taken_meanwhile: "Toutes les places ont été prises entre-temps.",
+    code_valid: "Code validé — accès débloqué.",
+    code_invalid: "Code invalide.",
+    complet: "Complet",
+    spots_epuisees: "Places épuisées",
+  },
+  en: {
+    eyebrow: "Free picks on your first sign-up",
+    hero_title: '3 free picks, odds <span>1.5 (1/2) or higher</span>, for the first 10,000 subscribers',
+    hero_sub: "One email, three analysed picks, one simple rule: minimum odds of 1.5 (1/2). Once the 10,000 spots are taken, the offer closes.",
+    of_total: "/ 10,000",
+    places: "Spots",
+    remaining: "Remaining",
+    reserve_title: "Reserve my spot",
+    email_placeholder: "you@email.com",
+    receive_btn: "Get picks",
+    ticket_fine: "Free. No spam. Picks show up right below once you're signed up.",
+    sold_out_title: "Free spots are gone",
+    sold_out_text: "All 10,000 free spots have been claimed. Picks are still available with the paid plan.",
+    pay_btn: "Pay and unlock",
+    already_paid: "Already paid? Enter the code you received by email:",
+    code_placeholder: "Access code",
+    validate_btn: "Confirm",
+    step1_title: "Reserve your spot",
+    step1_text: "Your email, that's it. One of the 10,000 launch spots is assigned to you.",
+    step2_title: "We pick 3 matches",
+    step2_text: "Every pick has minimum odds of 1.5 (1/2), no exceptions.",
+    step3_title: "You get the picks",
+    step3_text: "Shown here right after you sign up, ahead of each match.",
+    matches_title: "Today's 3 picks",
+    matches_sub_locked: "Sign up above to unlock them.",
+    matches_sub_ready: "Here are the 3 current picks, minimum odds 1.5 (1/2).",
+    matches_sub_empty: "Thanks for signing up — picks are being prepared.",
+    empty_locked: "The 3 picks will appear here right after you sign up (or pay, once the free spots are gone).",
+    empty_ready: "No match published yet. Check back a bit later.",
+    pick_label: "Pick",
+    date_tbd: "Date to be confirmed",
+    footer_text: "MVP — Edge Picks · Betting involves risk, please play responsibly.",
+    sub_confirmed: "Sign-up confirmed — your picks are right below.",
+    already_subscribed_title: "You're signed up",
+    subscribed_btn: "Signed up ✓",
+    spots_taken_meanwhile: "All spots were taken in the meantime.",
+    code_valid: "Code validated — access unlocked.",
+    code_invalid: "Invalid code.",
+    complet: "Sold out",
+    spots_epuisees: "No spots left",
+  }
 };
 
+function t(key){ return (I18N[currentLang] && I18N[currentLang][key]) || key; }
 
-
-
-
-function t(key){
-
-return translations[currentLang][key];
-
+function detectLang(){
+  const nav = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
+  return nav.startsWith('fr') ? 'fr' : 'en';
 }
 
-
-
-
-
-function updateLanguage(){
-
-
-document.querySelector("[data-i18n='eyebrow']").innerHTML =
-t("eyebrow");
-
-
-document.querySelector("[data-i18n='title']").innerHTML =
-t("title");
-
-
-document.querySelector("[data-i18n='subtitle']").innerHTML =
-t("subtitle");
-
-
-document.querySelector("[data-i18n='signupTitle']").innerHTML =
-t("signupTitle");
-
-
-document.querySelector("[data-i18n='matchesTitle']").innerHTML =
-t("matchesTitle");
-
-
-document.getElementById("subscribeBtn").innerHTML =
-t("subscribe");
-
-
-document.getElementById("email").placeholder =
-t("emailPlaceholder");
-
-
-
-document.getElementById("langBtn").innerHTML =
-currentLang==="fr" ? "EN":"FR";
-
+// Conversion cote décimale -> fractionnaire (format UK/IE), ex: 2.17 -> "6/5"
+function gcd(a, b){ return b ? gcd(b, a % b) : a; }
+function decimalToFraction(decimal){
+  const value = decimal - 1; // la cote décimale inclut la mise, la fractionnaire non
+  if(!isFinite(value) || value <= 0) return null;
+  const maxDen = 100;
+  let bestNum = 1, bestDen = 1, minErr = Infinity;
+  for(let den = 1; den <= maxDen; den++){
+    const num = Math.round(value * den);
+    if(num <= 0) continue;
+    const err = Math.abs(value - num / den);
+    if(err < minErr){ minErr = err; bestNum = num; bestDen = den; }
+  }
+  const g = gcd(bestNum, bestDen) || 1;
+  return `${bestNum / g}/${bestDen / g}`;
+}
+function formatOdds(decimalStr){
+  const decimal = parseFloat((decimalStr || '').replace(',', '.'));
+  if(currentLang !== 'en' || !decimal) return decimalStr || '—';
+  const frac = decimalToFraction(decimal);
+  return frac ? `${decimalStr} (${frac})` : decimalStr;
 }
 
+function applyStaticI18n(){
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.dataset.i18nHtml); });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+  document.getElementById('langToggle').textContent = currentLang === 'fr' ? 'EN' : 'FR';
+}
 
+// ---------- storage helpers ----------
+async function getShared(key, fallback){
+  try{
+    const r = await window.storage.get(key, true);
+    return r ? JSON.parse(r.value) : fallback;
+  }catch(e){ return fallback; }
+}
+async function setShared(key, value){
+  try{ await window.storage.set(key, JSON.stringify(value), true); }catch(e){ console.error(e); }
+}
+async function getPersonal(key, fallback){
+  try{
+    const r = await window.storage.get(key, false);
+    return r ? JSON.parse(r.value) : fallback;
+  }catch(e){ return fallback; }
+}
+async function setPersonal(key, value){
+  try{ await window.storage.set(key, JSON.stringify(value), false); }catch(e){ console.error(e); }
+}
 
+// ---------- state ----------
+let subscriberCount = 0;
+let matches = { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() };
+let alreadySubscribed = false;
+let hasPaidAccess = false;
+let paidConfig = { price: "9,99 €", paymentLink: "", accessCode: "" };
+let autoFeedUrl = "";
+let autoFeedError = false;
 
+async function loadAutoFeed(){
+  if(!autoFeedUrl){ autoFeedError = false; return; }
+  try{
+    const res = await fetch(autoFeedUrl, { cache: "no-store" });
+    if(!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    const list = Array.isArray(data) ? data : (data.matches || []);
+    if(!Array.isArray(list) || list.length === 0) throw new Error("format vide/invalide");
 
-/*
-========================
-LOAD PICKS FROM BOT FILE
-========================
-*/
+    const next = { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() };
+    MATCH_KEYS.forEach((k, i) => { if(list[i]) next[k] = { ...emptyMatch(), ...list[i] }; });
+    matches = next;
+    autoFeedError = false;
+  }catch(e){
+    console.error("Flux automatique inaccessible, repli sur les données manuelles.", e);
+    autoFeedError = true;
+  }
+}
 
+function hasAccess(){ return alreadySubscribed || hasPaidAccess; }
 
-async function loadPicks(){
+// ---------- render: scoreboard ----------
+function renderScoreboard(){
+  const remaining = Math.max(TOTAL_SPOTS - subscriberCount, 0);
+  document.getElementById('remainingDigits').textContent = String(remaining).padStart(5,'0');
+  const pct = Math.min((subscriberCount / TOTAL_SPOTS) * 100, 100);
+  document.getElementById('barInner').style.width = pct + '%';
 
+  const signupTicket = document.getElementById('signupTicket');
+  const paywallTicket = document.getElementById('paywallTicket');
 
-const container =
-document.getElementById("matchesContainer");
+  if(remaining <= 0 && !alreadySubscribed){
+    // free tier closed -> show paywall (unless user already redeemed a paid code)
+    signupTicket.classList.add('hidden');
+    if(hasPaidAccess){
+      paywallTicket.classList.add('hidden');
+    } else {
+      paywallTicket.classList.remove('hidden');
+      document.getElementById('priceTag').textContent = paidConfig.price || '—';
+      document.getElementById('payLink').href = paidConfig.paymentLink || '#';
+    }
+  } else {
+    signupTicket.classList.remove('hidden');
+    paywallTicket.classList.add('hidden');
+  }
+}
 
+// ---------- render: matches ----------
+function renderMatches(){
+  const list = document.getElementById('matchesList');
+  const sub = document.getElementById('matchesSub');
+  list.innerHTML = '';
 
+  if(!hasAccess()){
+    sub.textContent = t('matches_sub_locked');
+    list.innerHTML = `<div class="empty-state">${t('empty_locked')}</div>`;
+    return;
+  }
 
-try{
+  const filled = MATCH_KEYS.map(k => matches[k]).filter(m => m.home && m.away);
+  if(filled.length === 0){
+    sub.textContent = t('matches_sub_empty');
+    list.innerHTML = `<div class="empty-state">${t('empty_ready')}</div>`;
+    return;
+  }
 
+  sub.textContent = t('matches_sub_ready');
+  filled.forEach(m => {
+    const card = document.createElement('div');
+    card.className = 'match-card';
+    card.innerHTML = `
+      <div>
+        <div class="match-teams">${escapeHtml(m.home)} — ${escapeHtml(m.away)}</div>
+        <div class="match-meta">${escapeHtml(m.date || t('date_tbd'))}</div>
+      </div>
+      <div class="match-pick">
+        <div class="p-label">${t('pick_label')}</div>
+        <div class="p-val">${escapeHtml(m.pick || '—')}</div>
+      </div>
+      <div class="match-odds">${escapeHtml(formatOdds(m.odds))}</div>
+    `;
+    list.appendChild(card);
+  });
+}
 
-const response =
-await fetch("pronostics.json?time="+Date.now());
+function escapeHtml(str){
+  const d = document.createElement('div');
+  d.textContent = str ?? '';
+  return d.innerHTML;
+}
 
+// ---------- signup flow ----------
+document.getElementById('signupForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const msg = document.getElementById('signupMsg');
+  msg.className = 'msg hidden';
 
+  if(alreadySubscribed){ return; }
 
-const data =
-await response.json();
+  const email = document.getElementById('emailInput').value.trim();
+  if(!email){ return; }
 
+  const btn = document.getElementById('signupBtn');
+  btn.disabled = true; btn.textContent = "...";
 
+  // re-fetch latest count to reduce race conditions
+  subscriberCount = await getShared('subscriber-count', 0);
+  if(subscriberCount >= TOTAL_SPOTS){
+    renderScoreboard();
+    msg.textContent = t('spots_taken_meanwhile');
+    msg.className = 'msg err';
+    btn.disabled = false; btn.textContent = t('receive_btn');
+    return;
+  }
 
-container.innerHTML="";
+  subscriberCount += 1;
+  await setShared('subscriber-count', subscriberCount);
+  await setPersonal('subscribed', true);
+  await setPersonal('subscribed-email', email);
+  alreadySubscribed = true;
 
-
-
-data.matches.forEach(match=>{
-
-
-const card=document.createElement("div");
-
-
-card.className="match-card";
-
-
-
-card.innerHTML=`
-
-<div>
-
-<div class="teams">
-
-${match.home}
--
-${match.away}
-
-</div>
-
-
-<div class="meta">
-
-${match.date}
-
-</div>
-
-
-</div>
-
-
-<div class="pick">
-
-${match.pick}
-
-</div>
-
-
-<div class="odds">
-
-${match.odds}
-
-</div>
-
-
-`;
-
-
-
-container.appendChild(card);
-
-
-
+  renderScoreboard();
+  renderMatches();
+  msg.textContent = t('sub_confirmed');
+  msg.className = 'msg ok';
+  btn.textContent = t('subscribed_btn');
+  document.getElementById('emailInput').disabled = true;
 });
 
+// ---------- redeem paid access code ----------
+document.getElementById('redeemBtn').addEventListener('click', async () => {
+  const input = document.getElementById('codeInput');
+  const msg = document.getElementById('redeemMsg');
+  const entered = input.value.trim();
 
+  if(!entered){ return; }
 
-}
-
-catch(error){
-
-
-container.innerHTML=`
-
-<div class="loading">
-
-No picks available yet.
-
-</div>
-
-`;
-
-
-console.log(error);
-
-
-}
-
-
-
-}
-
-
-
-
-
-/*
-========================
-EMAIL SIGNUP
-========================
-*/
-
-
-document
-.getElementById("subscribeBtn")
-.addEventListener("click",()=>{
-
-
-const email =
-document.getElementById("email").value.trim();
-
-
-
-const message =
-document.getElementById("signupMessage");
-
-
-
-if(!email || !email.includes("@")){
-
-
-message.innerHTML =
-"Please enter a valid email.";
-
-
-return;
-
-
-}
-
-
-
-localStorage.setItem(
-"edge_email",
-email
-);
-
-
-
-userRegistered=true;
-
-
-
-message.innerHTML =
-t("success");
-
-
-
+  paidConfig = await getShared('paid-config', paidConfig); // refresh in case admin updated it
+  if(paidConfig.accessCode && entered.toLowerCase() === paidConfig.accessCode.toLowerCase()){
+    hasPaidAccess = true;
+    await setPersonal('paid', true);
+    renderScoreboard();
+    renderMatches();
+    msg.textContent = t('code_valid');
+    msg.className = 'msg ok';
+  } else {
+    msg.textContent = t('code_invalid');
+    msg.className = 'msg err';
+  }
 });
 
-
-
-
-
-/*
-========================
-LANG BUTTON
-========================
-*/
-
-
-document
-.getElementById("langBtn")
-.addEventListener("click",()=>{
-
-
-currentLang =
-currentLang==="fr" ? "en":"fr";
-
-
-updateLanguage();
-
-
+// ---------- admin: toggle views ----------
+document.getElementById('adminToggle').addEventListener('click', () => {
+  document.getElementById('publicView').classList.add('hidden');
+  document.getElementById('adminView').classList.remove('hidden');
+});
+document.getElementById('backToSiteBtn').addEventListener('click', () => {
+  document.getElementById('adminView').classList.add('hidden');
+  document.getElementById('publicView').classList.remove('hidden');
 });
 
-
-
-
-
-
-/*
-========================
-START
-========================
-*/
-
-
-updateLanguage();
-
-loadPicks();
-<!-- =========================
-FILE 4/5 — admin.html
-EDGE PICKS ADMIN
-========================= -->
-
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Edge Picks Admin</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-
-<body>
-
-
-<header class="header">
-
-<div class="logo">
-<span class="dot"></span>
-EDGE PICKS ADMIN
-</div>
-
-
-</header>
-
-
-
-<main>
-
-
-<section class="signup-box">
-
-
-<h3>
-Publish 3 picks
-</h3>
-
-
-
-<div class="form-row">
-
-<input id="home1" placeholder="Home team">
-
-<input id="away1" placeholder="Away team">
-
-</div>
-
-
-<div class="form-row">
-
-<input id="pick1" placeholder="Prediction">
-
-<input id="odds1" placeholder="Odds">
-
-</div>
-
-
-
-
-<hr>
-
-
-
-<div class="form-row">
-
-<input id="home2" placeholder="Home team">
-
-<input id="away2" placeholder="Away team">
-
-</div>
-
-
-<div class="form-row">
-
-<input id="pick2" placeholder="Prediction">
-
-<input id="odds2" placeholder="Odds">
-
-</div>
-
-
-
-<hr>
-
-
-
-<div class="form-row">
-
-<input id="home3" placeholder="Home team">
-
-<input id="away3" placeholder="Away team">
-
-</div>
-
-
-<div class="form-row">
-
-<input id="pick3" placeholder="Prediction">
-
-<input id="odds3" placeholder="Odds">
-
-</div>
-
-
-
-<br>
-
-
-<button id="saveBtn">
-
-Generate pronostics.json
-
-</button>
-
-
-<p id="message"></p>
-
-
-</section>
-
-
-</main>
-
-
-<script src="admin.js"></script>
-
+document.getElementById('adminLoginBtn').addEventListener('click', () => {
+  const val = document.getElementById('adminPass').value;
+  const msg = document.getElementById('adminLoginMsg');
+  if(val === ADMIN_CODE){
+    document.getElementById('adminGate').classList.add('hidden');
+    document.getElementById('adminEditor').classList.remove('hidden');
+    renderAdminForm();
+    document.getElementById('adminCountLabel').textContent = subscriberCount;
+    document.getElementById('paidPrice').value = paidConfig.price || '';
+    document.getElementById('paidLink').value = paidConfig.paymentLink || '';
+    document.getElementById('paidCode').value = paidConfig.accessCode || '';
+    document.getElementById('autoFeedUrl').value = autoFeedUrl || '';
+  } else {
+    msg.textContent = "Code incorrect.";
+    msg.className = 'msg err';
+  }
+});
+
+function renderAdminForm(){
+  const container = document.getElementById('adminMatchesForm');
+  container.innerHTML = '';
+  MATCH_KEYS.forEach((k, i) => {
+    const m = matches[k];
+    const block = document.createElement('div');
+    block.className = 'admin-match';
+    block.innerHTML = `
+      <label style="margin-bottom:12px;">Match ${i+1}</label>
+      <div class="grid">
+        <div><label>Équipe domicile</label><input data-key="${k}" data-field="home" value="${escapeAttr(m.home)}" placeholder="ex: PSG"></div>
+        <div><label>Équipe extérieure</label><input data-key="${k}" data-field="away" value="${escapeAttr(m.away)}" placeholder="ex: OM"></div>
+      </div>
+      <div class="grid">
+        <div><label>Date / heure</label><input data-key="${k}" data-field="date" value="${escapeAttr(m.date)}" placeholder="ex: Sam. 2 août — 21h00"></div>
+        <div><label>Cote (≥ 1.5)</label><input data-key="${k}" data-field="odds" value="${escapeAttr(m.odds)}" placeholder="ex: 1.75"></div>
+      </div>
+      <div><label>Pronostic</label><input data-key="${k}" data-field="pick" value="${escapeAttr(m.pick)}" placeholder="ex: Victoire domicile"></div>
+    `;
+    container.appendChild(block);
+  });
+}
+function escapeAttr(str){ return (str ?? '').replace(/"/g,'&quot;'); }
+
+document.getElementById('adminMatchesForm').addEventListener('input', (e) => {
+  const t = e.target;
+  if(t.dataset.key && t.dataset.field){
+    matches[t.dataset.key][t.dataset.field] = t.value;
+  }
+});
+
+document.getElementById('saveMatchesBtn').addEventListener('click', async () => {
+  // validation cote >= 1.5 (warn but don't block)
+  const lowOdds = MATCH_KEYS
+    .map(k => matches[k])
+    .filter(m => m.home && m.odds && parseFloat(m.odds.replace(',','.')) < 1.5);
+
+  await setShared('matches', matches);
+  renderMatches();
+
+  const btn = document.getElementById('saveMatchesBtn');
+  const original = btn.textContent;
+  btn.textContent = lowOdds.length ? "Publié (attention : cote < 1.5 détectée)" : "Publié ✓";
+  setTimeout(() => btn.textContent = original, 2500);
+});
+
+document.getElementById('saveFeedBtn').addEventListener('click', async () => {
+  autoFeedUrl = document.getElementById('autoFeedUrl').value.trim();
+  await setShared('auto-feed-url', autoFeedUrl);
+  await loadAutoFeed();
+  renderMatches();
+  const btn = document.getElementById('saveFeedBtn');
+  const original = btn.textContent;
+  btn.textContent = autoFeedError ? "Enregistré (flux injoignable, vérifie l'URL)" : "Enregistré ✓";
+  setTimeout(() => btn.textContent = original, 2500);
+});
+
+document.getElementById('savePaidBtn').addEventListener('click', async () => {
+  paidConfig = {
+    price: document.getElementById('paidPrice').value.trim() || "9,99 €",
+    paymentLink: document.getElementById('paidLink').value.trim(),
+    accessCode: document.getElementById('paidCode').value.trim()
+  };
+  await setShared('paid-config', paidConfig);
+  renderScoreboard();
+  const btn = document.getElementById('savePaidBtn');
+  const original = btn.textContent;
+  btn.textContent = "Enregistré ✓";
+  setTimeout(() => btn.textContent = original, 2000);
+});
+
+document.getElementById('resetCountBtn').addEventListener('click', async () => {
+  subscriberCount = 0;
+  await setShared('subscriber-count', 0);
+  document.getElementById('adminCountLabel').textContent = 0;
+  renderScoreboard();
+});
+
+// ---------- init ----------
+async function init(){
+  let storedLang = null;
+  try{
+    const r = await window.storage.get('lang', false);
+    storedLang = r ? JSON.parse(r.value) : null;
+  }catch(e){ storedLang = null; }
+
+  if(storedLang){
+    currentLang = storedLang;
+  } else {
+    currentLang = detectLang(); // première visite : on devine depuis la langue du navigateur
+    await setPersonal('lang', currentLang);
+  }
+  applyStaticI18n();
+
+  subscriberCount = await getShared('subscriber-count', 0);
+  matches = await getShared('matches', { m1: emptyMatch(), m2: emptyMatch(), m3: emptyMatch() });
+  paidConfig = await getShared('paid-config', paidConfig);
+  autoFeedUrl = await getShared('auto-feed-url', '');
+  await loadAutoFeed();
+  alreadySubscribed = await getPersonal('subscribed', false);
+  hasPaidAccess = await getPersonal('paid', false);
+
+  // Déblocage automatique si on revient d'un paiement Stripe/PayPal avec ?code=... dans l'URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const codeFromUrl = urlParams.get('code');
+  if(!hasPaidAccess && codeFromUrl && paidConfig.accessCode && codeFromUrl.toLowerCase() === paidConfig.accessCode.toLowerCase()){
+    hasPaidAccess = true;
+    await setPersonal('paid', true);
+    window.history.replaceState({}, document.title, window.location.pathname); // nettoie l'URL, le code ne doit pas rester visible
+  }
+
+  // Bouton admin visible uniquement avec le token secret dans l'URL (?panel=...)
+  if(urlParams.get('panel') === ADMIN_URL_TOKEN){
+    document.getElementById('adminToggle').classList.remove('hidden');
+  }
+
+  if(alreadySubscribed){
+    document.getElementById('emailInput').disabled = true;
+    document.getElementById('signupBtn').textContent = t('subscribed_btn');
+    document.getElementById('signupBtn').disabled = true;
+    document.getElementById('signupTicket').querySelector('h3').textContent = t('already_subscribed_title');
+  }
+
+  renderScoreboard();
+  renderMatches();
+}
+
+document.getElementById('langToggle').addEventListener('click', async () => {
+  currentLang = currentLang === 'fr' ? 'en' : 'fr';
+  await setPersonal('lang', currentLang);
+  applyStaticI18n();
+  if(alreadySubscribed){
+    document.getElementById('signupBtn').textContent = t('subscribed_btn');
+    document.getElementById('signupTicket').querySelector('h3').textContent = t('already_subscribed_title');
+  }
+  renderScoreboard();
+  renderMatches();
+});
+
+init();
+</script>
 
 </body>
-
 </html>
-{
-  "updated": "2026-01-01T00:00:00Z",
-  "matches": [
-    {
-      "home": "Team A",
-      "away": "Team B",
-      "date": "Today 20:00",
-      "pick": "Home win",
-      "odds": "1.75"
-    },
-    {
-      "home": "Team C",
-      "away": "Team D",
-      "date": "Tomorrow 18:30",
-      "pick": "Over 1.5 goals",
-      "odds": "1.60"
-    },
-    {
-      "home": "Team E",
-      "away": "Team F",
-      "date": "Tomorrow 21:00",
-      "pick": "Both teams score",
-      "odds": "1.80"
-    }
-  ]
-}
