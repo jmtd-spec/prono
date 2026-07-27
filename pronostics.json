@@ -1,13 +1,40 @@
-{
-  "generated_at": "2026-07-27T20:09:43.171026+00:00",
-  "products": {
-    "single": [],
-    "premium": [],
-    "vip": []
-  },
-  "vip_membership": {
-    "monthly_unlocks": 12,
-    "picks_per_unlock": 3
-  },
-  "disclaimer": "Automatic football selections generated from market odds. Responsible betting only."
-}
+name: Mise à jour automatique des pronostics
+
+on:
+  schedule:
+    # tous les jours à 11h00 UTC
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  update-picks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests
+
+      - name: Générer les pronostics
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python pronostic_bot.py
+
+      - name: Publier pronostics.json
+        run: |
+          git config user.name "pronostic-bot"
+          git config user.email "bot@users.noreply.github.com"
+
+          git add pronostics.json
+
+          git diff --quiet --cached || git commit -m "Mise à jour automatique des pronostics"
+
+          git push origin main
