@@ -31,6 +31,7 @@ PREMIUM_LIMIT = 6
 VIP_LIMIT = 3
 
 
+
 # ==========================
 # API REQUEST
 # ==========================
@@ -39,12 +40,14 @@ def api_request(endpoint, params=None):
 
     url = f"{BASE_URL}/{endpoint}"
 
+
     response = requests.get(
         url,
         headers=HEADERS,
         params=params,
         timeout=20
     )
+
 
     if response.status_code != 200:
 
@@ -58,7 +61,10 @@ def api_request(endpoint, params=None):
 
     data = response.json()
 
+
     return data.get("response", [])
+
+
 
 
 
@@ -74,8 +80,7 @@ def get_fixtures():
     fixtures = api_request(
         "fixtures",
         {
-            "date": today,
-            "timezone": "UTC"
+            "date": today
         }
     )
 
@@ -86,6 +91,8 @@ def get_fixtures():
 
 
     return fixtures
+
+
 
 
 
@@ -104,6 +111,8 @@ def get_fixture_odds(fixture_id):
 
 
 
+
+
 # ==========================
 # ANALYSE ODDS
 # ==========================
@@ -111,12 +120,15 @@ def get_fixture_odds(fixture_id):
 def analyse_odds(odds_data):
 
     if not odds_data:
+
         return None
+
 
 
     try:
 
         bookmakers = odds_data[0]["bookmakers"]
+
 
     except Exception:
 
@@ -125,6 +137,7 @@ def analyse_odds(odds_data):
 
 
     candidates = []
+
 
 
     allowed_markets = [
@@ -138,6 +151,7 @@ def analyse_odds(odds_data):
         "Match Winner"
 
     ]
+
 
 
     blocked_markets = [
@@ -162,9 +176,11 @@ def analyse_odds(odds_data):
 
 
 
+            # Ignore unwanted markets
+
             if any(
-                blocked in market
-                for blocked in blocked_markets
+                x in market
+                for x in blocked_markets
             ):
 
                 continue
@@ -172,8 +188,8 @@ def analyse_odds(odds_data):
 
 
             if not any(
-                allowed in market
-                for allowed in allowed_markets
+                x in market
+                for x in allowed_markets
             ):
 
                 continue
@@ -186,14 +202,17 @@ def analyse_odds(odds_data):
                 odd = value.get("odd")
 
 
+
                 if odd is None:
 
                     continue
 
 
+
                 try:
 
                     odd = float(odd)
+
 
                 except:
 
@@ -228,14 +247,13 @@ def analyse_odds(odds_data):
 
 
 
-    # Select closest to 1.80
+    # Choose odds closest to 1.80
+
     best = sorted(
 
         candidates,
 
-        key=lambda x: abs(
-            x["odds"] - 1.80
-        )
+        key=lambda x: abs(x["odds"] - 1.80)
 
     )[0]
 
@@ -267,6 +285,8 @@ def calculate_confidence(pick):
 
 
 
+
+
 # ==========================
 # BUILD PICKS
 # ==========================
@@ -292,14 +312,14 @@ def build_picks():
 
 
 
-        odds_data = get_fixture_odds(
+        odds = get_fixture_odds(
             fixture_id
         )
 
 
 
         best = analyse_odds(
-            odds_data
+            odds
         )
 
 
@@ -342,7 +362,7 @@ def build_picks():
 
 
 
-    # Highest confidence first
+    # Sort highest confidence first
 
     all_picks = sorted(
 
@@ -358,19 +378,20 @@ def build_picks():
 
 
 
-    products = {
+    return {
+
 
         "single": all_picks[:SINGLE_LIMIT],
 
+
         "premium": all_picks[:PREMIUM_LIMIT],
+
 
         "vip": all_picks[:VIP_LIMIT]
 
     }
 
 
-
-    return products
 
 
 
@@ -401,7 +422,6 @@ def save_predictions(products):
 
 
             "picks_per_unlock": 3
-
 
         },
 
@@ -440,6 +460,9 @@ def save_predictions(products):
 
 
 
+
+
+
 # ==========================
 # MAIN
 # ==========================
@@ -458,7 +481,9 @@ def main():
 
         )
 
+
         sys.exit(1)
+
 
 
 
@@ -476,9 +501,9 @@ def main():
 
     total = sum(
 
-        len(value)
+        len(x)
 
-        for value in products.values()
+        for x in products.values()
 
     )
 
@@ -489,6 +514,8 @@ def main():
         f"[OK] {total} picks generated"
 
     )
+
+
 
 
 
