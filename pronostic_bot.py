@@ -116,11 +116,18 @@ def analyse_odds(odds_data):
 
 
     allowed_markets = [
-        "Goals Over/Under",
-        "Both Teams Score",
-        "Double Chance",
-        "Match Winner"
-    ]
+    "Goals Over/Under",
+    "Both Teams Score",
+    "Double Chance",
+    "Match Winner"
+]
+
+
+blocked_markets = [
+    "First Half",
+    "Second Half",
+    "Asian Handicap"
+]
 
 
     for bookmaker in bookmakers:
@@ -135,11 +142,18 @@ def analyse_odds(odds_data):
                 continue
 
 
-            if not any(
-                x in market
-                for x in allowed_markets
-            ):
-                continue
+          if any(
+    x in market
+    for x in blocked_markets
+):
+    continue
+
+
+if not any(
+    x in market
+    for x in allowed_markets
+):
+    continue
 
 
             for value in bet.get("values", []):
