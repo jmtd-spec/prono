@@ -23,8 +23,8 @@ SINGLE_PICKS = 3
 PREMIUM_PICKS = 6
 VIP_PICKS = 12
 
-MIN_ODDS = 1.5
-MAX_ODDS = 2.5
+MIN_ODDS = 1.50
+MAX_ODDS = 2.50
 
 
 # ==========================
@@ -56,7 +56,7 @@ def api_request(endpoint, params=None):
 
 
 # ==========================
-# GET TODAY MATCHES
+# FIXTURES
 # ==========================
 
 def get_fixtures():
@@ -79,7 +79,7 @@ def get_fixtures():
 
 
 # ==========================
-# GET ODDS
+# ODDS
 # ==========================
 
 def get_fixture_odds(fixture_id):
@@ -94,7 +94,7 @@ def get_fixture_odds(fixture_id):
 
 
 # ==========================
-# ANALYSE ODDS
+# PICK ANALYSIS
 # ==========================
 
 def extract_best_pick(odds_data):
@@ -104,11 +104,9 @@ def extract_best_pick(odds_data):
 
 
     try:
-
         bookmakers = odds_data[0]["bookmakers"]
 
     except Exception:
-
         return None
 
 
@@ -119,12 +117,27 @@ def extract_best_pick(odds_data):
 
         for bet in bookmaker.get("bets", []):
 
+            market_name = bet.get("name", "")
+
+            # Keep only useful football markets
+            allowed_markets = [
+                "Goals Over/Under",
+                "Both Teams Score",
+                "Double Chance",
+                "Match Winner"
+            ]
+
+            if not any(m in market_name for m in allowed_markets):
+                continue
+
+
             for value in bet.get("values", []):
 
                 odd = value.get("odd")
 
                 if odd is None:
                     continue
+
 
                 try:
                     odd = float(odd)
@@ -138,7 +151,7 @@ def extract_best_pick(odds_data):
                     candidates.append(
                         {
                             "bookmaker": bookmaker["name"],
-                            "market": bet["name"],
+                            "market": market_name,
                             "pick": value["value"],
                             "odds": odd
                         }
@@ -149,25 +162,29 @@ def extract_best_pick(odds_data):
         return None
 
 
-    # choose safest odds (lowest inside range)
-best = sorted(
-    candidates,
-    key=lambda x: x["odds"]
-)[0]
+    # Select safest valid odd
+    best = sorted(
+        candidates,
+        key=lambda x: x["odds"]
+    )[0]
 
 
-# confidence calculation
-if best["odds"] <= 1.70:
-    confidence = 85
-elif best["odds"] <= 2.00:
-    confidence = 78
-else:
-    confidence = 72
+    # Confidence score
+    if best["odds"] <= 1.70:
+        confidence = 85
+
+    elif best["odds"] <= 2.00:
+        confidence = 78
+
+    else:
+        confidence = 72
 
 
-best["confidence"] = confidence
+    best["confidence"] = confidence
 
-return best
+
+    return best
+
 
 
 # ==========================
@@ -211,7 +228,8 @@ def build_picks():
                 "pick": best["pick"],
                 "market": best["market"],
                 "bookmaker": best["bookmaker"],
-                "odds": f'{best["odds"]:.2f}'
+                "odds": f'{best["odds"]:.2f}',
+                "confidence": f'{best["confidence"]}%'
             }
         )
 
@@ -219,23 +237,24 @@ def build_picks():
         print(
             f"[PICK] {home} vs {away} "
             f"{best['pick']} "
-            f"{best['odds']}"
+            f"{best['odds']} "
+            f"{best['confidence']}%"
         )
 
 
-      # Sort by confidence first
-picks = sorted(
-    picks,
-    key=lambda x: x.get("confidence", 0),
-    reverse=True
-)
+    # Rank by confidence
+    picks = sorted(
+        picks,
+        key=lambda x: int(x["confidence"].replace("%","")),
+        reverse=True
+    )
 
 
-return {
-    "single": picks[:3],
-    "premium": picks[:6],
-    "vip": picks[:12]
-}
+    return {
+        "single": picks[:SINGLE_PICKS],
+        "premium": picks[:PREMIUM_PICKS],
+        "vip": picks[:VIP_PICKS]
+    }
 
 
 
@@ -255,8 +274,7 @@ def main():
         sys.exit(1)
 
 
-
-    picks = build_picks()
+    products = build_picks()
 
 
     output = {
@@ -264,13 +282,13 @@ def main():
         "generated_at":
             datetime.now(timezone.utc).isoformat(),
 
-      "products": picks,
+        "products":
+            products,
 
         "disclaimer":
             "Automatic football selections generated from market odds. Responsible betting only."
 
     }
-
 
 
     with open(
@@ -287,8 +305,13 @@ def main():
         )
 
 
+    total = sum(
+        len(v) for v in products.values()
+    )
+
+
     print(
-        f"[OK] {len(picks)} picks saved"
+        f"[OK] {total} picks saved"
     )
 
 
