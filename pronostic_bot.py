@@ -19,10 +19,12 @@ HEADERS = {
 
 OUTPUT_FILE = "pronostics.json"
 
-NB_PICKS = 3
+SINGLE_PICKS = 3
+PREMIUM_PICKS = 6
+VIP_PICKS = 12
 
-MIN_ODDS = 1.40
-MAX_ODDS = 3.00
+MIN_ODDS = 1.5
+MAX_ODDS = 2.5
 
 
 # ==========================
@@ -148,11 +150,24 @@ def extract_best_pick(odds_data):
 
 
     # choose safest odds (lowest inside range)
-    return sorted(
-        candidates,
-        key=lambda x: x["odds"]
-    )[0]
+best = sorted(
+    candidates,
+    key=lambda x: x["odds"]
+)[0]
 
+
+# confidence calculation
+if best["odds"] <= 1.70:
+    confidence = 85
+elif best["odds"] <= 2.00:
+    confidence = 78
+else:
+    confidence = 72
+
+
+best["confidence"] = confidence
+
+return best
 
 
 # ==========================
@@ -208,11 +223,19 @@ def build_picks():
         )
 
 
-        if len(picks) >= NB_PICKS:
-            break
+      # Sort by confidence first
+picks = sorted(
+    picks,
+    key=lambda x: x.get("confidence", 0),
+    reverse=True
+)
 
 
-    return picks
+return {
+    "single": picks[:3],
+    "premium": picks[:6],
+    "vip": picks[:12]
+}
 
 
 
@@ -241,8 +264,7 @@ def main():
         "generated_at":
             datetime.now(timezone.utc).isoformat(),
 
-        "matches":
-            picks,
+      "products": picks,
 
         "disclaimer":
             "Automatic football selections generated from market odds. Responsible betting only."
