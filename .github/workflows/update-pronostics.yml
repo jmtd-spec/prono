@@ -2,15 +2,16 @@ name: Mise à jour automatique des pronostics
 
 on:
   schedule:
-    # tous les jours à 08h00 UTC — ajuste selon tes besoins
-    - cron: "0 8 * * *"
-  workflow_dispatch: {}   # permet aussi de le lancer manuellement depuis GitHub
+    # tous les jours à 11h00 UTC
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
 
 jobs:
   update-picks:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,9 +33,8 @@ jobs:
           git config user.name "pronostic-bot"
           git config user.email "bot@users.noreply.github.com"
 
-          git pull --rebase origin main
-
           git add pronostics.json
+
           git diff --quiet --cached || git commit -m "Mise à jour automatique des pronostics"
 
           git push origin main
