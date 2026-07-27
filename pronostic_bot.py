@@ -19,6 +19,8 @@ HEADERS = {
 
 OUTPUT_FILE = "pronostics.json"
 
+
+# Odds range
 MIN_ODDS = 1.60
 MAX_ODDS = 2.20
 
@@ -45,11 +47,14 @@ def api_request(endpoint, params=None):
     )
 
     if response.status_code != 200:
+
         print(
             f"[ERROR] API {response.status_code}: {response.text}",
             file=sys.stderr
         )
+
         return []
+
 
     data = response.json()
 
@@ -65,16 +70,20 @@ def get_fixtures():
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
+
     fixtures = api_request(
         "fixtures",
         {
-            "date": today
+            "date": today,
+            "timezone": "UTC"
         }
     )
+
 
     print(
         f"[INFO] Fixtures found: {len(fixtures)}"
     )
+
 
     return fixtures
 
@@ -96,7 +105,7 @@ def get_fixture_odds(fixture_id):
 
 
 # ==========================
-# PICK ANALYSIS
+# ANALYSE ODDS
 # ==========================
 
 def analyse_odds(odds_data):
@@ -106,147 +115,199 @@ def analyse_odds(odds_data):
 
 
     try:
+
         bookmakers = odds_data[0]["bookmakers"]
 
     except Exception:
+
         return None
+
 
 
     candidates = []
 
 
     allowed_markets = [
-    "Goals Over/Under",
-    "Both Teams Score",
-    "Double Chance",
-    "Match Winner"
-]
+
+        "Goals Over/Under",
+
+        "Both Teams Score",
+
+        "Double Chance",
+
+        "Match Winner"
+
+    ]
 
 
-blocked_markets = [
-    "First Half",
-    "Second Half",
-    "Asian Handicap"
-]
+    blocked_markets = [
+
+        "First Half",
+
+        "Second Half",
+
+        "Asian Handicap"
+
+    ]
+
 
 
     for bookmaker in bookmakers:
 
+
         for bet in bookmaker.get("bets", []):
+
 
             market = bet.get("name", "")
 
 
-            # remove first half markets
-            if "First Half" in market:
+
+            if any(
+                blocked in market
+                for blocked in blocked_markets
+            ):
+
                 continue
 
 
-          if any(
-    x in market
-    for x in blocked_markets
-):
-    continue
 
+            if not any(
+                allowed in market
+                for allowed in allowed_markets
+            ):
 
-if not any(
-    x in market
-    for x in allowed_markets
-):
-    continue
+                continue
+
 
 
             for value in bet.get("values", []):
+
 
                 odd = value.get("odd")
 
 
                 if odd is None:
+
                     continue
 
 
                 try:
+
                     odd = float(odd)
 
                 except:
+
                     continue
+
 
 
                 if MIN_ODDS <= odd <= MAX_ODDS:
 
+
                     candidates.append(
+
                         {
+
                             "market": market,
+
                             "pick": value.get("value"),
+
                             "odds": odd,
+
                             "bookmaker": bookmaker.get("name")
+
                         }
+
                     )
 
 
+
     if not candidates:
+
         return None
 
 
-    # Prefer value around 1.80
+
+    # Select closest to 1.80
     best = sorted(
+
         candidates,
-        key=lambda x: abs(x["odds"] - 1.80)
+
+        key=lambda x: abs(
+            x["odds"] - 1.80
+        )
+
     )[0]
 
 
-    return best
 
-# ==========================
-# CONFIDENCE SCORE
+    return best
+    # ==========================
+# CONFIDENCE
 # ==========================
 
 def calculate_confidence(pick):
 
     odds = pick["odds"]
 
+
     if odds <= 1.70:
+
         return 82
 
+
     elif odds <= 1.90:
+
         return 78
 
+
     else:
+
         return 74
 
 
 
 # ==========================
-# BUILD DAILY PICKS
+# BUILD PICKS
 # ==========================
 
 def build_picks():
 
     fixtures = get_fixtures()
 
+
     all_picks = []
+
 
 
     for fixture in fixtures:
 
+
         fixture_id = fixture["fixture"]["id"]
 
+
         home = fixture["teams"]["home"]["name"]
+
         away = fixture["teams"]["away"]["name"]
 
 
-        odds = get_fixture_odds(
+
+        odds_data = get_fixture_odds(
             fixture_id
         )
 
 
+
         best = analyse_odds(
-            odds
+            odds_data
         )
 
 
+
         if not best:
+
             continue
+
 
 
         confidence = calculate_confidence(
@@ -254,31 +315,50 @@ def build_picks():
         )
 
 
+
         all_picks.append(
+
             {
+
                 "home": home,
+
                 "away": away,
+
                 "date": fixture["fixture"]["date"],
+
                 "pick": best["pick"],
+
                 "market": best["market"],
+
                 "bookmaker": best["bookmaker"],
+
                 "odds": f'{best["odds"]:.2f}',
+
                 "confidence": f"{confidence}%"
+
             }
+
         )
 
 
+
     # Highest confidence first
+
     all_picks = sorted(
+
         all_picks,
+
         key=lambda x: int(
             x["confidence"].replace("%","")
         ),
+
         reverse=True
+
     )
 
 
-    return {
+
+    products = {
 
         "single": all_picks[:SINGLE_LIMIT],
 
@@ -290,48 +370,74 @@ def build_picks():
 
 
 
+    return products
+
+
+
 # ==========================
 # SAVE JSON
 # ==========================
 
 def save_predictions(products):
 
+
     output = {
 
+
         "generated_at":
+
             datetime.now(timezone.utc).isoformat(),
+
 
 
         "products": products,
 
 
+
         "vip_membership": {
+
 
             "monthly_unlocks": 12,
 
+
             "picks_per_unlock": 3
+
 
         },
 
 
+
         "disclaimer":
+
             "Automatic football selections generated from market odds. Responsible betting only."
 
     }
 
 
+
     with open(
+
         OUTPUT_FILE,
+
         "w",
+
         encoding="utf-8"
+
     ) as file:
 
+
         json.dump(
+
             output,
+
             file,
+
             indent=2,
+
             ensure_ascii=False
+
         )
+
 
 
 # ==========================
@@ -340,32 +446,48 @@ def save_predictions(products):
 
 def main():
 
+
     if not API_KEY:
 
+
         print(
+
             "[ERROR] API_FOOTBALL_KEY missing",
+
             file=sys.stderr
+
         )
 
         sys.exit(1)
 
 
+
     products = build_picks()
 
 
+
     save_predictions(
+
         products
+
     )
+
 
 
     total = sum(
-        len(x)
-        for x in products.values()
+
+        len(value)
+
+        for value in products.values()
+
     )
 
 
+
     print(
+
         f"[OK] {total} picks generated"
+
     )
 
 
