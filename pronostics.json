@@ -1,5 +1,33 @@
 {
-  "generated_at": "2026-07-27T01:18:25.433091+00:00",
-  "matches": [],
-  "disclaimer": "Sélections générées automatiquement à partir des cotes du marché. Ne constitue pas un conseil financier ni une garantie de gain. Le pari comporte des risques, jouez de façon responsable."
+  "generated_at": "2026-07-27T01:26:43.530715+00:00",
+  "matches": [
+    {
+      "home": "Deportivo Garcilaso",
+      "away": "FC Cajamarca",
+      "date": "2026-07-27T00:00:00+00:00",
+      "pick": "Under 1.5",
+      "market": "Goals Over/Under First Half",
+      "bookmaker": "William Hill",
+      "odds": "1.40"
+    },
+    {
+      "home": "Barcelona SC",
+      "away": "LDU de Quito",
+      "date": "2026-07-27T00:15:00+00:00",
+      "pick": "Home +0.5",
+      "market": "Asian Handicap",
+      "bookmaker": "Bet365",
+      "odds": "1.40"
+    },
+    {
+      "home": "Concepción",
+      "away": "O'Higgins",
+      "date": "2026-07-27T00:30:00+00:00",
+      "pick": "Over 0.5",
+      "market": "Goals Over/Under First Half",
+      "bookmaker": "10Bet",
+      "odds": "1.40"
+    }
+  ],
+  "disclaimer": "Automatic football selections generated from market odds. Responsible betting only."
 }
