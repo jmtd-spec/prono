@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-07-27T20:43:29.213109+00:00",
+  "generated_at": "2026-07-28T12:53:40.624972+00:00",
   "products": {
     "single": [
       {
-        "home": "Banfield",
-        "away": "Sarmiento de Junin",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Over 1.75",
+        "home": "Defensa y Justicia",
+        "away": "Deportivo Riestra",
+        "date": "2026-07-29T20:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
+        "bookmaker": "BetAnything",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Internacional",
+        "away": "Flamengo",
+        "date": "2026-07-29T22:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "San Lorenzo",
-        "away": "Gimnasia Mendoza",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Over 1.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.86",
-        "confidence": "78%"
-      },
-      {
-        "home": "Argentinos Juniors",
-        "away": "Estudiantes de Río Cuarto",
-        "date": "2026-07-29T00:15:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.82",
+        "home": "Mirassol",
+        "away": "Remo",
+        "date": "2026-07-29T22:30:00Z",
+        "pick": "Mirassol",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Banfield",
-        "away": "Sarmiento de Junin",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Over 1.75",
+        "home": "Defensa y Justicia",
+        "away": "Deportivo Riestra",
+        "date": "2026-07-29T20:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
+        "bookmaker": "BetAnything",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Internacional",
+        "away": "Flamengo",
+        "date": "2026-07-29T22:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "San Lorenzo",
-        "away": "Gimnasia Mendoza",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Over 1.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.86",
+        "home": "Mirassol",
+        "away": "Remo",
+        "date": "2026-07-29T22:30:00Z",
+        "pick": "Mirassol",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Argentinos Juniors",
-        "away": "Estudiantes de Río Cuarto",
-        "date": "2026-07-29T00:15:00Z",
-        "pick": "Over 2.0",
+        "home": "Fluminense",
+        "away": "Bahia",
+        "date": "2026-07-30T00:30:00Z",
+        "pick": "Fluminense",
+        "market": "Match Winner",
+        "bookmaker": "Coolbet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Vitoria",
+        "away": "Palmeiras",
+        "date": "2026-07-30T00:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Banfield",
+        "away": "Sarmiento de Junin",
+        "date": "2026-07-28T22:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Rosario Central",
-        "away": "Racing Club",
-        "date": "2026-07-29T00:15:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.85",
-        "confidence": "78%"
-      },
-      {
-        "home": "Barracas Central",
-        "away": "Aldosivi Mar del Plata",
-        "date": "2026-07-29T17:30:00Z",
-        "pick": "Over 1.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.75",
-        "confidence": "78%"
-      },
-      {
-        "home": "Defensa y Justicia",
-        "away": "Deportivo Riestra",
-        "date": "2026-07-29T20:00:00Z",
-        "pick": "Over 1.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.84",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Banfield",
-        "away": "Sarmiento de Junin",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Over 1.75",
+        "home": "Defensa y Justicia",
+        "away": "Deportivo Riestra",
+        "date": "2026-07-29T20:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
+        "bookmaker": "BetAnything",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Internacional",
+        "away": "Flamengo",
+        "date": "2026-07-29T22:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "San Lorenzo",
-        "away": "Gimnasia Mendoza",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Over 1.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.86",
-        "confidence": "78%"
-      },
-      {
-        "home": "Argentinos Juniors",
-        "away": "Estudiantes de Río Cuarto",
-        "date": "2026-07-29T00:15:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.82",
+        "home": "Mirassol",
+        "away": "Remo",
+        "date": "2026-07-29T22:30:00Z",
+        "pick": "Mirassol",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
