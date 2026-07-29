@@ -1,17 +1,7 @@
 {
-  "generated_at": "2026-07-28T12:53:40.624972+00:00",
+  "generated_at": "2026-07-29T13:00:18.809119+00:00",
   "products": {
     "single": [
-      {
-        "home": "Defensa y Justicia",
-        "away": "Deportivo Riestra",
-        "date": "2026-07-29T20:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.70",
-        "confidence": "82%"
-      },
       {
         "home": "Internacional",
         "away": "Flamengo",
@@ -26,25 +16,25 @@
         "home": "Mirassol",
         "away": "Remo",
         "date": "2026-07-29T22:30:00Z",
-        "pick": "Mirassol",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Bahia",
+        "date": "2026-07-30T00:30:00Z",
+        "pick": "Fluminense",
+        "market": "Match Winner",
+        "bookmaker": "Coolbet",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Defensa y Justicia",
-        "away": "Deportivo Riestra",
-        "date": "2026-07-29T20:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.70",
-        "confidence": "82%"
-      },
-      {
         "home": "Internacional",
         "away": "Flamengo",
         "date": "2026-07-29T22:30:00Z",
@@ -58,9 +48,9 @@
         "home": "Mirassol",
         "away": "Remo",
         "date": "2026-07-29T22:30:00Z",
-        "pick": "Mirassol",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -78,34 +68,34 @@
         "home": "Vitoria",
         "away": "Palmeiras",
         "date": "2026-07-30T00:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.77",
+        "pick": "Palmeiras",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
-        "home": "Banfield",
-        "away": "Sarmiento de Junin",
-        "date": "2026-07-28T22:00:00Z",
-        "pick": "Under 2.0",
+        "home": "Corinthians",
+        "away": "Atletico Paranaense",
+        "date": "2026-07-30T22:30:00Z",
+        "pick": "Corinthians",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Coritiba",
+        "away": "Cruzeiro",
+        "date": "2026-07-31T00:30:00Z",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.82",
+        "odds": "1.76",
         "confidence": "78%"
       }
     ],
     "vip": [
-      {
-        "home": "Defensa y Justicia",
-        "away": "Deportivo Riestra",
-        "date": "2026-07-29T20:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.70",
-        "confidence": "82%"
-      },
       {
         "home": "Internacional",
         "away": "Flamengo",
@@ -120,9 +110,19 @@
         "home": "Mirassol",
         "away": "Remo",
         "date": "2026-07-29T22:30:00Z",
-        "pick": "Mirassol",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fluminense",
+        "away": "Bahia",
+        "date": "2026-07-30T00:30:00Z",
+        "pick": "Fluminense",
+        "market": "Match Winner",
+        "bookmaker": "Coolbet",
         "odds": "1.80",
         "confidence": "78%"
       }
