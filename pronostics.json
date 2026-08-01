@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T12:55:24.698221+00:00",
+  "generated_at": "2026-08-01T12:01:44.557780+00:00",
   "products": {
     "single": [
       {
@@ -8,7 +8,7 @@
         "date": "2026-08-01T13:00:00Z",
         "pick": "BK Hacken",
         "market": "Match Winner",
-        "bookmaker": "888sport",
+        "bookmaker": "Nordic Bet",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -16,8 +16,8 @@
         "home": "IFK Goteborg",
         "away": "Degerfors IF",
         "date": "2026-08-02T12:00:00Z",
-        "pick": "IFK Goteborg",
-        "market": "Match Winner",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
         "bookmaker": "Nordic Bet",
         "odds": "1.78",
         "confidence": "78%"
@@ -29,7 +29,7 @@
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Pinnacle",
-        "odds": "1.79",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
@@ -40,7 +40,7 @@
         "date": "2026-08-01T13:00:00Z",
         "pick": "BK Hacken",
         "market": "Match Winner",
-        "bookmaker": "888sport",
+        "bookmaker": "Nordic Bet",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -48,8 +48,8 @@
         "home": "IFK Goteborg",
         "away": "Degerfors IF",
         "date": "2026-08-02T12:00:00Z",
-        "pick": "IFK Goteborg",
-        "market": "Match Winner",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
         "bookmaker": "Nordic Bet",
         "odds": "1.78",
         "confidence": "78%"
@@ -61,27 +61,17 @@
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Pinnacle",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Vålerenga",
-        "away": "HamKam",
-        "date": "2026-07-31T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bodø/Glimt",
-        "away": "Lillestrom",
-        "date": "2026-07-31T19:00:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "AIK",
+        "away": "Örgryte IS",
+        "date": "2026-08-02T14:30:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.77",
         "confidence": "78%"
       },
       {
@@ -90,8 +80,18 @@
         "date": "2026-08-01T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.77",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "IK Start",
+        "away": "Viking FK",
+        "date": "2026-08-01T16:00:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
@@ -102,7 +102,7 @@
         "date": "2026-08-01T13:00:00Z",
         "pick": "BK Hacken",
         "market": "Match Winner",
-        "bookmaker": "888sport",
+        "bookmaker": "Nordic Bet",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -110,8 +110,8 @@
         "home": "IFK Goteborg",
         "away": "Degerfors IF",
         "date": "2026-08-02T12:00:00Z",
-        "pick": "IFK Goteborg",
-        "market": "Match Winner",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
         "bookmaker": "Nordic Bet",
         "odds": "1.78",
         "confidence": "78%"
@@ -123,7 +123,7 @@
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Pinnacle",
-        "odds": "1.79",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
