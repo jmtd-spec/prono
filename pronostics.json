@@ -1,93 +1,43 @@
 {
-  "generated_at": "2026-08-03T13:41:16.316997+00:00",
+  "generated_at": "2026-08-04T13:02:15.558440+00:00",
   "products": {
     "single": [
       {
-        "home": "Djurgardens IF",
-        "away": "Västerås SK",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Halmstads BK",
-        "away": "IK Sirius",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Over 3.0",
+        "home": "Boca Juniors",
+        "away": "Estudiantes",
+        "date": "2026-08-05T22:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "OB Odense BK",
-        "away": "SonderjyskE",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Under 3.0",
+        "home": "CA Tigre BA",
+        "away": "Belgrano de Cordoba",
+        "date": "2026-08-06T00:15:00Z",
+        "pick": "Under 1.75",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
+        "bookmaker": "BetAnything",
+        "odds": "1.83",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Djurgardens IF",
-        "away": "Västerås SK",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Halmstads BK",
-        "away": "IK Sirius",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Over 3.0",
+        "home": "Boca Juniors",
+        "away": "Estudiantes",
+        "date": "2026-08-05T22:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "OB Odense BK",
-        "away": "SonderjyskE",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Sarmiento de Junin",
-        "away": "Independiente Rivadavia",
-        "date": "2026-08-03T19:45:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Velez Sarsfield BA",
-        "away": "Independiente",
-        "date": "2026-08-03T22:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.85",
-        "confidence": "78%"
-      },
-      {
-        "home": "Platense",
-        "away": "Talleres",
-        "date": "2026-08-03T22:00:00Z",
+        "home": "CA Tigre BA",
+        "away": "Belgrano de Cordoba",
+        "date": "2026-08-06T00:15:00Z",
         "pick": "Under 1.75",
         "market": "Goals Over/Under",
         "bookmaker": "BetAnything",
@@ -97,33 +47,23 @@
     ],
     "vip": [
       {
-        "home": "Djurgardens IF",
-        "away": "Västerås SK",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Halmstads BK",
-        "away": "IK Sirius",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Over 3.0",
+        "home": "Boca Juniors",
+        "away": "Estudiantes",
+        "date": "2026-08-05T22:00:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "OB Odense BK",
-        "away": "SonderjyskE",
-        "date": "2026-08-03T17:00:00Z",
-        "pick": "Under 3.0",
+        "home": "CA Tigre BA",
+        "away": "Belgrano de Cordoba",
+        "date": "2026-08-06T00:15:00Z",
+        "pick": "Under 1.75",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
+        "bookmaker": "BetAnything",
+        "odds": "1.83",
         "confidence": "78%"
       }
     ]
