@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T13:02:15.558440+00:00",
+  "generated_at": "2026-08-05T12:52:03.843296+00:00",
   "products": {
     "single": [
       {
@@ -8,18 +8,28 @@
         "date": "2026-08-05T22:00:00Z",
         "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
         "home": "CA Tigre BA",
         "away": "Belgrano de Cordoba",
         "date": "2026-08-06T00:15:00Z",
-        "pick": "Under 1.75",
+        "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.83",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Union Santa Fe",
+        "away": "Lanus",
+        "date": "2026-08-06T22:00:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
         "confidence": "78%"
       }
     ],
@@ -30,18 +40,58 @@
         "date": "2026-08-05T22:00:00Z",
         "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
         "home": "CA Tigre BA",
         "away": "Belgrano de Cordoba",
         "date": "2026-08-06T00:15:00Z",
-        "pick": "Under 1.75",
+        "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.83",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Union Santa Fe",
+        "away": "Lanus",
+        "date": "2026-08-06T22:00:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Yokohama F Marinos",
+        "away": "Kashima Antlers",
+        "date": "2026-08-07T10:25:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Gamba Osaka",
+        "away": "Urawa Red Diamonds",
+        "date": "2026-08-07T10:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Beijing FC",
+        "away": "Shenzhen Peng City FC",
+        "date": "2026-08-07T11:35:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.82",
         "confidence": "78%"
       }
     ],
@@ -52,18 +102,28 @@
         "date": "2026-08-05T22:00:00Z",
         "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
         "home": "CA Tigre BA",
         "away": "Belgrano de Cordoba",
         "date": "2026-08-06T00:15:00Z",
-        "pick": "Under 1.75",
+        "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.83",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Union Santa Fe",
+        "away": "Lanus",
+        "date": "2026-08-06T22:00:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
         "confidence": "78%"
       }
     ]
