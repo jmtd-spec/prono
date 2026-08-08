@@ -1,67 +1,25 @@
 {
-  "generated_at": "2026-08-07T11:44:37.582629+00:00",
+  "generated_at": "2026-08-08T11:27:55.620614+00:00",
   "products": {
     "single": [
       {
-        "home": "SC Cambuur",
-        "away": "Excelsior",
-        "date": "2026-08-07T18:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
         "home": "NEC Nijmegen",
         "away": "SC Telstar",
         "date": "2026-08-08T14:30:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
-        "odds": "1.77",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
         "home": "Go Ahead Eagles",
         "away": "Willem II",
         "date": "2026-08-08T16:45:00Z",
-        "pick": "Go Ahead Eagles",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.79",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "SC Cambuur",
-        "away": "Excelsior",
-        "date": "2026-08-07T18:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "NEC Nijmegen",
-        "away": "SC Telstar",
-        "date": "2026-08-08T14:30:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.77",
-        "confidence": "78%"
-      },
-      {
-        "home": "Go Ahead Eagles",
-        "away": "Willem II",
-        "date": "2026-08-08T16:45:00Z",
-        "pick": "Go Ahead Eagles",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.79",
+        "bookmaker": "Coolbet",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
@@ -71,41 +29,11 @@
         "pick": "Under 4.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetAnything",
-        "odds": "1.85",
-        "confidence": "78%"
-      },
-      {
-        "home": "AZ Alkmaar",
-        "away": "ADO Den Haag",
-        "date": "2026-08-08T19:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Sparta Rotterdam",
-        "away": "Feyenoord",
-        "date": "2026-08-09T10:15:00Z",
-        "pick": "Feyenoord",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.81",
+        "odds": "1.84",
         "confidence": "78%"
       }
     ],
-    "vip": [
-      {
-        "home": "SC Cambuur",
-        "away": "Excelsior",
-        "date": "2026-08-07T18:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
+    "premium": [
       {
         "home": "NEC Nijmegen",
         "away": "SC Telstar",
@@ -113,17 +41,89 @@
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
-        "odds": "1.77",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
         "home": "Go Ahead Eagles",
         "away": "Willem II",
         "date": "2026-08-08T16:45:00Z",
-        "pick": "Go Ahead Eagles",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.79",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "PSV Eindhoven",
+        "away": "Fortuna Sittard",
+        "date": "2026-08-08T18:00:00Z",
+        "pick": "Under 4.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.84",
+        "confidence": "78%"
+      },
+      {
+        "home": "AZ Alkmaar",
+        "away": "ADO Den Haag",
+        "date": "2026-08-08T19:00:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.84",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sparta Rotterdam",
+        "away": "Feyenoord",
+        "date": "2026-08-09T10:15:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "FC Zwolle",
+        "away": "Ajax",
+        "date": "2026-08-09T12:30:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.73",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "NEC Nijmegen",
+        "away": "SC Telstar",
+        "date": "2026-08-08T14:30:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Go Ahead Eagles",
+        "away": "Willem II",
+        "date": "2026-08-08T16:45:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "PSV Eindhoven",
+        "away": "Fortuna Sittard",
+        "date": "2026-08-08T18:00:00Z",
+        "pick": "Under 4.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.84",
         "confidence": "78%"
       }
     ]
