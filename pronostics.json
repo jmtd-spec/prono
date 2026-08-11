@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-10T11:46:54.360927+00:00",
+  "generated_at": "2026-08-11T11:43:00.097409+00:00",
   "products": {
     "single": [
       {
-        "home": "Santa Clara",
-        "away": "Nacional",
-        "date": "2026-08-10T19:15:00Z",
-        "pick": "Santa Clara",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (NL)",
+        "home": "Talleres",
+        "away": "Lanus",
+        "date": "2026-08-12T00:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fluminense-RJ",
+        "away": "Independiente Rivadavia",
+        "date": "2026-08-11T22:00:00Z",
+        "pick": "Fluminense-RJ",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Västerås SK",
-        "away": "Djurgardens IF",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Djurgardens IF",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "IK Sirius",
-        "away": "IF Brommapojkarna",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Under 3.5",
+        "home": "Deportes Tolima",
+        "away": "Independiente del Valle",
+        "date": "2026-08-12T00:30:00Z",
+        "pick": "Over 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.80",
@@ -35,92 +35,92 @@
     ],
     "premium": [
       {
-        "home": "Santa Clara",
-        "away": "Nacional",
-        "date": "2026-08-10T19:15:00Z",
-        "pick": "Santa Clara",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (NL)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Västerås SK",
-        "away": "Djurgardens IF",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Djurgardens IF",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "IK Sirius",
-        "away": "IF Brommapojkarna",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Silkeborg IF",
-        "away": "OB Odense BK",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Banfield",
-        "away": "Belgrano de Cordoba",
-        "date": "2026-08-10T22:00:00Z",
+        "home": "Talleres",
+        "away": "Lanus",
+        "date": "2026-08-12T00:00:00Z",
         "pick": "Under 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "Pinnacle",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fluminense-RJ",
+        "away": "Independiente Rivadavia",
+        "date": "2026-08-11T22:00:00Z",
+        "pick": "Fluminense-RJ",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Union Santa Fe",
-        "away": "Central Córdoba",
-        "date": "2026-08-11T00:15:00Z",
-        "pick": "Under 2.5",
+        "home": "Deportes Tolima",
+        "away": "Independiente del Valle",
+        "date": "2026-08-12T00:30:00Z",
+        "pick": "Over 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Estudiantes La Plata",
+        "away": "Universidad Católica (CHI)",
+        "date": "2026-08-12T00:30:00Z",
+        "pick": "Estudiantes La Plata",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
         "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Palmeiras-SP",
+        "away": "Cerro Porteño",
+        "date": "2026-08-12T22:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Platense",
+        "away": "Coquimbo Unido",
+        "date": "2026-08-12T22:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Santa Clara",
-        "away": "Nacional",
-        "date": "2026-08-10T19:15:00Z",
-        "pick": "Santa Clara",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (NL)",
+        "home": "Talleres",
+        "away": "Lanus",
+        "date": "2026-08-12T00:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fluminense-RJ",
+        "away": "Independiente Rivadavia",
+        "date": "2026-08-11T22:00:00Z",
+        "pick": "Fluminense-RJ",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Västerås SK",
-        "away": "Djurgardens IF",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Djurgardens IF",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "IK Sirius",
-        "away": "IF Brommapojkarna",
-        "date": "2026-08-10T17:00:00Z",
-        "pick": "Under 3.5",
+        "home": "Deportes Tolima",
+        "away": "Independiente del Valle",
+        "date": "2026-08-12T00:30:00Z",
+        "pick": "Over 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.80",
