@@ -1,87 +1,15 @@
 {
-  "generated_at": "2026-08-11T11:43:00.097409+00:00",
+  "generated_at": "2026-08-12T11:45:38.500326+00:00",
   "products": {
     "single": [
-      {
-        "home": "Talleres",
-        "away": "Lanus",
-        "date": "2026-08-12T00:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Fluminense-RJ",
-        "away": "Independiente Rivadavia",
-        "date": "2026-08-11T22:00:00Z",
-        "pick": "Fluminense-RJ",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Deportes Tolima",
-        "away": "Independiente del Valle",
-        "date": "2026-08-12T00:30:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Talleres",
-        "away": "Lanus",
-        "date": "2026-08-12T00:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Fluminense-RJ",
-        "away": "Independiente Rivadavia",
-        "date": "2026-08-11T22:00:00Z",
-        "pick": "Fluminense-RJ",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Deportes Tolima",
-        "away": "Independiente del Valle",
-        "date": "2026-08-12T00:30:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Estudiantes La Plata",
-        "away": "Universidad Católica (CHI)",
-        "date": "2026-08-12T00:30:00Z",
-        "pick": "Estudiantes La Plata",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.77",
-        "confidence": "78%"
-      },
       {
         "home": "Palmeiras-SP",
         "away": "Cerro Porteño",
         "date": "2026-08-12T22:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
+        "bookmaker": "Coolbet",
+        "odds": "1.82",
         "confidence": "78%"
       },
       {
@@ -93,37 +21,109 @@
         "bookmaker": "Coolbet",
         "odds": "1.79",
         "confidence": "78%"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Flamengo-RJ",
+        "date": "2026-08-13T00:30:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
+        "confidence": "78%"
       }
     ],
-    "vip": [
+    "premium": [
       {
-        "home": "Talleres",
-        "away": "Lanus",
-        "date": "2026-08-12T00:00:00Z",
-        "pick": "Under 2.0",
+        "home": "Palmeiras-SP",
+        "away": "Cerro Porteño",
+        "date": "2026-08-12T22:00:00Z",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
+        "bookmaker": "Coolbet",
         "odds": "1.82",
         "confidence": "78%"
       },
       {
-        "home": "Fluminense-RJ",
-        "away": "Independiente Rivadavia",
-        "date": "2026-08-11T22:00:00Z",
-        "pick": "Fluminense-RJ",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.80",
+        "home": "Platense",
+        "away": "Coquimbo Unido",
+        "date": "2026-08-12T22:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "Deportes Tolima",
-        "away": "Independiente del Valle",
-        "date": "2026-08-12T00:30:00Z",
+        "home": "Cruzeiro",
+        "away": "Flamengo-RJ",
+        "date": "2026-08-13T00:30:00Z",
         "pick": "Over 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Mirassol",
+        "away": "LDU Quito",
+        "date": "2026-08-13T22:00:00Z",
+        "pick": "Mirassol",
+        "market": "Match Winner",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Rosario Central",
+        "away": "Corinthians-SP",
+        "date": "2026-08-14T00:30:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Tokyo Verdy",
+        "away": "Kashiwa Reysol",
+        "date": "2026-08-14T10:00:00Z",
+        "pick": "Kashiwa Reysol",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
         "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Palmeiras-SP",
+        "away": "Cerro Porteño",
+        "date": "2026-08-12T22:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Platense",
+        "away": "Coquimbo Unido",
+        "date": "2026-08-12T22:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Flamengo-RJ",
+        "date": "2026-08-13T00:30:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
         "confidence": "78%"
       }
     ]
