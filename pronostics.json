@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-14T11:42:34.814294+00:00",
+  "generated_at": "2026-08-15T11:19:48.326675+00:00",
   "products": {
     "single": [
       {
-        "home": "Newells Old Boys",
-        "away": "Deportivo Riestra",
-        "date": "2026-08-15T22:00:00Z",
+        "home": "Aldosivi Mar del Plata",
+        "away": "CA Tigre BA",
+        "date": "2026-08-15T17:30:00Z",
         "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.70",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.69",
         "confidence": "82%"
       },
       {
-        "home": "Wolverhampton Wanderers",
-        "away": "Blackburn Rovers",
-        "date": "2026-08-14T19:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Sarmiento de Junin",
+        "away": "Atlético Huracán",
+        "date": "2026-08-16T18:00:00Z",
+        "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.79",
-        "confidence": "78%"
+        "bookmaker": "1xBet",
+        "odds": "1.70",
+        "confidence": "82%"
       },
       {
         "home": "Bolton Wanderers",
@@ -28,31 +28,31 @@
         "date": "2026-08-15T11:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "1xBet",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Newells Old Boys",
-        "away": "Deportivo Riestra",
-        "date": "2026-08-15T22:00:00Z",
+        "home": "Aldosivi Mar del Plata",
+        "away": "CA Tigre BA",
+        "date": "2026-08-15T17:30:00Z",
         "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.70",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.69",
         "confidence": "82%"
       },
       {
-        "home": "Wolverhampton Wanderers",
-        "away": "Blackburn Rovers",
-        "date": "2026-08-14T19:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Sarmiento de Junin",
+        "away": "Atlético Huracán",
+        "date": "2026-08-16T18:00:00Z",
+        "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.79",
-        "confidence": "78%"
+        "bookmaker": "1xBet",
+        "odds": "1.70",
+        "confidence": "82%"
       },
       {
         "home": "Bolton Wanderers",
@@ -60,7 +60,7 @@
         "date": "2026-08-15T11:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "1xBet",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -71,7 +71,7 @@
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "LeoVegas (SE)",
-        "odds": "1.81",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -88,7 +88,7 @@
         "home": "Middlesbrough",
         "away": "Lincoln City",
         "date": "2026-08-15T14:00:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.76",
@@ -97,24 +97,24 @@
     ],
     "vip": [
       {
-        "home": "Newells Old Boys",
-        "away": "Deportivo Riestra",
-        "date": "2026-08-15T22:00:00Z",
+        "home": "Aldosivi Mar del Plata",
+        "away": "CA Tigre BA",
+        "date": "2026-08-15T17:30:00Z",
         "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.70",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.69",
         "confidence": "82%"
       },
       {
-        "home": "Wolverhampton Wanderers",
-        "away": "Blackburn Rovers",
-        "date": "2026-08-14T19:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Sarmiento de Junin",
+        "away": "Atlético Huracán",
+        "date": "2026-08-16T18:00:00Z",
+        "pick": "Over 1.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.79",
-        "confidence": "78%"
+        "bookmaker": "1xBet",
+        "odds": "1.70",
+        "confidence": "82%"
       },
       {
         "home": "Bolton Wanderers",
@@ -122,7 +122,7 @@
         "date": "2026-08-15T11:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "1xBet",
         "odds": "1.80",
         "confidence": "78%"
       }
