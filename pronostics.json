@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-08-18T11:24:41.533433+00:00",
+  "generated_at": "2026-08-19T11:24:19.906140+00:00",
   "products": {
     "single": [
       {
         "home": "Atlético Madrid",
         "away": "Málaga",
         "date": "2026-08-19T19:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
-        "odds": "1.79",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Rayo Vallecano",
+        "away": "Alavés",
+        "date": "2026-08-20T19:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
         "home": "Columbus Crew SC",
         "away": "CF Montreal",
         "date": "2026-08-19T23:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.86",
-        "confidence": "78%"
-      },
-      {
-        "home": "Toronto FC",
-        "away": "Charlotte FC",
-        "date": "2026-08-19T23:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
+        "pick": "Columbus Crew SC",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
@@ -38,40 +38,50 @@
         "home": "Atlético Madrid",
         "away": "Málaga",
         "date": "2026-08-19T19:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
-        "odds": "1.79",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Rayo Vallecano",
+        "away": "Alavés",
+        "date": "2026-08-20T19:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
         "home": "Columbus Crew SC",
         "away": "CF Montreal",
         "date": "2026-08-19T23:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.86",
+        "pick": "Columbus Crew SC",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
         "home": "Toronto FC",
         "away": "Charlotte FC",
         "date": "2026-08-19T23:30:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 2.75",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
+        "bookmaker": "Pinnacle",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
         "home": "Orlando City SC",
         "away": "Chicago Fire",
         "date": "2026-08-19T23:30:00Z",
-        "pick": "Over 3.5",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "PMU (FR)",
-        "odds": "1.81",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.82",
         "confidence": "78%"
       },
       {
@@ -80,18 +90,8 @@
         "date": "2026-08-19T23:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "FC Cincinnati",
-        "away": "New York City FC",
-        "date": "2026-08-19T23:30:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.77",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
@@ -100,30 +100,30 @@
         "home": "Atlético Madrid",
         "away": "Málaga",
         "date": "2026-08-19T19:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
-        "odds": "1.79",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Rayo Vallecano",
+        "away": "Alavés",
+        "date": "2026-08-20T19:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
         "home": "Columbus Crew SC",
         "away": "CF Montreal",
         "date": "2026-08-19T23:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.86",
-        "confidence": "78%"
-      },
-      {
-        "home": "Toronto FC",
-        "away": "Charlotte FC",
-        "date": "2026-08-19T23:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
+        "pick": "Columbus Crew SC",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ]
