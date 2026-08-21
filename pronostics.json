@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T11:25:29.341932+00:00",
+  "generated_at": "2026-08-21T11:25:34.514379+00:00",
   "products": {
     "single": [
       {
@@ -8,28 +8,28 @@
         "date": "2026-08-21T19:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.89",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
-        "home": "Rayo Vallecano",
-        "away": "Alavés",
-        "date": "2026-08-20T19:00:00Z",
-        "pick": "Over 2.0",
+        "home": "Hull City",
+        "away": "Manchester United",
+        "date": "2026-08-22T11:30:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Real Betis",
-        "away": "Real Sociedad",
-        "date": "2026-08-21T19:00:00Z",
+        "home": "Everton",
+        "away": "Crystal Palace",
+        "date": "2026-08-22T14:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.81",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
@@ -40,58 +40,58 @@
         "date": "2026-08-21T19:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.89",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
-        "home": "Rayo Vallecano",
-        "away": "Alavés",
-        "date": "2026-08-20T19:00:00Z",
-        "pick": "Over 2.0",
+        "home": "Hull City",
+        "away": "Manchester United",
+        "date": "2026-08-22T11:30:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Real Betis",
-        "away": "Real Sociedad",
-        "date": "2026-08-21T19:00:00Z",
+        "home": "Everton",
+        "away": "Crystal Palace",
+        "date": "2026-08-22T14:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Marseille",
-        "away": "Strasbourg",
-        "date": "2026-08-21T18:45:00Z",
-        "pick": "Marseille",
-        "market": "Match Winner",
-        "bookmaker": "Betfair",
+        "bookmaker": "PMU (FR)",
         "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "IK Sirius",
-        "away": "BK Hacken",
-        "date": "2026-08-21T17:00:00Z",
-        "pick": "IK Sirius",
-        "market": "Match Winner",
-        "bookmaker": "Betclic (FR)",
+        "home": "Ipswich Town",
+        "away": "Sunderland",
+        "date": "2026-08-22T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Tigres",
-        "away": "Atlante FC",
-        "date": "2026-08-22T01:00:00Z",
-        "pick": "Over 2.75",
+        "home": "Nottingham Forest",
+        "away": "Leeds United",
+        "date": "2026-08-22T14:00:00Z",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.88",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brentford",
+        "away": "Tottenham Hotspur",
+        "date": "2026-08-22T16:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.76",
         "confidence": "78%"
       }
     ],
@@ -102,28 +102,28 @@
         "date": "2026-08-21T19:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.89",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
-        "home": "Rayo Vallecano",
-        "away": "Alavés",
-        "date": "2026-08-20T19:00:00Z",
-        "pick": "Over 2.0",
+        "home": "Hull City",
+        "away": "Manchester United",
+        "date": "2026-08-22T11:30:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Real Betis",
-        "away": "Real Sociedad",
-        "date": "2026-08-21T19:00:00Z",
+        "home": "Everton",
+        "away": "Crystal Palace",
+        "date": "2026-08-22T14:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.81",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ]
