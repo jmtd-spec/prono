@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-21T11:25:34.514379+00:00",
+  "generated_at": "2026-08-22T11:20:22.261250+00:00",
   "products": {
     "single": [
       {
-        "home": "Arsenal",
-        "away": "Coventry City",
-        "date": "2026-08-21T19:00:00Z",
+        "home": "Hull City",
+        "away": "Manchester United",
+        "date": "2026-08-22T11:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "MyBookie.ag",
@@ -13,52 +13,10 @@
         "confidence": "78%"
       },
       {
-        "home": "Hull City",
-        "away": "Manchester United",
-        "date": "2026-08-22T11:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
         "home": "Everton",
         "away": "Crystal Palace",
         "date": "2026-08-22T14:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "PMU (FR)",
-        "odds": "1.79",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Arsenal",
-        "away": "Coventry City",
-        "date": "2026-08-21T19:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.85",
-        "confidence": "78%"
-      },
-      {
-        "home": "Hull City",
-        "away": "Manchester United",
-        "date": "2026-08-22T11:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Everton",
-        "away": "Crystal Palace",
-        "date": "2026-08-22T14:00:00Z",
-        "pick": "Under 2.5",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "PMU (FR)",
         "odds": "1.79",
@@ -70,8 +28,40 @@
         "date": "2026-08-22T14:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Hull City",
+        "away": "Manchester United",
+        "date": "2026-08-22T11:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Everton",
+        "away": "Crystal Palace",
+        "date": "2026-08-22T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Ipswich Town",
+        "away": "Sunderland",
+        "date": "2026-08-22T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -80,26 +70,36 @@
         "date": "2026-08-22T14:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
         "home": "Brentford",
         "away": "Tottenham Hotspur",
         "date": "2026-08-22T16:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brighton and Hove Albion",
+        "away": "Aston Villa",
+        "date": "2026-08-23T13:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "1xBet",
-        "odds": "1.76",
+        "odds": "1.84",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Arsenal",
-        "away": "Coventry City",
-        "date": "2026-08-21T19:00:00Z",
+        "home": "Hull City",
+        "away": "Manchester United",
+        "date": "2026-08-22T11:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "MyBookie.ag",
@@ -107,22 +107,22 @@
         "confidence": "78%"
       },
       {
-        "home": "Hull City",
-        "away": "Manchester United",
-        "date": "2026-08-22T11:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
         "home": "Everton",
         "away": "Crystal Palace",
         "date": "2026-08-22T14:00:00Z",
-        "pick": "Under 2.5",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "PMU (FR)",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Ipswich Town",
+        "away": "Sunderland",
+        "date": "2026-08-22T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
         "odds": "1.79",
         "confidence": "78%"
       }
