@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-08-23T11:20:07.114826+00:00",
+  "generated_at": "2026-08-24T11:27:44.425593+00:00",
   "products": {
     "single": [
       {
-        "home": "Brighton and Hove Albion",
-        "away": "Aston Villa",
-        "date": "2026-08-23T13:00:00Z",
+        "home": "Fulham",
+        "away": "Chelsea",
+        "date": "2026-08-24T19:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "LeoVegas (SE)",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "Bournemouth",
-        "date": "2026-08-23T13:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Newcastle United",
-        "away": "Liverpool",
-        "date": "2026-08-23T15:30:00Z",
-        "pick": "Over 3.0",
+        "home": "CA Osasuna",
+        "away": "Levante",
+        "date": "2026-08-24T17:30:00Z",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.78",
+        "bookmaker": "Coolbet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Málaga",
+        "away": "Deportivo La Coruña",
+        "date": "2026-08-24T19:30:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.76",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Brighton and Hove Albion",
-        "away": "Aston Villa",
-        "date": "2026-08-23T13:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "LeoVegas (SE)",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "Bournemouth",
-        "date": "2026-08-23T13:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Newcastle United",
-        "away": "Liverpool",
-        "date": "2026-08-23T15:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
         "home": "Fulham",
         "away": "Chelsea",
         "date": "2026-08-24T19:00:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "West Bromwich Albion",
-        "away": "Burnley",
-        "date": "2026-08-23T11:00:00Z",
-        "pick": "Burnley",
-        "market": "Match Winner",
+        "home": "CA Osasuna",
+        "away": "Levante",
+        "date": "2026-08-24T17:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Málaga",
+        "away": "Deportivo La Coruña",
+        "date": "2026-08-24T19:30:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.76",
+        "confidence": "78%"
+      },
+      {
+        "home": "Valencia",
+        "away": "Real Betis",
+        "date": "2026-08-25T19:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Bologna",
+        "away": "Lazio",
+        "date": "2026-08-24T16:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
         "odds": "1.73",
         "confidence": "78%"
       },
       {
-        "home": "Atlético Madrid",
-        "away": "Villarreal",
-        "date": "2026-08-23T15:00:00Z",
-        "pick": "Atlético Madrid",
-        "market": "Match Winner",
-        "bookmaker": "Betclic (FR)",
-        "odds": "1.80",
+        "home": "AS Roma",
+        "away": "Fiorentina",
+        "date": "2026-08-24T18:45:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.82",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Brighton and Hove Albion",
-        "away": "Aston Villa",
-        "date": "2026-08-23T13:00:00Z",
+        "home": "Fulham",
+        "away": "Chelsea",
+        "date": "2026-08-24T19:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "LeoVegas (SE)",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "Bournemouth",
-        "date": "2026-08-23T13:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Newcastle United",
-        "away": "Liverpool",
-        "date": "2026-08-23T15:30:00Z",
-        "pick": "Over 3.0",
+        "home": "CA Osasuna",
+        "away": "Levante",
+        "date": "2026-08-24T17:30:00Z",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.78",
+        "bookmaker": "Coolbet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Málaga",
+        "away": "Deportivo La Coruña",
+        "date": "2026-08-24T19:30:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.76",
         "confidence": "78%"
       }
     ]
