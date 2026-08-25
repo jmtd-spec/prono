@@ -1,68 +1,16 @@
 {
-  "generated_at": "2026-08-24T11:27:44.425593+00:00",
+  "generated_at": "2026-08-25T11:26:46.767872+00:00",
   "products": {
     "single": [
       {
-        "home": "Fulham",
-        "away": "Chelsea",
-        "date": "2026-08-24T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "CA Osasuna",
-        "away": "Levante",
-        "date": "2026-08-24T17:30:00Z",
+        "home": "Independiente del Valle",
+        "away": "Deportes Tolima",
+        "date": "2026-08-26T00:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Málaga",
-        "away": "Deportivo La Coruña",
-        "date": "2026-08-24T19:30:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Fulham",
-        "away": "Chelsea",
-        "date": "2026-08-24T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "CA Osasuna",
-        "away": "Levante",
-        "date": "2026-08-24T17:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Málaga",
-        "away": "Deportivo La Coruña",
-        "date": "2026-08-24T19:30:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
-        "confidence": "78%"
+        "bookmaker": "1xBet",
+        "odds": "1.70",
+        "confidence": "82%"
       },
       {
         "home": "Valencia",
@@ -70,60 +18,112 @@
         "date": "2026-08-25T19:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "1xBet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Real Madrid",
+        "away": "Real Sociedad",
+        "date": "2026-08-26T19:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Independiente del Valle",
+        "away": "Deportes Tolima",
+        "date": "2026-08-26T00:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Valencia",
+        "away": "Real Betis",
+        "date": "2026-08-25T19:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Real Madrid",
+        "away": "Real Sociedad",
+        "date": "2026-08-26T19:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Bologna",
-        "away": "Lazio",
-        "date": "2026-08-24T16:30:00Z",
+        "home": "Daejeon Citizen",
+        "away": "Ulsan Hyundai FC",
+        "date": "2026-08-26T10:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.73",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "AS Roma",
-        "away": "Fiorentina",
-        "date": "2026-08-24T18:45:00Z",
+        "home": "FC Anyang",
+        "away": "Incheon United",
+        "date": "2026-08-26T10:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (NL)",
-        "odds": "1.82",
+        "bookmaker": "Matchbook",
+        "odds": "1.72",
+        "confidence": "78%"
+      },
+      {
+        "home": "Gangwon FC",
+        "away": "Gwangju FC",
+        "date": "2026-08-26T10:30:00Z",
+        "pick": "Over 2.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.81",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Fulham",
-        "away": "Chelsea",
-        "date": "2026-08-24T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "CA Osasuna",
-        "away": "Levante",
-        "date": "2026-08-24T17:30:00Z",
+        "home": "Independiente del Valle",
+        "away": "Deportes Tolima",
+        "date": "2026-08-26T00:30:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
+        "bookmaker": "1xBet",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Valencia",
+        "away": "Real Betis",
+        "date": "2026-08-25T19:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
         "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "Málaga",
-        "away": "Deportivo La Coruña",
-        "date": "2026-08-24T19:30:00Z",
-        "pick": "Over 2.0",
+        "home": "Real Madrid",
+        "away": "Real Sociedad",
+        "date": "2026-08-26T19:00:00Z",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
+        "bookmaker": "1xBet",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
