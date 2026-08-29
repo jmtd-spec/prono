@@ -1,69 +1,7 @@
 {
-  "generated_at": "2026-08-28T21:19:00.392705+00:00",
+  "generated_at": "2026-08-29T15:30:07.615679+00:00",
   "products": {
     "single": [
-      {
-        "home": "Liverpool",
-        "away": "Nottingham Forest",
-        "date": "2026-08-29T11:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bournemouth",
-        "away": "Everton",
-        "date": "2026-08-29T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Coventry City",
-        "away": "Hull City",
-        "date": "2026-08-29T14:00:00Z",
-        "pick": "Coventry City",
-        "market": "Match Winner",
-        "bookmaker": "Everygame",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Liverpool",
-        "away": "Nottingham Forest",
-        "date": "2026-08-29T11:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bournemouth",
-        "away": "Everton",
-        "date": "2026-08-29T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Coventry City",
-        "away": "Hull City",
-        "date": "2026-08-29T14:00:00Z",
-        "pick": "Coventry City",
-        "market": "Match Winner",
-        "bookmaker": "Everygame",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
       {
         "home": "Tottenham Hotspur",
         "away": "Newcastle United",
@@ -71,7 +9,7 @@
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "MyBookie.ag",
-        "odds": "1.80",
+        "odds": "1.77",
         "confidence": "78%"
       },
       {
@@ -90,39 +28,101 @@
         "date": "2026-08-30T13:00:00Z",
         "pick": "Chelsea",
         "market": "Match Winner",
-        "bookmaker": "Nordic Bet",
+        "bookmaker": "Winamax (DE)",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Tottenham Hotspur",
+        "away": "Newcastle United",
+        "date": "2026-08-29T16:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Leeds United",
+        "away": "Brentford",
+        "date": "2026-08-30T13:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Brighton and Hove Albion",
+        "date": "2026-08-30T13:00:00Z",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (DE)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sunderland",
+        "away": "Fulham",
+        "date": "2026-08-30T13:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester United",
+        "away": "Ipswich Town",
+        "date": "2026-08-30T15:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Levante",
+        "away": "Real Betis",
+        "date": "2026-08-29T15:00:00Z",
+        "pick": "Levante",
+        "market": "Match Winner",
+        "bookmaker": "Matchbook",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Liverpool",
-        "away": "Nottingham Forest",
-        "date": "2026-08-29T11:30:00Z",
+        "home": "Tottenham Hotspur",
+        "away": "Newcastle United",
+        "date": "2026-08-29T16:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "MyBookie.ag",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Leeds United",
+        "away": "Brentford",
+        "date": "2026-08-30T13:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
         "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "Bournemouth",
-        "away": "Everton",
-        "date": "2026-08-29T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Coventry City",
-        "away": "Hull City",
-        "date": "2026-08-29T14:00:00Z",
-        "pick": "Coventry City",
+        "home": "Chelsea",
+        "away": "Brighton and Hove Albion",
+        "date": "2026-08-30T13:00:00Z",
+        "pick": "Chelsea",
         "market": "Match Winner",
-        "bookmaker": "Everygame",
+        "bookmaker": "Winamax (DE)",
         "odds": "1.80",
         "confidence": "78%"
       }
