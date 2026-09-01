@@ -1,9 +1,132 @@
 {
-  "generated_at": "2026-08-31T17:55:07.016986+00:00",
+  "generated_at": "2026-09-01T15:23:24.404785+00:00",
   "products": {
-    "single": [],
-    "premium": [],
-    "vip": []
+    "single": [
+      {
+        "home": "Lincoln City",
+        "away": "Blackburn Rovers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sheffield United",
+        "away": "Bolton Wanderers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "GTbets",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Preston North End",
+        "away": "Bristol City",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Lincoln City",
+        "away": "Blackburn Rovers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sheffield United",
+        "away": "Bolton Wanderers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "GTbets",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Preston North End",
+        "away": "Bristol City",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Portsmouth",
+        "away": "Derby County",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Swansea City",
+        "away": "Watford",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "West Ham United",
+        "away": "Wolverhampton Wanderers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.83",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Lincoln City",
+        "away": "Blackburn Rovers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sheffield United",
+        "away": "Bolton Wanderers",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "GTbets",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Preston North End",
+        "away": "Bristol City",
+        "date": "2026-09-01T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ]
   },
   "vip_membership": {
     "monthly_unlocks": 12,
