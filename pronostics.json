@@ -1,128 +1,128 @@
 {
-  "generated_at": "2026-09-02T14:58:35.592561+00:00",
+  "generated_at": "2026-09-03T14:52:53.963065+00:00",
   "products": {
     "single": [
       {
-        "home": "Queens Park Rangers",
-        "away": "Cardiff City",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Queens Park Rangers",
-        "market": "Match Winner",
-        "bookmaker": "888sport",
-        "odds": "1.80",
+        "home": "Ipswich Town",
+        "away": "Liverpool",
+        "date": "2026-09-04T19:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "West Bromwich Albion",
-        "away": "Charlton Athletic",
-        "date": "2026-09-02T18:45:00Z",
+        "home": "Newcastle United",
+        "away": "Bournemouth",
+        "date": "2026-09-05T11:30:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.88",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brentford",
+        "away": "Sunderland",
+        "date": "2026-09-05T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Millwall",
-        "away": "Wrexham AFC",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "GTbets",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Queens Park Rangers",
-        "away": "Cardiff City",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Queens Park Rangers",
-        "market": "Match Winner",
-        "bookmaker": "888sport",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "West Bromwich Albion",
-        "away": "Charlton Athletic",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Over 2.5",
+        "home": "Ipswich Town",
+        "away": "Liverpool",
+        "date": "2026-09-04T19:00:00Z",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Millwall",
-        "away": "Wrexham AFC",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Burnley",
-        "away": "Middlesbrough",
-        "date": "2026-09-02T19:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.76",
-        "confidence": "78%"
-      },
-      {
-        "home": "Real Sociedad",
-        "away": "Celta Vigo",
-        "date": "2026-09-03T19:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "PMU (FR)",
+        "bookmaker": "Matchbook",
         "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "Toulouse",
-        "away": "Lille",
-        "date": "2026-09-03T18:45:00Z",
-        "pick": "Under 2.5",
+        "home": "Newcastle United",
+        "away": "Bournemouth",
+        "date": "2026-09-05T11:30:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.88",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brentford",
+        "away": "Sunderland",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "GTbets",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brighton and Hove Albion",
+        "away": "Leeds United",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester City",
+        "away": "Coventry City",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fulham",
+        "away": "Crystal Palace",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Queens Park Rangers",
-        "away": "Cardiff City",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Queens Park Rangers",
-        "market": "Match Winner",
-        "bookmaker": "888sport",
-        "odds": "1.80",
+        "home": "Ipswich Town",
+        "away": "Liverpool",
+        "date": "2026-09-04T19:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "West Bromwich Albion",
-        "away": "Charlton Athletic",
-        "date": "2026-09-02T18:45:00Z",
+        "home": "Newcastle United",
+        "away": "Bournemouth",
+        "date": "2026-09-05T11:30:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.88",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brentford",
+        "away": "Sunderland",
+        "date": "2026-09-05T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Millwall",
-        "away": "Wrexham AFC",
-        "date": "2026-09-02T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "GTbets",
         "odds": "1.80",
         "confidence": "78%"
       }
