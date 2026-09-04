@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:52:53.963065+00:00",
+  "generated_at": "2026-09-04T14:49:04.635580+00:00",
   "products": {
     "single": [
       {
@@ -8,8 +8,8 @@
         "date": "2026-09-04T19:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -18,8 +18,8 @@
         "date": "2026-09-05T11:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.88",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.86",
         "confidence": "78%"
       },
       {
@@ -40,8 +40,8 @@
         "date": "2026-09-04T19:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -50,8 +50,8 @@
         "date": "2026-09-05T11:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.88",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.86",
         "confidence": "78%"
       },
       {
@@ -70,7 +70,7 @@
         "date": "2026-09-05T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -90,7 +90,7 @@
         "date": "2026-09-05T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       }
@@ -102,8 +102,8 @@
         "date": "2026-09-04T19:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -112,8 +112,8 @@
         "date": "2026-09-05T11:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.88",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.86",
         "confidence": "78%"
       },
       {
