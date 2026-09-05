@@ -1,59 +1,7 @@
 {
-  "generated_at": "2026-09-04T14:49:04.635580+00:00",
+  "generated_at": "2026-09-05T13:41:13.362987+00:00",
   "products": {
     "single": [
-      {
-        "home": "Ipswich Town",
-        "away": "Liverpool",
-        "date": "2026-09-04T19:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Newcastle United",
-        "away": "Bournemouth",
-        "date": "2026-09-05T11:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.86",
-        "confidence": "78%"
-      },
-      {
-        "home": "Brentford",
-        "away": "Sunderland",
-        "date": "2026-09-05T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "GTbets",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Ipswich Town",
-        "away": "Liverpool",
-        "date": "2026-09-04T19:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Newcastle United",
-        "away": "Bournemouth",
-        "date": "2026-09-05T11:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.86",
-        "confidence": "78%"
-      },
       {
         "home": "Brentford",
         "away": "Sunderland",
@@ -70,8 +18,8 @@
         "date": "2026-09-05T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -80,7 +28,39 @@
         "date": "2026-09-05T14:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "PMU (FR)",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Brentford",
+        "away": "Sunderland",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "GTbets",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brighton and Hove Albion",
+        "away": "Leeds United",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester City",
+        "away": "Coventry City",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
         "odds": "1.81",
         "confidence": "78%"
       },
@@ -93,29 +73,29 @@
         "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
-      }
-    ],
-    "vip": [
+      },
       {
-        "home": "Ipswich Town",
-        "away": "Liverpool",
-        "date": "2026-09-04T19:00:00Z",
-        "pick": "Under 3.5",
+        "home": "Nottingham Forest",
+        "away": "Tottenham Hotspur",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Newcastle United",
-        "away": "Bournemouth",
-        "date": "2026-09-05T11:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.86",
+        "home": "Hull City",
+        "away": "Aston Villa",
+        "date": "2026-09-05T16:30:00Z",
+        "pick": "Aston Villa",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (DE)",
+        "odds": "1.80",
         "confidence": "78%"
-      },
+      }
+    ],
+    "vip": [
       {
         "home": "Brentford",
         "away": "Sunderland",
@@ -124,6 +104,26 @@
         "market": "Goals Over/Under",
         "bookmaker": "GTbets",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brighton and Hove Albion",
+        "away": "Leeds United",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester City",
+        "away": "Coventry City",
+        "date": "2026-09-05T14:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
         "confidence": "78%"
       }
     ]
