@@ -1,128 +1,128 @@
 {
-  "generated_at": "2026-09-06T13:57:30.417650+00:00",
+  "generated_at": "2026-09-07T16:17:21.569761+00:00",
   "products": {
     "single": [
       {
-        "home": "Everton",
-        "away": "Manchester United",
-        "date": "2026-09-06T13:00:00Z",
-        "pick": "Over 1.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Arsenal",
-        "away": "Chelsea",
-        "date": "2026-09-06T15:30:00Z",
+        "home": "Blackburn Rovers",
+        "away": "Sheffield United",
+        "date": "2026-09-08T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "Valencia",
-        "away": "Barcelona",
-        "date": "2026-09-06T14:15:00Z",
-        "pick": "Under 3.5",
+        "home": "Wrexham AFC",
+        "away": "Burnley",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Cardiff City",
+        "away": "Stoke City",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
         "odds": "1.82",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Everton",
-        "away": "Manchester United",
-        "date": "2026-09-06T13:00:00Z",
-        "pick": "Over 1.5",
+        "home": "Blackburn Rovers",
+        "away": "Sheffield United",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Wrexham AFC",
+        "away": "Burnley",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Cardiff City",
+        "away": "Stoke City",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Watford",
+        "away": "Preston North End",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Arsenal",
-        "away": "Chelsea",
-        "date": "2026-09-06T15:30:00Z",
+        "home": "Southampton",
+        "away": "Swansea City",
+        "date": "2026-09-08T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Bolton Wanderers",
+        "away": "West Ham United",
+        "date": "2026-09-08T19:00:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Valencia",
-        "away": "Barcelona",
-        "date": "2026-09-06T14:15:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Alavés",
-        "away": "CA Osasuna",
-        "date": "2026-09-06T16:30:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Málaga",
-        "away": "Levante",
-        "date": "2026-09-06T16:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Espanyol",
-        "away": "Sevilla",
-        "date": "2026-09-06T19:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.80",
+        "odds": "1.85",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Everton",
-        "away": "Manchester United",
-        "date": "2026-09-06T13:00:00Z",
-        "pick": "Over 1.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Arsenal",
-        "away": "Chelsea",
-        "date": "2026-09-06T15:30:00Z",
+        "home": "Blackburn Rovers",
+        "away": "Sheffield United",
+        "date": "2026-09-08T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "Valencia",
-        "away": "Barcelona",
-        "date": "2026-09-06T14:15:00Z",
-        "pick": "Under 3.5",
+        "home": "Wrexham AFC",
+        "away": "Burnley",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Cardiff City",
+        "away": "Stoke City",
+        "date": "2026-09-08T18:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
         "odds": "1.82",
         "confidence": "78%"
       }
