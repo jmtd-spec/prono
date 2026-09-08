@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-09-07T16:17:21.569761+00:00",
+  "generated_at": "2026-09-08T14:55:01.674719+00:00",
   "products": {
     "single": [
+      {
+        "home": "Pohang Steelers",
+        "away": "Sangju Sangmu FC",
+        "date": "2026-09-09T10:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
       {
         "home": "Blackburn Rovers",
         "away": "Sheffield United",
@@ -18,23 +28,23 @@
         "date": "2026-09-08T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Cardiff City",
-        "away": "Stoke City",
-        "date": "2026-09-08T18:45:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
+        "home": "Pohang Steelers",
+        "away": "Sangju Sangmu FC",
+        "date": "2026-09-09T10:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
         "home": "Blackburn Rovers",
         "away": "Sheffield United",
         "date": "2026-09-08T18:45:00Z",
@@ -50,8 +60,8 @@
         "date": "2026-09-08T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -61,7 +71,7 @@
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
-        "odds": "1.82",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -78,24 +88,24 @@
         "home": "Southampton",
         "away": "Swansea City",
         "date": "2026-09-08T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Unibet (NL)",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bolton Wanderers",
-        "away": "West Ham United",
-        "date": "2026-09-08T19:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.85",
+        "pick": "Southampton",
+        "market": "Match Winner",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "vip": [
+      {
+        "home": "Pohang Steelers",
+        "away": "Sangju Sangmu FC",
+        "date": "2026-09-09T10:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
       {
         "home": "Blackburn Rovers",
         "away": "Sheffield United",
@@ -112,18 +122,8 @@
         "date": "2026-09-08T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Cardiff City",
-        "away": "Stoke City",
-        "date": "2026-09-08T18:45:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
