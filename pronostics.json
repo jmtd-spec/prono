@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-09-09T15:01:15.419060+00:00",
+  "generated_at": "2026-09-10T14:51:48.530088+00:00",
   "products": {
     "single": [
       {
-        "home": "Norwich City",
-        "away": "Birmingham City",
-        "date": "2026-09-09T18:45:00Z",
-        "pick": "Norwich City",
-        "market": "Match Winner",
-        "bookmaker": "Winamax (DE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Derby County",
-        "away": "West Bromwich Albion",
-        "date": "2026-09-09T18:45:00Z",
+        "home": "Coritiba",
+        "away": "Atletico Paranaense",
+        "date": "2026-09-12T00:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Nottingham Forest",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Charlton Athletic",
-        "away": "Queens Park Rangers",
-        "date": "2026-09-09T19:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Bournemouth",
+        "away": "Brentford",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.80",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.85",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Norwich City",
-        "away": "Birmingham City",
-        "date": "2026-09-09T18:45:00Z",
-        "pick": "Norwich City",
-        "market": "Match Winner",
-        "bookmaker": "Winamax (DE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Derby County",
-        "away": "West Bromwich Albion",
-        "date": "2026-09-09T18:45:00Z",
+        "home": "Coritiba",
+        "away": "Atletico Paranaense",
+        "date": "2026-09-12T00:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
+        "odds": "1.70",
+        "confidence": "82%"
       },
       {
-        "home": "Charlton Athletic",
-        "away": "Queens Park Rangers",
-        "date": "2026-09-09T19:00:00Z",
+        "home": "Aston Villa",
+        "away": "Nottingham Forest",
+        "date": "2026-09-12T14:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
+        "bookmaker": "PMU (FR)",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "FC Twente Enschede",
-        "away": "SC Telstar",
-        "date": "2026-09-09T16:45:00Z",
-        "pick": "Over 3.75",
+        "home": "Bournemouth",
+        "away": "Brentford",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.85",
         "confidence": "78%"
       },
       {
-        "home": "Moreirense FC",
-        "away": "Benfica",
-        "date": "2026-09-09T19:45:00Z",
+        "home": "Chelsea",
+        "away": "Hull City",
+        "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "Coolbet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Crystal Palace",
+        "away": "Ipswich Town",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Unibet (NL)",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "CF Estrela",
-        "away": "Braga",
-        "date": "2026-09-10T19:15:00Z",
-        "pick": "Braga",
-        "market": "Match Winner",
-        "bookmaker": "GTbets",
-        "odds": "1.80",
+        "home": "Liverpool",
+        "away": "Fulham",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.77",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Norwich City",
-        "away": "Birmingham City",
-        "date": "2026-09-09T18:45:00Z",
-        "pick": "Norwich City",
-        "market": "Match Winner",
-        "bookmaker": "Winamax (DE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Derby County",
-        "away": "West Bromwich Albion",
-        "date": "2026-09-09T18:45:00Z",
+        "home": "Coritiba",
+        "away": "Atletico Paranaense",
+        "date": "2026-09-12T00:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "Tipico",
+        "odds": "1.70",
+        "confidence": "82%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Nottingham Forest",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Charlton Athletic",
-        "away": "Queens Park Rangers",
-        "date": "2026-09-09T19:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Bournemouth",
+        "away": "Brentford",
+        "date": "2026-09-12T14:00:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.80",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.85",
         "confidence": "78%"
       }
     ]
