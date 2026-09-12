@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-11T14:50:51.504680+00:00",
+  "generated_at": "2026-09-12T13:53:47.029905+00:00",
   "products": {
     "single": [
       {
         "home": "Aston Villa",
         "away": "Nottingham Forest",
         "date": "2026-09-12T14:00:00Z",
-        "pick": "Under 2.5",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -18,8 +18,8 @@
         "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -28,8 +28,8 @@
         "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
@@ -38,10 +38,10 @@
         "home": "Aston Villa",
         "away": "Nottingham Forest",
         "date": "2026-09-12T14:00:00Z",
-        "pick": "Under 2.5",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -50,8 +50,8 @@
         "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -60,28 +60,28 @@
         "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
         "home": "Crystal Palace",
         "away": "Ipswich Town",
         "date": "2026-09-12T14:00:00Z",
-        "pick": "Crystal Palace",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (FR)",
-        "odds": "1.80",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.73",
         "confidence": "78%"
       },
       {
         "home": "Liverpool",
         "away": "Fulham",
         "date": "2026-09-12T14:00:00Z",
-        "pick": "Under 3.5",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.77",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
@@ -90,8 +90,8 @@
         "date": "2026-09-12T16:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
+        "bookmaker": "1xBet",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
@@ -100,10 +100,10 @@
         "home": "Aston Villa",
         "away": "Nottingham Forest",
         "date": "2026-09-12T14:00:00Z",
-        "pick": "Under 2.5",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -112,8 +112,8 @@
         "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -122,8 +122,8 @@
         "date": "2026-09-12T14:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.81",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
