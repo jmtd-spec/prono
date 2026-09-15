@@ -1,86 +1,66 @@
 {
-  "generated_at": "2026-09-14T16:47:54.081036+00:00",
+  "generated_at": "2026-09-15T15:27:14.607747+00:00",
   "products": {
     "single": [
       {
-        "home": "Leeds United",
-        "away": "Newcastle United",
-        "date": "2026-09-14T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.75",
-        "confidence": "78%"
-      },
-      {
         "home": "Bristol City",
         "away": "Lincoln City",
         "date": "2026-09-15T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Middlesbrough",
-        "away": "Millwall",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.83",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Leeds United",
-        "away": "Newcastle United",
-        "date": "2026-09-14T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.75",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bristol City",
-        "away": "Lincoln City",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Middlesbrough",
-        "away": "Millwall",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Villarreal",
-        "away": "Real Betis",
-        "date": "2026-09-14T19:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "pick": "Bristol City",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Middlesbrough",
+        "away": "Millwall",
+        "date": "2026-09-15T18:45:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.87",
         "confidence": "78%"
       },
       {
         "home": "Rayo Vallecano",
         "away": "Espanyol",
         "date": "2026-09-15T17:00:00Z",
-        "pick": "Under 2.5",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Bristol City",
+        "away": "Lincoln City",
+        "date": "2026-09-15T18:45:00Z",
+        "pick": "Bristol City",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Middlesbrough",
+        "away": "Millwall",
+        "date": "2026-09-15T18:45:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Rayo Vallecano",
+        "away": "Espanyol",
+        "date": "2026-09-15T17:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -88,42 +68,62 @@
         "home": "Alavés",
         "away": "Valencia",
         "date": "2026-09-15T18:00:00Z",
-        "pick": "Alavés",
-        "market": "Match Winner",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
         "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
-      }
-    ],
-    "vip": [
-      {
-        "home": "Leeds United",
-        "away": "Newcastle United",
-        "date": "2026-09-14T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.75",
-        "confidence": "78%"
       },
       {
-        "home": "Bristol City",
-        "away": "Lincoln City",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Over 2.5",
+        "home": "Elche CF",
+        "away": "Real Madrid",
+        "date": "2026-09-15T19:30:00Z",
+        "pick": "Over 3.5",
         "market": "Goals Over/Under",
         "bookmaker": "1xBet",
         "odds": "1.81",
         "confidence": "78%"
       },
       {
+        "home": "Atlético Madrid",
+        "away": "CA Osasuna",
+        "date": "2026-09-16T17:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Bristol City",
+        "away": "Lincoln City",
+        "date": "2026-09-15T18:45:00Z",
+        "pick": "Bristol City",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
         "home": "Middlesbrough",
         "away": "Millwall",
         "date": "2026-09-15T18:45:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Pinnacle",
-        "odds": "1.83",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Rayo Vallecano",
+        "away": "Espanyol",
+        "date": "2026-09-15T17:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
