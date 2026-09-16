@@ -1,89 +1,7 @@
 {
-  "generated_at": "2026-09-15T15:27:14.607747+00:00",
+  "generated_at": "2026-09-16T15:20:09.926286+00:00",
   "products": {
     "single": [
-      {
-        "home": "Bristol City",
-        "away": "Lincoln City",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Bristol City",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (FR)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Middlesbrough",
-        "away": "Millwall",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.87",
-        "confidence": "78%"
-      },
-      {
-        "home": "Rayo Vallecano",
-        "away": "Espanyol",
-        "date": "2026-09-15T17:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Bristol City",
-        "away": "Lincoln City",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Bristol City",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (FR)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Middlesbrough",
-        "away": "Millwall",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.87",
-        "confidence": "78%"
-      },
-      {
-        "home": "Rayo Vallecano",
-        "away": "Espanyol",
-        "date": "2026-09-15T17:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Alavés",
-        "away": "Valencia",
-        "date": "2026-09-15T18:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Elche CF",
-        "away": "Real Madrid",
-        "date": "2026-09-15T19:30:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
       {
         "home": "Atlético Madrid",
         "away": "CA Osasuna",
@@ -91,38 +9,120 @@
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "1xBet",
-        "odds": "1.78",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Deportivo La Coruña",
+        "away": "Sevilla",
+        "date": "2026-09-16T17:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Levante",
+        "away": "Athletic Bilbao",
+        "date": "2026-09-16T19:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Atlético Madrid",
+        "away": "CA Osasuna",
+        "date": "2026-09-16T17:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Deportivo La Coruña",
+        "away": "Sevilla",
+        "date": "2026-09-16T17:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Levante",
+        "away": "Athletic Bilbao",
+        "date": "2026-09-16T19:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Barcelona",
+        "away": "Real Racing Club de Santander",
+        "date": "2026-09-16T19:30:00Z",
+        "pick": "Under 5.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Real Betis",
+        "away": "Getafe",
+        "date": "2026-09-17T17:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Málaga",
+        "away": "Villarreal",
+        "date": "2026-09-17T19:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.81",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Bristol City",
-        "away": "Lincoln City",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Bristol City",
-        "market": "Match Winner",
-        "bookmaker": "Unibet (FR)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Middlesbrough",
-        "away": "Millwall",
-        "date": "2026-09-15T18:45:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.87",
-        "confidence": "78%"
-      },
-      {
-        "home": "Rayo Vallecano",
-        "away": "Espanyol",
-        "date": "2026-09-15T17:00:00Z",
+        "home": "Atlético Madrid",
+        "away": "CA Osasuna",
+        "date": "2026-09-16T17:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "1xBet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Deportivo La Coruña",
+        "away": "Sevilla",
+        "date": "2026-09-16T17:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Levante",
+        "away": "Athletic Bilbao",
+        "date": "2026-09-16T19:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       }
