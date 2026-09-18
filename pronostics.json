@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-17T15:26:32.088793+00:00",
+  "generated_at": "2026-09-18T14:47:54.801150+00:00",
   "products": {
     "single": [
       {
         "home": "Brentford",
         "away": "Chelsea",
         "date": "2026-09-18T19:00:00Z",
-        "pick": "Under 3.5",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.76",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.77",
         "confidence": "78%"
       },
       {
@@ -18,8 +18,8 @@
         "date": "2026-09-19T11:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Nordic Bet",
-        "odds": "1.80",
+        "bookmaker": "1xBet",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -28,8 +28,8 @@
         "date": "2026-09-19T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
@@ -38,10 +38,10 @@
         "home": "Brentford",
         "away": "Chelsea",
         "date": "2026-09-18T19:00:00Z",
-        "pick": "Under 3.5",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.76",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.77",
         "confidence": "78%"
       },
       {
@@ -50,8 +50,8 @@
         "date": "2026-09-19T11:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Nordic Bet",
-        "odds": "1.80",
+        "bookmaker": "1xBet",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -60,18 +60,18 @@
         "date": "2026-09-19T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
         "home": "Everton",
         "away": "Ipswich Town",
         "date": "2026-09-19T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.79",
+        "pick": "Everton",
+        "market": "Match Winner",
+        "bookmaker": "Pinnacle",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -85,13 +85,13 @@
         "confidence": "78%"
       },
       {
-        "home": "Bristol City",
-        "away": "Watford",
-        "date": "2026-09-18T19:00:00Z",
+        "home": "Nottingham Forest",
+        "away": "Coventry City",
+        "date": "2026-09-19T16:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.79",
+        "bookmaker": "Coolbet",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
@@ -100,10 +100,10 @@
         "home": "Brentford",
         "away": "Chelsea",
         "date": "2026-09-18T19:00:00Z",
-        "pick": "Under 3.5",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.76",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.77",
         "confidence": "78%"
       },
       {
@@ -112,8 +112,8 @@
         "date": "2026-09-19T11:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Nordic Bet",
-        "odds": "1.80",
+        "bookmaker": "1xBet",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -122,8 +122,8 @@
         "date": "2026-09-19T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
