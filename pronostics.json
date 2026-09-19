@@ -1,66 +1,14 @@
 {
-  "generated_at": "2026-09-18T14:47:54.801150+00:00",
+  "generated_at": "2026-09-19T14:11:36.764423+00:00",
   "products": {
     "single": [
       {
-        "home": "Brentford",
-        "away": "Chelsea",
-        "date": "2026-09-18T19:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
-        "confidence": "78%"
-      },
-      {
-        "home": "Tottenham Hotspur",
-        "away": "Aston Villa",
-        "date": "2026-09-19T11:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
         "home": "Brighton and Hove Albion",
         "away": "Arsenal",
         "date": "2026-09-19T14:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Brentford",
-        "away": "Chelsea",
-        "date": "2026-09-18T19:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
-        "confidence": "78%"
-      },
-      {
-        "home": "Tottenham Hotspur",
-        "away": "Aston Villa",
-        "date": "2026-09-19T11:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Brighton and Hove Albion",
-        "away": "Arsenal",
-        "date": "2026-09-19T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -68,9 +16,9 @@
         "home": "Everton",
         "away": "Ipswich Town",
         "date": "2026-09-19T14:00:00Z",
-        "pick": "Everton",
-        "market": "Match Winner",
-        "bookmaker": "Pinnacle",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "LeoVegas (SE)",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -78,10 +26,42 @@
         "home": "Newcastle United",
         "away": "Hull City",
         "date": "2026-09-19T14:00:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 4.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
+        "bookmaker": "Matchbook",
+        "odds": "1.76",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Brighton and Hove Albion",
+        "away": "Arsenal",
+        "date": "2026-09-19T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Everton",
+        "away": "Ipswich Town",
+        "date": "2026-09-19T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Newcastle United",
+        "away": "Hull City",
+        "date": "2026-09-19T14:00:00Z",
+        "pick": "Over 4.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.76",
         "confidence": "78%"
       },
       {
@@ -90,40 +70,60 @@
         "date": "2026-09-19T16:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
+        "bookmaker": "Betsson",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Bournemouth",
+        "away": "Liverpool",
+        "date": "2026-09-20T13:00:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Leeds United",
+        "away": "Crystal Palace",
+        "date": "2026-09-20T13:00:00Z",
+        "pick": "Leeds United",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.77",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Brentford",
-        "away": "Chelsea",
-        "date": "2026-09-18T19:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
-        "confidence": "78%"
-      },
-      {
-        "home": "Tottenham Hotspur",
-        "away": "Aston Villa",
-        "date": "2026-09-19T11:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
         "home": "Brighton and Hove Albion",
         "away": "Arsenal",
         "date": "2026-09-19T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Everton",
+        "away": "Ipswich Town",
+        "date": "2026-09-19T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "LeoVegas (SE)",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Newcastle United",
+        "away": "Hull City",
+        "date": "2026-09-19T14:00:00Z",
+        "pick": "Over 4.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.76",
         "confidence": "78%"
       }
     ]
