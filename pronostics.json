@@ -1,9 +1,122 @@
 {
-  "generated_at": "2026-09-30T16:40:37.536843+00:00",
+  "generated_at": "2026-10-01T17:16:41.913822+00:00",
   "products": {
-    "single": [],
-    "premium": [],
-    "vip": []
+    "single": [
+      {
+        "home": "Seattle Sounders FC",
+        "away": "Sporting Kansas City",
+        "date": "2026-10-02T01:30:00Z",
+        "pick": "Over 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sao Paulo",
+        "away": "Santos",
+        "date": "2026-10-02T23:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Independiente",
+        "away": "Instituto de Córdoba",
+        "date": "2026-10-02T22:15:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.86",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Seattle Sounders FC",
+        "away": "Sporting Kansas City",
+        "date": "2026-10-02T01:30:00Z",
+        "pick": "Over 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sao Paulo",
+        "away": "Santos",
+        "date": "2026-10-02T23:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Independiente",
+        "away": "Instituto de Córdoba",
+        "date": "2026-10-02T22:15:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.86",
+        "confidence": "78%"
+      },
+      {
+        "home": "Boca Juniors",
+        "away": "Union Santa Fe",
+        "date": "2026-10-03T00:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Independiente Rivadavia",
+        "away": "Gimnasia La Plata",
+        "date": "2026-10-03T00:30:00Z",
+        "pick": "Independiente Rivadavia",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (DE)",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Seattle Sounders FC",
+        "away": "Sporting Kansas City",
+        "date": "2026-10-02T01:30:00Z",
+        "pick": "Over 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sao Paulo",
+        "away": "Santos",
+        "date": "2026-10-02T23:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Independiente",
+        "away": "Instituto de Córdoba",
+        "date": "2026-10-02T22:15:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.86",
+        "confidence": "78%"
+      }
+    ]
   },
   "vip_membership": {
     "monthly_unlocks": 12,
