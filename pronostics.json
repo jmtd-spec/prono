@@ -1,87 +1,15 @@
 {
-  "generated_at": "2026-10-02T16:30:27.899530+00:00",
+  "generated_at": "2026-10-03T15:03:11.960317+00:00",
   "products": {
     "single": [
       {
-        "home": "Sao Paulo",
-        "away": "Santos",
-        "date": "2026-10-02T23:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.74",
-        "confidence": "78%"
-      },
-      {
         "home": "Atletico Mineiro",
         "away": "Bragantino-SP",
         "date": "2026-10-03T21:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "Coolbet",
         "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Independiente",
-        "away": "Instituto de Córdoba",
-        "date": "2026-10-02T22:15:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.83",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Sao Paulo",
-        "away": "Santos",
-        "date": "2026-10-02T23:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.74",
-        "confidence": "78%"
-      },
-      {
-        "home": "Atletico Mineiro",
-        "away": "Bragantino-SP",
-        "date": "2026-10-03T21:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Independiente",
-        "away": "Instituto de Córdoba",
-        "date": "2026-10-02T22:15:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Boca Juniors",
-        "away": "Union Santa Fe",
-        "date": "2026-10-03T00:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Independiente Rivadavia",
-        "away": "Gimnasia La Plata",
-        "date": "2026-10-03T00:30:00Z",
-        "pick": "Under 2.25",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.85",
         "confidence": "78%"
       },
       {
@@ -93,37 +21,109 @@
         "bookmaker": "BetOnline.ag",
         "odds": "1.87",
         "confidence": "78%"
+      },
+      {
+        "home": "Atlético Tucuman",
+        "away": "Barracas Central",
+        "date": "2026-10-03T20:00:00Z",
+        "pick": "Atlético Tucuman",
+        "market": "Match Winner",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.79",
+        "confidence": "78%"
       }
     ],
-    "vip": [
-      {
-        "home": "Sao Paulo",
-        "away": "Santos",
-        "date": "2026-10-02T23:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.74",
-        "confidence": "78%"
-      },
+    "premium": [
       {
         "home": "Atletico Mineiro",
         "away": "Bragantino-SP",
         "date": "2026-10-03T21:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "Coolbet",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Independiente",
-        "away": "Instituto de Córdoba",
-        "date": "2026-10-02T22:15:00Z",
+        "home": "Defensa y Justicia",
+        "away": "San Lorenzo",
+        "date": "2026-10-03T17:45:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Atlético Tucuman",
+        "away": "Barracas Central",
+        "date": "2026-10-03T20:00:00Z",
+        "pick": "Atlético Tucuman",
+        "market": "Match Winner",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Newells Old Boys",
+        "away": "Lanus",
+        "date": "2026-10-03T20:00:00Z",
         "pick": "Under 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
         "odds": "1.83",
+        "confidence": "78%"
+      },
+      {
+        "home": "Atlético Huracán",
+        "away": "Aldosivi Mar del Plata",
+        "date": "2026-10-04T17:45:00Z",
+        "pick": "Atlético Huracán",
+        "market": "Match Winner",
+        "bookmaker": "Betfair",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Talleres",
+        "away": "Belgrano de Cordoba",
+        "date": "2026-10-04T20:00:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Atletico Mineiro",
+        "away": "Bragantino-SP",
+        "date": "2026-10-03T21:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Defensa y Justicia",
+        "away": "San Lorenzo",
+        "date": "2026-10-03T17:45:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Atlético Tucuman",
+        "away": "Barracas Central",
+        "date": "2026-10-03T20:00:00Z",
+        "pick": "Atlético Tucuman",
+        "market": "Match Winner",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ]
