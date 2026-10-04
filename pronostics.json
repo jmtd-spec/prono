@@ -1,87 +1,15 @@
 {
-  "generated_at": "2026-10-03T15:03:11.960317+00:00",
+  "generated_at": "2026-10-04T15:40:34.348690+00:00",
   "products": {
     "single": [
-      {
-        "home": "Atletico Mineiro",
-        "away": "Bragantino-SP",
-        "date": "2026-10-03T21:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Defensa y Justicia",
-        "away": "San Lorenzo",
-        "date": "2026-10-03T17:45:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.87",
-        "confidence": "78%"
-      },
-      {
-        "home": "Atlético Tucuman",
-        "away": "Barracas Central",
-        "date": "2026-10-03T20:00:00Z",
-        "pick": "Atlético Tucuman",
-        "market": "Match Winner",
-        "bookmaker": "LeoVegas (SE)",
-        "odds": "1.79",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Atletico Mineiro",
-        "away": "Bragantino-SP",
-        "date": "2026-10-03T21:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Defensa y Justicia",
-        "away": "San Lorenzo",
-        "date": "2026-10-03T17:45:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.87",
-        "confidence": "78%"
-      },
-      {
-        "home": "Atlético Tucuman",
-        "away": "Barracas Central",
-        "date": "2026-10-03T20:00:00Z",
-        "pick": "Atlético Tucuman",
-        "market": "Match Winner",
-        "bookmaker": "LeoVegas (SE)",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Newells Old Boys",
-        "away": "Lanus",
-        "date": "2026-10-03T20:00:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
       {
         "home": "Atlético Huracán",
         "away": "Aldosivi Mar del Plata",
         "date": "2026-10-04T17:45:00Z",
         "pick": "Atlético Huracán",
-        "market": "Match Winner",
+        "market": "h2h_lay",
         "bookmaker": "Betfair",
-        "odds": "1.80",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
@@ -91,39 +19,111 @@
         "pick": "Over 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.87",
+        "odds": "1.84",
+        "confidence": "78%"
+      },
+      {
+        "home": "Argentinos Juniors",
+        "away": "CA Tigre BA",
+        "date": "2026-10-04T22:15:00Z",
+        "pick": "Argentinos Juniors",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Atlético Huracán",
+        "away": "Aldosivi Mar del Plata",
+        "date": "2026-10-04T17:45:00Z",
+        "pick": "Atlético Huracán",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Talleres",
+        "away": "Belgrano de Cordoba",
+        "date": "2026-10-04T20:00:00Z",
+        "pick": "Over 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.84",
+        "confidence": "78%"
+      },
+      {
+        "home": "Argentinos Juniors",
+        "away": "CA Tigre BA",
+        "date": "2026-10-04T22:15:00Z",
+        "pick": "Argentinos Juniors",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Estudiantes de Río Cuarto",
+        "away": "Racing Club",
+        "date": "2026-10-05T00:30:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Deportivo Riestra",
+        "away": "Central Córdoba",
+        "date": "2026-10-05T19:45:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Estudiantes",
+        "away": "Gimnasia Mendoza",
+        "date": "2026-10-05T22:00:00Z",
+        "pick": "Estudiantes",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.81",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Atletico Mineiro",
-        "away": "Bragantino-SP",
-        "date": "2026-10-03T21:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
+        "home": "Atlético Huracán",
+        "away": "Aldosivi Mar del Plata",
+        "date": "2026-10-04T17:45:00Z",
+        "pick": "Atlético Huracán",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "Defensa y Justicia",
-        "away": "San Lorenzo",
-        "date": "2026-10-03T17:45:00Z",
+        "home": "Talleres",
+        "away": "Belgrano de Cordoba",
+        "date": "2026-10-04T20:00:00Z",
         "pick": "Over 2.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.87",
+        "odds": "1.84",
         "confidence": "78%"
       },
       {
-        "home": "Atlético Tucuman",
-        "away": "Barracas Central",
-        "date": "2026-10-03T20:00:00Z",
-        "pick": "Atlético Tucuman",
+        "home": "Argentinos Juniors",
+        "away": "CA Tigre BA",
+        "date": "2026-10-04T22:15:00Z",
+        "pick": "Argentinos Juniors",
         "market": "Match Winner",
-        "bookmaker": "LeoVegas (SE)",
-        "odds": "1.79",
+        "bookmaker": "Winamax (FR)",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
