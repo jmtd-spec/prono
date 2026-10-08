@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-10-07T17:40:56.031867+00:00",
+  "generated_at": "2026-10-08T17:45:03.323770+00:00",
   "products": {
     "single": [
       {
-        "home": "IFK Goteborg",
-        "away": "Västerås SK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "IFK Goteborg",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
+        "home": "Arsenal",
+        "away": "Leeds United",
+        "date": "2026-10-10T11:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.76",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Bournemouth",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "1xBet",
         "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "SK Brann",
-        "away": "Viking FK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "FC Nordsjaelland",
-        "away": "OB Odense BK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "IFK Goteborg",
-        "away": "Västerås SK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "IFK Goteborg",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
+        "home": "Arsenal",
+        "away": "Leeds United",
+        "date": "2026-10-10T11:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.76",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Bournemouth",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "1xBet",
         "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "SK Brann",
-        "away": "Viking FK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "FC Nordsjaelland",
-        "away": "OB Odense BK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bragantino-SP",
-        "away": "Mirassol",
-        "date": "2026-10-07T22:30:00Z",
-        "pick": "Over 2.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.85",
-        "confidence": "78%"
-      },
-      {
-        "home": "Internacional",
-        "away": "Corinthians",
-        "date": "2026-10-07T22:30:00Z",
-        "pick": "Under 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Remo",
-        "away": "Grêmio",
-        "date": "2026-10-07T22:30:00Z",
+        "home": "Sunderland",
+        "away": "Brighton and Hove Albion",
+        "date": "2026-10-10T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "William Hill",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Ipswich Town",
+        "away": "Fulham",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester United",
+        "away": "Tottenham Hotspur",
+        "date": "2026-10-10T16:30:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.78",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "IFK Goteborg",
-        "away": "Västerås SK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "IFK Goteborg",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
+        "home": "Arsenal",
+        "away": "Leeds United",
+        "date": "2026-10-10T11:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.76",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Bournemouth",
+        "date": "2026-10-10T14:00:00Z",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "1xBet",
         "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "SK Brann",
-        "away": "Viking FK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "FC Nordsjaelland",
-        "away": "OB Odense BK",
-        "date": "2026-10-09T17:00:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.80",
         "confidence": "78%"
       }
     ]
