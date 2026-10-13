@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-12T20:07:15.881451+00:00",
+  "generated_at": "2026-10-13T17:56:53.903446+00:00",
   "products": {
     "single": [
       {
         "home": "Bristol City",
         "away": "Blackburn Rovers",
         "date": "2026-10-13T18:45:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
+        "bookmaker": "Matchbook",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
@@ -28,7 +28,7 @@
         "date": "2026-10-13T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       }
@@ -38,10 +38,10 @@
         "home": "Bristol City",
         "away": "Blackburn Rovers",
         "date": "2026-10-13T18:45:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
+        "bookmaker": "Matchbook",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
@@ -60,7 +60,7 @@
         "date": "2026-10-13T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -68,20 +68,20 @@
         "home": "Cardiff City",
         "away": "Watford",
         "date": "2026-10-13T18:45:00Z",
-        "pick": "Cardiff City",
-        "market": "h2h_lay",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.76",
         "confidence": "78%"
       },
       {
         "home": "Millwall",
         "away": "Swansea City",
         "date": "2026-10-13T18:45:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
+        "bookmaker": "Betsson",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -90,8 +90,8 @@
         "date": "2026-10-13T18:45:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Betsson",
-        "odds": "1.80",
+        "bookmaker": "Unibet (NL)",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
@@ -100,10 +100,10 @@
         "home": "Bristol City",
         "away": "Blackburn Rovers",
         "date": "2026-10-13T18:45:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
+        "bookmaker": "Matchbook",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
@@ -122,7 +122,7 @@
         "date": "2026-10-13T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       }
