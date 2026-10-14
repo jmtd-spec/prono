@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-10-13T17:56:53.903446+00:00",
+  "generated_at": "2026-10-14T15:42:44.401300+00:00",
   "products": {
     "single": [
       {
-        "home": "Bristol City",
-        "away": "Blackburn Rovers",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Wolverhampton Wanderers",
-        "away": "Bolton Wanderers",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Burnley",
-        "away": "Charlton Athletic",
-        "date": "2026-10-13T18:45:00Z",
+        "home": "Queens Park Rangers",
+        "away": "Derby County",
+        "date": "2026-10-14T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
+        "bookmaker": "Codere (IT)",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Norwich City",
+        "away": "Southampton",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Portsmouth",
+        "away": "Sheffield United",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Bristol City",
-        "away": "Blackburn Rovers",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 2.5",
+        "home": "Queens Park Rangers",
+        "away": "Derby County",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.81",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Wolverhampton Wanderers",
-        "away": "Bolton Wanderers",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 3.0",
+        "home": "Norwich City",
+        "away": "Southampton",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Portsmouth",
+        "away": "Sheffield United",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Lincoln City",
+        "away": "West Ham United",
+        "date": "2026-10-14T19:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
         "odds": "1.82",
         "confidence": "78%"
       },
       {
-        "home": "Burnley",
-        "away": "Charlton Athletic",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Over 2.5",
+        "home": "Feyenoord",
+        "away": "Como",
+        "date": "2026-10-14T16:45:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
+        "bookmaker": "Coolbet",
+        "odds": "1.84",
         "confidence": "78%"
       },
       {
-        "home": "Cardiff City",
-        "away": "Watford",
-        "date": "2026-10-13T18:45:00Z",
+        "home": "LASK",
+        "away": "Liverpool",
+        "date": "2026-10-14T16:45:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.76",
-        "confidence": "78%"
-      },
-      {
-        "home": "Millwall",
-        "away": "Swansea City",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Betsson",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Wrexham AFC",
-        "away": "West Bromwich Albion",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Unibet (NL)",
-        "odds": "1.79",
+        "odds": "1.89",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Bristol City",
-        "away": "Blackburn Rovers",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Wolverhampton Wanderers",
-        "away": "Bolton Wanderers",
-        "date": "2026-10-13T18:45:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Burnley",
-        "away": "Charlton Athletic",
-        "date": "2026-10-13T18:45:00Z",
+        "home": "Queens Park Rangers",
+        "away": "Derby County",
+        "date": "2026-10-14T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
+        "bookmaker": "Codere (IT)",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Norwich City",
+        "away": "Southampton",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Portsmouth",
+        "away": "Sheffield United",
+        "date": "2026-10-14T18:45:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.79",
         "confidence": "78%"
       }
     ]
