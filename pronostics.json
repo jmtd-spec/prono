@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T15:30:13.683966+00:00",
+  "generated_at": "2026-10-16T15:14:06.542722+00:00",
   "products": {
     "single": [
       {
@@ -8,18 +8,18 @@
         "date": "2026-10-17T11:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.75",
+        "bookmaker": "Coolbet",
+        "odds": "1.76",
         "confidence": "78%"
       },
       {
         "home": "Brentford",
         "away": "Liverpool",
         "date": "2026-10-17T14:00:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.89",
+        "bookmaker": "Coolbet",
+        "odds": "1.88",
         "confidence": "78%"
       },
       {
@@ -28,8 +28,8 @@
         "date": "2026-10-17T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
@@ -40,18 +40,18 @@
         "date": "2026-10-17T11:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.75",
+        "bookmaker": "Coolbet",
+        "odds": "1.76",
         "confidence": "78%"
       },
       {
         "home": "Brentford",
         "away": "Liverpool",
         "date": "2026-10-17T14:00:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.89",
+        "bookmaker": "Coolbet",
+        "odds": "1.88",
         "confidence": "78%"
       },
       {
@@ -60,8 +60,8 @@
         "date": "2026-10-17T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -70,27 +70,27 @@
         "date": "2026-10-17T14:00:00Z",
         "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
+        "bookmaker": "MyBookie.ag",
         "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "Burnley",
-        "away": "Wolverhampton Wanderers",
-        "date": "2026-10-16T19:00:00Z",
-        "pick": "Over 2.5",
+        "home": "Newcastle United",
+        "away": "Aston Villa",
+        "date": "2026-10-17T16:30:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
+        "bookmaker": "BetAnything",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
-        "home": "Middlesbrough",
-        "away": "Cardiff City",
-        "date": "2026-10-17T11:30:00Z",
-        "pick": "Over 3.5",
+        "home": "Bournemouth",
+        "away": "Sunderland",
+        "date": "2026-10-18T13:00:00Z",
+        "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Tipico",
+        "bookmaker": "Codere (IT)",
         "odds": "1.80",
         "confidence": "78%"
       }
@@ -102,18 +102,18 @@
         "date": "2026-10-17T11:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.75",
+        "bookmaker": "Coolbet",
+        "odds": "1.76",
         "confidence": "78%"
       },
       {
         "home": "Brentford",
         "away": "Liverpool",
         "date": "2026-10-17T14:00:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.89",
+        "bookmaker": "Coolbet",
+        "odds": "1.88",
         "confidence": "78%"
       },
       {
@@ -122,8 +122,8 @@
         "date": "2026-10-17T14:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
