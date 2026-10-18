@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-10-17T14:04:09.944052+00:00",
+  "generated_at": "2026-10-18T14:19:32.721266+00:00",
   "products": {
     "single": [
       {
-        "home": "Brentford",
-        "away": "Liverpool",
-        "date": "2026-10-17T14:00:00Z",
+        "home": "Nottingham Forest",
+        "away": "Arsenal",
+        "date": "2026-10-18T15:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Tottenham Hotspur",
+        "away": "Coventry City",
+        "date": "2026-10-19T19:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Marathon Bet",
-        "odds": "1.79",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
         "confidence": "78%"
       },
       {
-        "home": "Fulham",
-        "away": "Hull City",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Over 2.5",
+        "home": "Celta Vigo",
+        "away": "Alavés",
+        "date": "2026-10-18T14:15:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "Ipswich Town",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.80",
+        "bookmaker": "Nordic Bet",
+        "odds": "1.75",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Brentford",
-        "away": "Liverpool",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Under 3.0",
+        "home": "Nottingham Forest",
+        "away": "Arsenal",
+        "date": "2026-10-18T15:30:00Z",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Marathon Bet",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "Fulham",
-        "away": "Hull City",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "Ipswich Town",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
+        "bookmaker": "PMU (FR)",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Newcastle United",
-        "away": "Aston Villa",
-        "date": "2026-10-17T16:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.90",
-        "confidence": "78%"
-      },
-      {
-        "home": "Bournemouth",
-        "away": "Sunderland",
-        "date": "2026-10-18T13:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Brighton and Hove Albion",
-        "away": "Crystal Palace",
-        "date": "2026-10-18T13:00:00Z",
+        "home": "Tottenham Hotspur",
+        "away": "Coventry City",
+        "date": "2026-10-19T19:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.88",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Celta Vigo",
+        "away": "Alavés",
+        "date": "2026-10-18T14:15:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Nordic Bet",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Málaga",
+        "away": "Real Sociedad",
+        "date": "2026-10-18T16:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Real Madrid",
+        "away": "Sevilla",
+        "date": "2026-10-18T19:00:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Marathon Bet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Getafe",
+        "away": "Rayo Vallecano",
+        "date": "2026-10-19T19:00:00Z",
+        "pick": "Under 2.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Brentford",
-        "away": "Liverpool",
-        "date": "2026-10-17T14:00:00Z",
+        "home": "Nottingham Forest",
+        "away": "Arsenal",
+        "date": "2026-10-18T15:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Tottenham Hotspur",
+        "away": "Coventry City",
+        "date": "2026-10-19T19:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Marathon Bet",
-        "odds": "1.79",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.87",
         "confidence": "78%"
       },
       {
-        "home": "Fulham",
-        "away": "Hull City",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Over 2.5",
+        "home": "Celta Vigo",
+        "away": "Alavés",
+        "date": "2026-10-18T14:15:00Z",
+        "pick": "Under 2.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "Ipswich Town",
-        "date": "2026-10-17T14:00:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "MyBookie.ag",
-        "odds": "1.80",
+        "bookmaker": "Nordic Bet",
+        "odds": "1.75",
         "confidence": "78%"
       }
     ]
