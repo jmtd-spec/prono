@@ -1,86 +1,24 @@
 {
-  "generated_at": "2026-10-19T17:20:35.834934+00:00",
+  "generated_at": "2026-10-20T15:33:33.100442+00:00",
   "products": {
     "single": [
       {
-        "home": "Tottenham Hotspur",
-        "away": "Coventry City",
-        "date": "2026-10-19T19:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
         "home": "Wolverhampton Wanderers",
         "away": "Portsmouth",
         "date": "2026-10-20T18:45:00Z",
         "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Getafe",
-        "away": "Rayo Vallecano",
-        "date": "2026-10-19T19:00:00Z",
-        "pick": "Over 1.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Tottenham Hotspur",
-        "away": "Coventry City",
-        "date": "2026-10-19T19:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Wolverhampton Wanderers",
-        "away": "Portsmouth",
-        "date": "2026-10-20T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Getafe",
-        "away": "Rayo Vallecano",
-        "date": "2026-10-19T19:00:00Z",
-        "pick": "Over 1.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Parma",
-        "away": "Torino",
-        "date": "2026-10-19T18:45:00Z",
-        "pick": "Over 2.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.77",
-        "confidence": "78%"
-      },
-      {
-        "home": "Braga",
-        "away": "Gil Vicente",
-        "date": "2026-10-19T19:15:00Z",
-        "pick": "Under 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Levante",
+        "away": "Athletic Bilbao",
+        "date": "2026-10-21T18:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -88,42 +26,104 @@
         "home": "Sabah FK",
         "away": "Borussia Dortmund",
         "date": "2026-10-20T16:45:00Z",
-        "pick": "Over 3.25",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.80",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
         "confidence": "78%"
       }
     ],
-    "vip": [
-      {
-        "home": "Tottenham Hotspur",
-        "away": "Coventry City",
-        "date": "2026-10-19T19:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
+    "premium": [
       {
         "home": "Wolverhampton Wanderers",
         "away": "Portsmouth",
         "date": "2026-10-20T18:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.83",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
         "confidence": "78%"
       },
       {
-        "home": "Getafe",
-        "away": "Rayo Vallecano",
-        "date": "2026-10-19T19:00:00Z",
-        "pick": "Over 1.75",
+        "home": "Levante",
+        "away": "Athletic Bilbao",
+        "date": "2026-10-21T18:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sabah FK",
+        "away": "Borussia Dortmund",
+        "date": "2026-10-20T16:45:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Fenerbahce",
+        "away": "Slavia Praha",
+        "date": "2026-10-20T16:45:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester City",
+        "away": "AEK Athens",
+        "date": "2026-10-20T19:00:00Z",
+        "pick": "Over 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "AS Roma",
+        "away": "ŠK Slovan Bratislava",
+        "date": "2026-10-20T19:00:00Z",
+        "pick": "Over 3.75",
         "market": "Goals Over/Under",
         "bookmaker": "Pinnacle",
+        "odds": "1.79",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Wolverhampton Wanderers",
+        "away": "Portsmouth",
+        "date": "2026-10-20T18:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Levante",
+        "away": "Athletic Bilbao",
+        "date": "2026-10-21T18:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sabah FK",
+        "away": "Borussia Dortmund",
+        "date": "2026-10-20T16:45:00Z",
+        "pick": "Under 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.78",
         "confidence": "78%"
       }
     ]
