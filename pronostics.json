@@ -1,129 +1,129 @@
 {
-  "generated_at": "2026-10-20T15:33:33.100442+00:00",
+  "generated_at": "2026-10-21T15:50:10.817408+00:00",
   "products": {
     "single": [
-      {
-        "home": "Wolverhampton Wanderers",
-        "away": "Portsmouth",
-        "date": "2026-10-20T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
       {
         "home": "Levante",
         "away": "Athletic Bilbao",
         "date": "2026-10-21T18:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Sabah FK",
-        "away": "Borussia Dortmund",
-        "date": "2026-10-20T16:45:00Z",
-        "pick": "Under 3.5",
+        "home": "Como",
+        "away": "Manchester United",
+        "date": "2026-10-21T16:45:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
+        "bookmaker": "BetAnything",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Lille",
+        "away": "Galatasaray",
+        "date": "2026-10-21T16:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Wolverhampton Wanderers",
-        "away": "Portsmouth",
-        "date": "2026-10-20T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
         "home": "Levante",
         "away": "Athletic Bilbao",
         "date": "2026-10-21T18:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Sabah FK",
-        "away": "Borussia Dortmund",
-        "date": "2026-10-20T16:45:00Z",
-        "pick": "Under 3.5",
+        "home": "Como",
+        "away": "Manchester United",
+        "date": "2026-10-21T16:45:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
+        "bookmaker": "BetAnything",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Lille",
+        "away": "Galatasaray",
+        "date": "2026-10-21T16:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Bayern Munich",
+        "away": "Arsenal",
+        "date": "2026-10-21T19:00:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetAnything",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Viking FK",
+        "date": "2026-10-21T19:00:00Z",
+        "pick": "Under 4.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
         "odds": "1.78",
         "confidence": "78%"
       },
       {
-        "home": "Fenerbahce",
-        "away": "Slavia Praha",
-        "date": "2026-10-20T16:45:00Z",
-        "pick": "Under 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "home": "Club Brugge",
+        "away": "RC Lens",
+        "date": "2026-10-21T19:00:00Z",
+        "pick": "Club Brugge",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
         "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Manchester City",
-        "away": "AEK Athens",
-        "date": "2026-10-20T19:00:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.79",
-        "confidence": "78%"
-      },
-      {
-        "home": "AS Roma",
-        "away": "ŠK Slovan Bratislava",
-        "date": "2026-10-20T19:00:00Z",
-        "pick": "Over 3.75",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.79",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Wolverhampton Wanderers",
-        "away": "Portsmouth",
-        "date": "2026-10-20T18:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
         "home": "Levante",
         "away": "Athletic Bilbao",
         "date": "2026-10-21T18:00:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Sabah FK",
-        "away": "Borussia Dortmund",
-        "date": "2026-10-20T16:45:00Z",
-        "pick": "Under 3.5",
+        "home": "Como",
+        "away": "Manchester United",
+        "date": "2026-10-21T16:45:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.78",
+        "bookmaker": "BetAnything",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Lille",
+        "away": "Galatasaray",
+        "date": "2026-10-21T16:45:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
