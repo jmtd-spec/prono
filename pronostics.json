@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T15:47:33.709397+00:00",
+  "generated_at": "2026-10-23T15:38:42.789828+00:00",
   "products": {
     "single": [
       {
@@ -8,8 +8,8 @@
         "date": "2026-10-23T19:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
+        "bookmaker": "1xBet",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
@@ -18,8 +18,8 @@
         "date": "2026-10-24T11:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -40,8 +40,8 @@
         "date": "2026-10-23T19:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
+        "bookmaker": "1xBet",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
@@ -50,8 +50,8 @@
         "date": "2026-10-24T11:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -75,23 +75,23 @@
         "confidence": "78%"
       },
       {
-        "home": "Bolton Wanderers",
-        "away": "Middlesbrough",
-        "date": "2026-10-23T19:00:00Z",
+        "home": "Chelsea",
+        "away": "Tottenham Hotspur",
+        "date": "2026-10-24T16:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.81",
+        "bookmaker": "Coolbet",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Charlton Athletic",
-        "away": "Norwich City",
-        "date": "2026-10-24T11:30:00Z",
-        "pick": "Over 2.5",
+        "home": "Manchester United",
+        "away": "Bournemouth",
+        "date": "2026-10-25T14:00:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "William Hill",
-        "odds": "1.80",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
         "confidence": "78%"
       }
     ],
@@ -102,8 +102,8 @@
         "date": "2026-10-23T19:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.78",
+        "bookmaker": "1xBet",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
@@ -112,8 +112,8 @@
         "date": "2026-10-24T11:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.83",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
