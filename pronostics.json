@@ -1,66 +1,14 @@
 {
-  "generated_at": "2026-10-23T15:38:42.789828+00:00",
+  "generated_at": "2026-10-24T14:16:15.935666+00:00",
   "products": {
     "single": [
       {
-        "home": "Ipswich Town",
-        "away": "Nottingham Forest",
-        "date": "2026-10-23T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Aston Villa",
-        "away": "Manchester City",
-        "date": "2026-10-24T11:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
         "home": "Arsenal",
         "away": "Everton",
         "date": "2026-10-24T14:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
-        "odds": "1.80",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Ipswich Town",
-        "away": "Nottingham Forest",
-        "date": "2026-10-23T19:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Aston Villa",
-        "away": "Manchester City",
-        "date": "2026-10-24T11:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Arsenal",
-        "away": "Everton",
-        "date": "2026-10-24T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
+        "bookmaker": "Marathon Bet",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -68,19 +16,51 @@
         "home": "Coventry City",
         "away": "Fulham",
         "date": "2026-10-24T14:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.81",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
         "home": "Chelsea",
         "away": "Tottenham Hotspur",
         "date": "2026-10-24T16:30:00Z",
-        "pick": "Over 3.0",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Arsenal",
+        "away": "Everton",
+        "date": "2026-10-24T14:00:00Z",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
+        "bookmaker": "Marathon Bet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Coventry City",
+        "away": "Fulham",
+        "date": "2026-10-24T14:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Tottenham Hotspur",
+        "date": "2026-10-24T16:30:00Z",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
         "odds": "1.80",
         "confidence": "78%"
       },
@@ -90,39 +70,59 @@
         "date": "2026-10-25T14:00:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Hull City",
+        "away": "Brentford",
+        "date": "2026-10-25T14:00:00Z",
+        "pick": "Brentford",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Liverpool",
+        "away": "Brighton and Hove Albion",
+        "date": "2026-10-25T14:00:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
         "odds": "1.81",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Ipswich Town",
-        "away": "Nottingham Forest",
-        "date": "2026-10-23T19:00:00Z",
-        "pick": "Over 2.5",
+        "home": "Arsenal",
+        "away": "Everton",
+        "date": "2026-10-24T14:00:00Z",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Aston Villa",
-        "away": "Manchester City",
-        "date": "2026-10-24T11:30:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
+        "bookmaker": "Marathon Bet",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Arsenal",
-        "away": "Everton",
+        "home": "Coventry City",
+        "away": "Fulham",
         "date": "2026-10-24T14:00:00Z",
-        "pick": "Over 2.5",
+        "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetAnything",
+        "bookmaker": "MyBookie.ag",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Tottenham Hotspur",
+        "date": "2026-10-24T16:30:00Z",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
         "odds": "1.80",
         "confidence": "78%"
       }
