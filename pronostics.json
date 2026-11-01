@@ -1,9 +1,132 @@
 {
-  "generated_at": "2026-10-31T15:57:12.854417+00:00",
+  "generated_at": "2026-11-01T17:00:33.056999+00:00",
   "products": {
-    "single": [],
-    "premium": [],
-    "vip": []
+    "single": [
+      {
+        "home": "Newcastle United",
+        "away": "Everton",
+        "date": "2026-11-02T20:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Elche CF",
+        "away": "Valencia",
+        "date": "2026-11-01T17:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Athletic Bilbao",
+        "away": "Real Sociedad",
+        "date": "2026-11-01T20:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Newcastle United",
+        "away": "Everton",
+        "date": "2026-11-02T20:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Elche CF",
+        "away": "Valencia",
+        "date": "2026-11-01T17:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Athletic Bilbao",
+        "away": "Real Sociedad",
+        "date": "2026-11-01T20:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Deportivo La Coruña",
+        "away": "CA Osasuna",
+        "date": "2026-11-02T20:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.73",
+        "confidence": "78%"
+      },
+      {
+        "home": "Lecce",
+        "away": "Genoa",
+        "date": "2026-11-01T17:00:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.73",
+        "confidence": "78%"
+      },
+      {
+        "home": "Juventus",
+        "away": "Napoli",
+        "date": "2026-11-01T19:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.79",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Newcastle United",
+        "away": "Everton",
+        "date": "2026-11-02T20:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Elche CF",
+        "away": "Valencia",
+        "date": "2026-11-01T17:30:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "LeoVegas (SE)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Athletic Bilbao",
+        "away": "Real Sociedad",
+        "date": "2026-11-01T20:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ]
   },
   "vip_membership": {
     "monthly_unlocks": 12,
