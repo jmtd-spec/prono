@@ -1,25 +1,15 @@
 {
-  "generated_at": "2026-11-02T20:38:08.489269+00:00",
+  "generated_at": "2026-11-03T18:14:46.329892+00:00",
   "products": {
     "single": [
       {
-        "home": "Newcastle United",
-        "away": "Everton",
-        "date": "2026-11-02T20:00:00Z",
-        "pick": "Over 1.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.76",
-        "confidence": "78%"
-      },
-      {
         "home": "Blackburn Rovers",
         "away": "Stoke City",
         "date": "2026-11-03T19:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "PMU (FR)",
-        "odds": "1.81",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -28,40 +18,8 @@
         "date": "2026-11-03T19:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.76",
-        "confidence": "78%"
-      }
-    ],
-    "premium": [
-      {
-        "home": "Newcastle United",
-        "away": "Everton",
-        "date": "2026-11-02T20:00:00Z",
-        "pick": "Over 1.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.76",
-        "confidence": "78%"
-      },
-      {
-        "home": "Blackburn Rovers",
-        "away": "Stoke City",
-        "date": "2026-11-03T19:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "PMU (FR)",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Charlton Athletic",
-        "away": "Bolton Wanderers",
-        "date": "2026-11-03T19:45:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.76",
+        "bookmaker": "Betsson",
+        "odds": "1.82",
         "confidence": "78%"
       },
       {
@@ -70,8 +28,40 @@
         "date": "2026-11-03T19:45:00Z",
         "pick": "Queens Park Rangers",
         "market": "Match Winner",
-        "bookmaker": "Unibet (FR)",
-        "odds": "1.76",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.78",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Blackburn Rovers",
+        "away": "Stoke City",
+        "date": "2026-11-03T19:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Charlton Athletic",
+        "away": "Bolton Wanderers",
+        "date": "2026-11-03T19:45:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Betsson",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Queens Park Rangers",
+        "away": "Burnley",
+        "date": "2026-11-03T19:45:00Z",
+        "pick": "Queens Park Rangers",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.78",
         "confidence": "78%"
       },
       {
@@ -81,7 +71,7 @@
         "pick": "Norwich City",
         "market": "Match Winner",
         "bookmaker": "Unibet (FR)",
-        "odds": "1.83",
+        "odds": "1.82",
         "confidence": "78%"
       },
       {
@@ -90,22 +80,22 @@
         "date": "2026-11-03T19:45:00Z",
         "pick": "Under 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "PMU (FR)",
-        "odds": "1.79",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Portsmouth",
+        "away": "Swansea City",
+        "date": "2026-11-03T19:45:00Z",
+        "pick": "Under 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "vip": [
-      {
-        "home": "Newcastle United",
-        "away": "Everton",
-        "date": "2026-11-02T20:00:00Z",
-        "pick": "Over 1.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.76",
-        "confidence": "78%"
-      },
       {
         "home": "Blackburn Rovers",
         "away": "Stoke City",
@@ -113,7 +103,7 @@
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
         "bookmaker": "PMU (FR)",
-        "odds": "1.81",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -122,8 +112,18 @@
         "date": "2026-11-03T19:45:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.76",
+        "bookmaker": "Betsson",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Queens Park Rangers",
+        "away": "Burnley",
+        "date": "2026-11-03T19:45:00Z",
+        "pick": "Queens Park Rangers",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.78",
         "confidence": "78%"
       }
     ]
