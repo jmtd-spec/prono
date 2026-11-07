@@ -1,128 +1,128 @@
 {
-  "generated_at": "2026-11-06T17:48:32.204320+00:00",
+  "generated_at": "2026-11-07T16:45:10.675443+00:00",
   "products": {
     "single": [
       {
-        "home": "Barracas Central",
-        "away": "Racing Club",
-        "date": "2026-11-06T18:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Nottingham Forest",
+        "away": "Manchester City",
+        "date": "2026-11-07T17:30:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.70",
-        "confidence": "82%"
+        "odds": "1.78",
+        "confidence": "78%"
       },
       {
-        "home": "Gangwon FC",
-        "away": "Jeonbuk Hyundai Motors",
-        "date": "2026-11-08T07:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.70",
-        "confidence": "82%"
+        "home": "Ipswich Town",
+        "away": "Bournemouth",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Bournemouth",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
       },
       {
-        "home": "Everton",
-        "away": "Coventry City",
-        "date": "2026-11-06T20:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "home": "Brighton and Hove Albion",
+        "away": "Brentford",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Brighton and Hove Albion",
+        "market": "Match Winner",
+        "bookmaker": "PMU (FR)",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Barracas Central",
-        "away": "Racing Club",
-        "date": "2026-11-06T18:00:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.70",
-        "confidence": "82%"
-      },
-      {
-        "home": "Gangwon FC",
-        "away": "Jeonbuk Hyundai Motors",
-        "date": "2026-11-08T07:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.70",
-        "confidence": "82%"
-      },
-      {
-        "home": "Everton",
-        "away": "Coventry City",
-        "date": "2026-11-06T20:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Leeds United",
-        "away": "Tottenham Hotspur",
-        "date": "2026-11-07T12:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Arsenal",
-        "away": "Hull City",
-        "date": "2026-11-07T15:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.83",
-        "confidence": "78%"
-      },
-      {
-        "home": "Fulham",
-        "away": "Newcastle United",
-        "date": "2026-11-07T15:00:00Z",
+        "home": "Nottingham Forest",
+        "away": "Manchester City",
+        "date": "2026-11-07T17:30:00Z",
         "pick": "Under 3.0",
         "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.78",
+        "confidence": "78%"
+      },
+      {
+        "home": "Ipswich Town",
+        "away": "Bournemouth",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Bournemouth",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Brighton and Hove Albion",
+        "away": "Brentford",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Brighton and Hove Albion",
+        "market": "Match Winner",
+        "bookmaker": "PMU (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Sunderland",
+        "away": "Chelsea",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
-        "odds": "1.81",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Crystal Palace",
+        "away": "Liverpool",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.87",
+        "confidence": "78%"
+      },
+      {
+        "home": "Manchester United",
+        "away": "Aston Villa",
+        "date": "2026-11-08T16:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.86",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Barracas Central",
-        "away": "Racing Club",
-        "date": "2026-11-06T18:00:00Z",
-        "pick": "Under 2.5",
+        "home": "Nottingham Forest",
+        "away": "Manchester City",
+        "date": "2026-11-07T17:30:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.70",
-        "confidence": "82%"
+        "odds": "1.78",
+        "confidence": "78%"
       },
       {
-        "home": "Gangwon FC",
-        "away": "Jeonbuk Hyundai Motors",
-        "date": "2026-11-08T07:30:00Z",
-        "pick": "Under 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.70",
-        "confidence": "82%"
+        "home": "Ipswich Town",
+        "away": "Bournemouth",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Bournemouth",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
       },
       {
-        "home": "Everton",
-        "away": "Coventry City",
-        "date": "2026-11-06T20:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "home": "Brighton and Hove Albion",
+        "away": "Brentford",
+        "date": "2026-11-08T14:00:00Z",
+        "pick": "Brighton and Hove Albion",
+        "market": "Match Winner",
+        "bookmaker": "PMU (FR)",
         "odds": "1.80",
         "confidence": "78%"
       }
