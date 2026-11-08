@@ -1,128 +1,128 @@
 {
-  "generated_at": "2026-11-07T16:45:10.675443+00:00",
+  "generated_at": "2026-11-08T16:55:26.535783+00:00",
   "products": {
     "single": [
       {
-        "home": "Nottingham Forest",
-        "away": "Manchester City",
-        "date": "2026-11-07T17:30:00Z",
-        "pick": "Under 3.0",
+        "home": "Manchester United",
+        "away": "Aston Villa",
+        "date": "2026-11-08T16:30:00Z",
+        "pick": "Over 5.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Ipswich Town",
-        "away": "Bournemouth",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Bournemouth",
-        "market": "Match Winner",
-        "bookmaker": "Betclic (FR)",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Brighton and Hove Albion",
-        "away": "Brentford",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Brighton and Hove Albion",
+        "home": "Celta Vigo",
+        "away": "Levante",
+        "date": "2026-11-08T17:30:00Z",
+        "pick": "Celta Vigo",
         "market": "Match Winner",
-        "bookmaker": "PMU (FR)",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Villarreal",
+        "away": "Getafe",
+        "date": "2026-11-08T17:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Nottingham Forest",
-        "away": "Manchester City",
-        "date": "2026-11-07T17:30:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Ipswich Town",
-        "away": "Bournemouth",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Bournemouth",
-        "market": "Match Winner",
-        "bookmaker": "Betclic (FR)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Brighton and Hove Albion",
-        "away": "Brentford",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Brighton and Hove Albion",
-        "market": "Match Winner",
-        "bookmaker": "PMU (FR)",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Sunderland",
-        "away": "Chelsea",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Crystal Palace",
-        "away": "Liverpool",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Over 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.87",
-        "confidence": "78%"
-      },
-      {
         "home": "Manchester United",
         "away": "Aston Villa",
         "date": "2026-11-08T16:30:00Z",
-        "pick": "Under 3.0",
+        "pick": "Over 5.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Tipico",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Celta Vigo",
+        "away": "Levante",
+        "date": "2026-11-08T17:30:00Z",
+        "pick": "Celta Vigo",
+        "market": "Match Winner",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Villarreal",
+        "away": "Getafe",
+        "date": "2026-11-08T17:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Atlético Madrid",
+        "away": "Barcelona",
+        "date": "2026-11-08T20:00:00Z",
+        "pick": "Barcelona",
+        "market": "Match Winner",
+        "bookmaker": "Winamax (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "SC Freiburg",
+        "away": "Union Berlin",
+        "date": "2026-11-08T16:30:00Z",
+        "pick": "Over 2.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.84",
+        "confidence": "78%"
+      },
+      {
+        "home": "TSG Hoffenheim",
+        "away": "FC Schalke 04",
+        "date": "2026-11-08T18:30:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "BetOnline.ag",
-        "odds": "1.86",
+        "odds": "1.88",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Nottingham Forest",
-        "away": "Manchester City",
-        "date": "2026-11-07T17:30:00Z",
-        "pick": "Under 3.0",
+        "home": "Manchester United",
+        "away": "Aston Villa",
+        "date": "2026-11-08T16:30:00Z",
+        "pick": "Over 5.5",
         "market": "Goals Over/Under",
-        "bookmaker": "BetOnline.ag",
-        "odds": "1.78",
-        "confidence": "78%"
-      },
-      {
-        "home": "Ipswich Town",
-        "away": "Bournemouth",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Bournemouth",
-        "market": "Match Winner",
-        "bookmaker": "Betclic (FR)",
+        "bookmaker": "Tipico",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Brighton and Hove Albion",
-        "away": "Brentford",
-        "date": "2026-11-08T14:00:00Z",
-        "pick": "Brighton and Hove Albion",
+        "home": "Celta Vigo",
+        "away": "Levante",
+        "date": "2026-11-08T17:30:00Z",
+        "pick": "Celta Vigo",
         "market": "Match Winner",
-        "bookmaker": "PMU (FR)",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Villarreal",
+        "away": "Getafe",
+        "date": "2026-11-08T17:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
         "odds": "1.80",
         "confidence": "78%"
       }
