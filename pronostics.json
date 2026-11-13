@@ -1,9 +1,102 @@
 {
-  "generated_at": "2026-11-12T18:42:28.088236+00:00",
+  "generated_at": "2026-11-13T18:24:22.665400+00:00",
   "products": {
-    "single": [],
-    "premium": [],
-    "vip": []
+    "single": [
+      {
+        "home": "Querétaro",
+        "away": "Monterrey",
+        "date": "2026-11-14T23:00:00Z",
+        "pick": "Monterrey",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Mirassol",
+        "away": "Atletico Mineiro",
+        "date": "2026-11-14T21:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Vasco da Gama",
+        "date": "2026-11-14T23:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.82",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Querétaro",
+        "away": "Monterrey",
+        "date": "2026-11-14T23:00:00Z",
+        "pick": "Monterrey",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Mirassol",
+        "away": "Atletico Mineiro",
+        "date": "2026-11-14T21:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Vasco da Gama",
+        "date": "2026-11-14T23:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.82",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Querétaro",
+        "away": "Monterrey",
+        "date": "2026-11-14T23:00:00Z",
+        "pick": "Monterrey",
+        "market": "Match Winner",
+        "bookmaker": "Betclic (FR)",
+        "odds": "1.85",
+        "confidence": "78%"
+      },
+      {
+        "home": "Mirassol",
+        "away": "Atletico Mineiro",
+        "date": "2026-11-14T21:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chapecoense",
+        "away": "Vasco da Gama",
+        "date": "2026-11-14T23:30:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "BetOnline.ag",
+        "odds": "1.82",
+        "confidence": "78%"
+      }
+    ]
   },
   "vip_membership": {
     "monthly_unlocks": 12,
