@@ -1,9 +1,132 @@
 {
-  "generated_at": "2026-11-16T20:49:01.224945+00:00",
+  "generated_at": "2026-11-17T19:38:24.848167+00:00",
   "products": {
-    "single": [],
-    "premium": [],
-    "vip": []
+    "single": [
+      {
+        "home": "Coritiba",
+        "away": "Santos",
+        "date": "2026-11-18T22:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Remo",
+        "away": "Chapecoense",
+        "date": "2026-11-18T23:00:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atletico Paranaense",
+        "date": "2026-11-18T23:30:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
+        "confidence": "78%"
+      }
+    ],
+    "premium": [
+      {
+        "home": "Coritiba",
+        "away": "Santos",
+        "date": "2026-11-18T22:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Remo",
+        "away": "Chapecoense",
+        "date": "2026-11-18T23:00:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atletico Paranaense",
+        "date": "2026-11-18T23:30:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "Cruzeiro",
+        "away": "Palmeiras",
+        "date": "2026-11-18T23:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Grêmio",
+        "away": "Bahia",
+        "date": "2026-11-19T00:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "1xBet",
+        "odds": "1.74",
+        "confidence": "78%"
+      },
+      {
+        "home": "Corinthians",
+        "away": "Botafogo",
+        "date": "2026-11-19T00:30:00Z",
+        "pick": "Corinthians",
+        "market": "Match Winner",
+        "bookmaker": "William Hill",
+        "odds": "1.80",
+        "confidence": "78%"
+      }
+    ],
+    "vip": [
+      {
+        "home": "Coritiba",
+        "away": "Santos",
+        "date": "2026-11-18T22:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.79",
+        "confidence": "78%"
+      },
+      {
+        "home": "Remo",
+        "away": "Chapecoense",
+        "date": "2026-11-18T23:00:00Z",
+        "pick": "Under 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atletico Paranaense",
+        "date": "2026-11-18T23:30:00Z",
+        "pick": "Under 3.25",
+        "market": "Goals Over/Under",
+        "bookmaker": "Pinnacle",
+        "odds": "1.81",
+        "confidence": "78%"
+      }
+    ]
   },
   "vip_membership": {
     "monthly_unlocks": 12,
