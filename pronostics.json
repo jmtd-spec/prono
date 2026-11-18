@@ -1,46 +1,86 @@
 {
-  "generated_at": "2026-11-17T19:38:24.848167+00:00",
+  "generated_at": "2026-11-18T19:14:42.799939+00:00",
   "products": {
     "single": [
       {
-        "home": "Coritiba",
-        "away": "Santos",
-        "date": "2026-11-18T22:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
+        "home": "Molde",
+        "away": "Bodø/Glimt",
+        "date": "2026-11-20T18:00:00Z",
+        "pick": "Bodø/Glimt",
+        "market": "Match Winner",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "Remo",
-        "away": "Chapecoense",
-        "date": "2026-11-18T23:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
+        "home": "AGF Aarhus",
+        "away": "Lyngby",
+        "date": "2026-11-20T18:00:00Z",
+        "pick": "AGF Aarhus",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
         "odds": "1.82",
         "confidence": "78%"
       },
       {
-        "home": "Flamengo",
-        "away": "Atletico Paranaense",
-        "date": "2026-11-18T23:30:00Z",
-        "pick": "Under 3.25",
+        "home": "Orlando City SC",
+        "away": "FC Cincinnati",
+        "date": "2026-11-20T00:30:00Z",
+        "pick": "Over 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
+        "home": "Molde",
+        "away": "Bodø/Glimt",
+        "date": "2026-11-20T18:00:00Z",
+        "pick": "Bodø/Glimt",
+        "market": "Match Winner",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
+        "confidence": "78%"
+      },
+      {
+        "home": "AGF Aarhus",
+        "away": "Lyngby",
+        "date": "2026-11-20T18:00:00Z",
+        "pick": "AGF Aarhus",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
+        "odds": "1.82",
+        "confidence": "78%"
+      },
+      {
+        "home": "Orlando City SC",
+        "away": "FC Cincinnati",
+        "date": "2026-11-20T00:30:00Z",
+        "pick": "Over 3.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Seattle Sounders FC",
+        "away": "Real Salt Lake",
+        "date": "2026-11-20T03:00:00Z",
+        "pick": "Over 3.0",
+        "market": "Goals Over/Under",
+        "bookmaker": "Coolbet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
         "home": "Coritiba",
         "away": "Santos",
         "date": "2026-11-18T22:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "pick": "Santos",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
         "odds": "1.79",
         "confidence": "78%"
       },
@@ -48,82 +88,42 @@
         "home": "Remo",
         "away": "Chapecoense",
         "date": "2026-11-18T23:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Flamengo",
-        "away": "Atletico Paranaense",
-        "date": "2026-11-18T23:30:00Z",
-        "pick": "Under 3.25",
-        "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "Cruzeiro",
-        "away": "Palmeiras",
-        "date": "2026-11-18T23:30:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Grêmio",
-        "away": "Bahia",
-        "date": "2026-11-19T00:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.74",
-        "confidence": "78%"
-      },
-      {
-        "home": "Corinthians",
-        "away": "Botafogo",
-        "date": "2026-11-19T00:30:00Z",
-        "pick": "Corinthians",
-        "market": "Match Winner",
-        "bookmaker": "William Hill",
+        "bookmaker": "GTbets",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Coritiba",
-        "away": "Santos",
-        "date": "2026-11-18T22:30:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.79",
+        "home": "Molde",
+        "away": "Bodø/Glimt",
+        "date": "2026-11-20T18:00:00Z",
+        "pick": "Bodø/Glimt",
+        "market": "Match Winner",
+        "bookmaker": "Codere (IT)",
+        "odds": "1.81",
         "confidence": "78%"
       },
       {
-        "home": "Remo",
-        "away": "Chapecoense",
-        "date": "2026-11-18T23:00:00Z",
-        "pick": "Under 3.0",
-        "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
+        "home": "AGF Aarhus",
+        "away": "Lyngby",
+        "date": "2026-11-20T18:00:00Z",
+        "pick": "AGF Aarhus",
+        "market": "h2h_lay",
+        "bookmaker": "Betfair",
         "odds": "1.82",
         "confidence": "78%"
       },
       {
-        "home": "Flamengo",
-        "away": "Atletico Paranaense",
-        "date": "2026-11-18T23:30:00Z",
-        "pick": "Under 3.25",
+        "home": "Orlando City SC",
+        "away": "FC Cincinnati",
+        "date": "2026-11-20T00:30:00Z",
+        "pick": "Over 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Pinnacle",
-        "odds": "1.81",
+        "bookmaker": "Matchbook",
+        "odds": "1.80",
         "confidence": "78%"
       }
     ]
