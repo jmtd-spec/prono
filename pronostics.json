@@ -1,128 +1,128 @@
 {
-  "generated_at": "2026-11-18T19:14:42.799939+00:00",
+  "generated_at": "2026-11-19T19:21:39.009399+00:00",
   "products": {
     "single": [
       {
-        "home": "Molde",
-        "away": "Bodø/Glimt",
-        "date": "2026-11-20T18:00:00Z",
-        "pick": "Bodø/Glimt",
-        "market": "Match Winner",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "AGF Aarhus",
-        "away": "Lyngby",
-        "date": "2026-11-20T18:00:00Z",
-        "pick": "AGF Aarhus",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Orlando City SC",
-        "away": "FC Cincinnati",
-        "date": "2026-11-20T00:30:00Z",
-        "pick": "Over 3.5",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "date": "2026-11-21T12:30:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "Coolbet",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Sunderland",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Aston Villa",
+        "market": "Match Winner",
+        "bookmaker": "Marathon Bet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Bournemouth",
+        "away": "Nottingham Forest",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Bournemouth",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
         "odds": "1.80",
         "confidence": "78%"
       }
     ],
     "premium": [
       {
-        "home": "Molde",
-        "away": "Bodø/Glimt",
-        "date": "2026-11-20T18:00:00Z",
-        "pick": "Bodø/Glimt",
-        "market": "Match Winner",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "AGF Aarhus",
-        "away": "Lyngby",
-        "date": "2026-11-20T18:00:00Z",
-        "pick": "AGF Aarhus",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Orlando City SC",
-        "away": "FC Cincinnati",
-        "date": "2026-11-20T00:30:00Z",
-        "pick": "Over 3.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.80",
-        "confidence": "78%"
-      },
-      {
-        "home": "Seattle Sounders FC",
-        "away": "Real Salt Lake",
-        "date": "2026-11-20T03:00:00Z",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "date": "2026-11-21T12:30:00Z",
         "pick": "Over 3.0",
         "market": "Goals Over/Under",
         "bookmaker": "Coolbet",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Sunderland",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Aston Villa",
+        "market": "Match Winner",
+        "bookmaker": "Marathon Bet",
         "odds": "1.80",
         "confidence": "78%"
       },
       {
-        "home": "Coritiba",
-        "away": "Santos",
-        "date": "2026-11-18T22:30:00Z",
-        "pick": "Santos",
+        "home": "Bournemouth",
+        "away": "Nottingham Forest",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Bournemouth",
         "market": "Match Winner",
         "bookmaker": "Unibet (FR)",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Leeds United",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Unibet (SE)",
         "odds": "1.79",
         "confidence": "78%"
       },
       {
-        "home": "Remo",
-        "away": "Chapecoense",
-        "date": "2026-11-18T23:00:00Z",
+        "home": "Coventry City",
+        "away": "Crystal Palace",
+        "date": "2026-11-21T15:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "GTbets",
-        "odds": "1.80",
+        "bookmaker": "1xBet",
+        "odds": "1.75",
+        "confidence": "78%"
+      },
+      {
+        "home": "Newcastle United",
+        "away": "Arsenal",
+        "date": "2026-11-21T17:30:00Z",
+        "pick": "Over 2.5",
+        "market": "Goals Over/Under",
+        "bookmaker": "Matchbook",
+        "odds": "1.78",
         "confidence": "78%"
       }
     ],
     "vip": [
       {
-        "home": "Molde",
-        "away": "Bodø/Glimt",
-        "date": "2026-11-20T18:00:00Z",
-        "pick": "Bodø/Glimt",
-        "market": "Match Winner",
-        "bookmaker": "Codere (IT)",
-        "odds": "1.81",
-        "confidence": "78%"
-      },
-      {
-        "home": "AGF Aarhus",
-        "away": "Lyngby",
-        "date": "2026-11-20T18:00:00Z",
-        "pick": "AGF Aarhus",
-        "market": "h2h_lay",
-        "bookmaker": "Betfair",
-        "odds": "1.82",
-        "confidence": "78%"
-      },
-      {
-        "home": "Orlando City SC",
-        "away": "FC Cincinnati",
-        "date": "2026-11-20T00:30:00Z",
-        "pick": "Over 3.5",
+        "home": "Manchester City",
+        "away": "Fulham",
+        "date": "2026-11-21T12:30:00Z",
+        "pick": "Over 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
+        "bookmaker": "Coolbet",
+        "odds": "1.77",
+        "confidence": "78%"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Sunderland",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Aston Villa",
+        "market": "Match Winner",
+        "bookmaker": "Marathon Bet",
+        "odds": "1.80",
+        "confidence": "78%"
+      },
+      {
+        "home": "Bournemouth",
+        "away": "Nottingham Forest",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Bournemouth",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
         "odds": "1.80",
         "confidence": "78%"
       }
