@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-19T19:21:39.009399+00:00",
+  "generated_at": "2026-11-20T18:58:02.569329+00:00",
   "products": {
     "single": [
       {
         "home": "Manchester City",
         "away": "Fulham",
         "date": "2026-11-21T12:30:00Z",
-        "pick": "Over 3.0",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.77",
+        "bookmaker": "Matchbook",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
@@ -38,10 +38,10 @@
         "home": "Manchester City",
         "away": "Fulham",
         "date": "2026-11-21T12:30:00Z",
-        "pick": "Over 3.0",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.77",
+        "bookmaker": "Matchbook",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
@@ -68,10 +68,10 @@
         "home": "Chelsea",
         "away": "Leeds United",
         "date": "2026-11-21T15:00:00Z",
-        "pick": "Over 2.5",
-        "market": "Goals Over/Under",
-        "bookmaker": "Unibet (SE)",
-        "odds": "1.79",
+        "pick": "Chelsea",
+        "market": "Match Winner",
+        "bookmaker": "Unibet (FR)",
+        "odds": "1.80",
         "confidence": "78%"
       },
       {
@@ -80,18 +80,18 @@
         "date": "2026-11-21T15:00:00Z",
         "pick": "Over 2.5",
         "market": "Goals Over/Under",
-        "bookmaker": "1xBet",
-        "odds": "1.75",
+        "bookmaker": "Coolbet",
+        "odds": "1.78",
         "confidence": "78%"
       },
       {
-        "home": "Newcastle United",
-        "away": "Arsenal",
-        "date": "2026-11-21T17:30:00Z",
-        "pick": "Over 2.5",
+        "home": "Tottenham Hotspur",
+        "away": "Ipswich Town",
+        "date": "2026-11-21T15:00:00Z",
+        "pick": "Under 3.0",
         "market": "Goals Over/Under",
-        "bookmaker": "Matchbook",
-        "odds": "1.78",
+        "bookmaker": "Pinnacle",
+        "odds": "1.86",
         "confidence": "78%"
       }
     ],
@@ -100,10 +100,10 @@
         "home": "Manchester City",
         "away": "Fulham",
         "date": "2026-11-21T12:30:00Z",
-        "pick": "Over 3.0",
+        "pick": "Under 3.5",
         "market": "Goals Over/Under",
-        "bookmaker": "Coolbet",
-        "odds": "1.77",
+        "bookmaker": "Matchbook",
+        "odds": "1.83",
         "confidence": "78%"
       },
       {
